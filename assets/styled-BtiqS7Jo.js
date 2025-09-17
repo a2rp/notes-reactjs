@@ -1,4 +1,4 @@
-import{d as o}from"./index-Dt0Nk7bl.js";const r='ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',i={Page:o.article`
+import{d as o}from"./index-DAKYIyJL.js";const r='ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',i={Page:o.article`
         max-width: 980px;
         margin: 0 auto;
         padding: 24px 18px 64px;

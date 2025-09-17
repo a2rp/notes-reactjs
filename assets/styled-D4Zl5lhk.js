@@ -1,4 +1,4 @@
-import{d as o}from"./index-Dt0Nk7bl.js";const r='ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',i={Page:o.article`
+import{d as o}from"./index-DAKYIyJL.js";const r='ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',i={Page:o.article`
         max-width: 980px;
         margin: 0 auto;
         padding: 24px 18px 64px;
@@ -7,6 +7,7 @@ import{d as o}from"./index-Dt0Nk7bl.js";const r='ui-monospace, SFMono-Regular, M
     `,Title:o.h1`
         font-size: clamp(22px, 2vw + 18px, 34px);
         margin: 0 0 12px;
+        letter-spacing: 0.2px;
     `,Lead:o.p`
         font-size: 1.05rem;
         color: #cfcfcf;
@@ -20,7 +21,7 @@ import{d as o}from"./index-Dt0Nk7bl.js";const r='ui-monospace, SFMono-Regular, M
     `,H2:o.h2`
         margin: 0 0 10px;
         font-size: 1.2rem;
-        color: #ffd2ba;
+        color: #ffd2ba; /* soft coral accent */
     `,List:o.ul`
         margin: 8px 0 0 18px;
         padding: 0;
