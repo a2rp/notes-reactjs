@@ -1,4 +1,4 @@
-import{j as e}from"./index-DAKYIyJL.js";import{S as i}from"./styled-D4Zl5lhk.js";const r=()=>e.jsxs(i.Page,{children:[e.jsx(i.Title,{children:"PKG Scripts (package.json)"}),e.jsx(i.Lead,{children:"Scripts are short aliases to run common tasks: dev server, build, preview, lint/format, tests, deploy, and utility commands. The same ideas work with npm, pnpm, and yarn."}),e.jsxs(i.Section,{children:[e.jsx(i.H2,{children:"Core scripts"}),e.jsx(i.Pre,{children:`// package.json (scripts only)
+import{j as e}from"./index-QA-tBXdP.js";import{S as i}from"./styled-B0tg3hn9.js";const r=()=>e.jsxs(i.Page,{children:[e.jsx(i.Title,{children:"PKG Scripts (package.json)"}),e.jsx(i.Lead,{children:"Scripts are short aliases to run common tasks: dev server, build, preview, lint/format, tests, deploy, and utility commands. The same ideas work with npm, pnpm, and yarn."}),e.jsxs(i.Section,{children:[e.jsx(i.H2,{children:"Core scripts"}),e.jsx(i.Pre,{children:`// package.json (scripts only)
 {
   "scripts": {
     "dev": "vite",
