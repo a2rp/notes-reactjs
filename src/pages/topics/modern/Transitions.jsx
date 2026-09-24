@@ -197,7 +197,7 @@ function Tabs({ panels }) {
                 <Styled.H2>When to Use / Not Use</Styled.H2>
                 <Styled.List>
                     <li><b>Use for:</b> filtering, sorting, pagination, tab/route changes, large list renders, chart updates.</li>
-                    <li><b>Avoid for:</b> form input echo, cursor position, button press feedback, “are we submitting?” flags — these are urgent.</li>
+                    <li><b>Avoid for:</b> form input echo, cursor position, button press feedback, “are we submitting?” flags  -  these are urgent.</li>
                     <li><b>Note:</b> Transitions don’t make work faster; they make it <i>interruptible</i>.</li>
                 </Styled.List>
             </Styled.Section>

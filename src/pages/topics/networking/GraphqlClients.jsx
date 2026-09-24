@@ -22,7 +22,7 @@ const GraphqlClients = () => {
                     <li><b>Resolver</b>: server function that resolves a field's data for a query/mutation/subscription.</li>
                     <li><b>Operation</b>: a single query, mutation, or subscription document sent to the server.</li>
                     <li><b>Endpoint</b>: the HTTP/WS URL that accepts GraphQL operations (often <Styled.InlineCode>/graphql</Styled.InlineCode>).</li>
-                    <li><b>Transport</b>: how operations travel—HTTP (POST/GET) for queries/mutations, WebSocket/SSE for subscriptions.</li>
+                    <li><b>Transport</b>: how operations travel - HTTP (POST/GET) for queries/mutations, WebSocket/SSE for subscriptions.</li>
                     <li><b>Cache</b>: client-side store of results to avoid refetching and keep UI reactive.</li>
                     <li><b>Fragment</b>: reusable field selection that can be composed across queries.</li>
                     <li><b>Normalization</b>: cache technique that stores entities by ID so multiple queries share the same data.</li>
@@ -43,7 +43,7 @@ const GraphqlClients = () => {
 
             {/* 3) Apollo Client: setup */}
             <Styled.Section>
-                <Styled.H2>Apollo Client — Quick Start</Styled.H2>
+                <Styled.H2>Apollo Client  -  Quick Start</Styled.H2>
                 <Styled.Small>Install: <Styled.InlineCode>npm i @apollo/client graphql</Styled.InlineCode></Styled.Small>
                 <Styled.Pre>
                     {`// apollo.js
@@ -288,7 +288,7 @@ async function fetchGraphQL(query, variables) {
                     <li><b>Do</b> model your schema for <i>cursor pagination</i> and stable IDs; clients rely on IDs for normalization.</li>
                     <li><b>Do</b> colocate queries with components or use fragments to keep data needs clear.</li>
                     <li><b>Do</b> handle <i>both</i> GraphQL and network errors in the UI.</li>
-                    <li><b>Don't</b> overfetch—ask only for fields you render; keep documents small and focused.</li>
+                    <li><b>Don't</b> overfetch - ask only for fields you render; keep documents small and focused.</li>
                     <li><b>Don't</b> block the UI while refetching; show loading states or use background updates.</li>
                 </Styled.List>
             </Styled.Section>

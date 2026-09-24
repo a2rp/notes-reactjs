@@ -142,7 +142,7 @@ function Table({ products }) {
                 <Styled.List>
                     <li>
                         Returning an <b>array</b> of elements is valid but requires commas and
-                        keys on each element—less readable than fragments for most cases.
+                        keys on each element - less readable than fragments for most cases.
                     </li>
                     <li>
                         Fragments read like normal JSX; use explicit fragments for keyed
@@ -166,7 +166,7 @@ return [
                         You cannot set <Styled.InlineCode>className</Styled.InlineCode>, <Styled.InlineCode>style</Styled.InlineCode>, or event handlers on a fragment.
                     </li>
                     <li>
-                        No <b>ref</b> target—there’s no DOM node. If a ref or class is needed, use a real element.
+                        No <b>ref</b> target - there’s no DOM node. If a ref or class is needed, use a real element.
                     </li>
                 </Styled.List>
             </Styled.Section>
@@ -178,8 +178,8 @@ return [
                     <li><b>Do</b> use <Styled.InlineCode>{`<React.Fragment key={...}>`}</Styled.InlineCode> for keyed groups in lists.</li>
                     <li><b>Do</b> use fragments inside tables where <code>div</code> would be invalid.</li>
                     <li><b>Don’t</b> try to style a fragment; use a semantic wrapper if styles or roles are needed.</li>
-                    <li><b>Don’t</b> use shorthand <Styled.InlineCode>{`<>`}</Styled.InlineCode> when a key is required—switch to explicit form.</li>
-                    <li><b>Don’t</b> wrap list items for <code>ul/ol</code>—children must be <code>li</code>; fragments are for grouping siblings, not replacing required semantics.</li>
+                    <li><b>Don’t</b> use shorthand <Styled.InlineCode>{`<>`}</Styled.InlineCode> when a key is required - switch to explicit form.</li>
+                    <li><b>Don’t</b> wrap list items for <code>ul/ol</code> - children must be <code>li</code>; fragments are for grouping siblings, not replacing required semantics.</li>
                 </Styled.List>
             </Styled.Section>
 

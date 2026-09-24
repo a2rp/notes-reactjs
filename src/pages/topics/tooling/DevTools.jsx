@@ -53,7 +53,7 @@ const DevTools = () => {
                     </li>
                     <li>
                         <b>Strict Mode (dev only):</b> Helps find side-effects by intentionally double-invoking some lifecycles in development.
-                        This can make “renders” appear twice in DevTools during local development—normal and expected.
+                        This can make “renders” appear twice in DevTools during local development - normal and expected.
                     </li>
                 </Styled.List>
             </Styled.Section>
@@ -77,7 +77,7 @@ const DevTools = () => {
 
             {/* 4) Components tab */}
             <Styled.Section>
-                <Styled.H2>Components Tab — Inspect Everything</Styled.H2>
+                <Styled.H2>Components Tab  -  Inspect Everything</Styled.H2>
                 <Styled.List>
                     <li>
                         <b>Left pane:</b> The component tree. Click a component to inspect it.
@@ -158,7 +158,7 @@ function Bulb() {
 
             {/* 6) Profiler intro */}
             <Styled.Section>
-                <Styled.H2>Profiler Tab — Measure Renders</Styled.H2>
+                <Styled.H2>Profiler Tab  -  Measure Renders</Styled.H2>
                 <Styled.List>
                     <li>
                         <b>What it does:</b> Records how long each component render took and <i>why</i> it happened
@@ -221,7 +221,7 @@ function App() {
                     <li><b>Do</b> name components (<Styled.InlineCode>displayName</Styled.InlineCode>) so they're easy to find.</li>
                     <li><b>Do</b> use <Styled.InlineCode>useDebugValue</Styled.InlineCode> for custom hooks that hold important state.</li>
                     <li><b>Do</b> profile before optimizing; measure first, then fix <i>specific</i> hot spots.</li>
-                    <li><b>Don't</b> panic about dev-only double renders under Strict Mode—it's a feature, not a bug.</li>
+                    <li><b>Don't</b> panic about dev-only double renders under Strict Mode - it's a feature, not a bug.</li>
                     <li><b>Don't</b> over-memoize everything. Memoization has a cost; apply where it reduces meaningful re-renders.</li>
                 </Styled.List>
             </Styled.Section>
@@ -245,7 +245,7 @@ function App() {
             <Styled.Callout>
                 React DevTools is your X-ray. Use the <b>Components</b> tab to understand data flow
                 and the <b>Profiler</b> to measure real costs. Name components, label custom hooks,
-                and optimize based on evidence—not guesses.
+                and optimize based on evidence - not guesses.
             </Styled.Callout>
         </Styled.Page>
     );

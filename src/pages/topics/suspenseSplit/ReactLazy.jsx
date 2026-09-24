@@ -213,7 +213,7 @@ class Boundary extends React.Component {
                 <Styled.H2>SSR &amp; Hosting Notes</Styled.H2>
                 <Styled.List>
                     <li>
-                        <b>CSR apps (like Vite + GH Pages):</b> React.lazy works out of the box—chunks are fetched at runtime.
+                        <b>CSR apps (like Vite + GH Pages):</b> React.lazy works out of the box - chunks are fetched at runtime.
                     </li>
                     <li>
                         <b>SSR frameworks:</b> need special handling (streaming + SSR-aware bundling). This notes app is CSR, so you’re good.

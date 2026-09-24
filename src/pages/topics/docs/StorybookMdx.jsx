@@ -10,7 +10,7 @@ const StorybookMdx = () => {
             <Styled.Lead>
                 <b>Storybook</b> is a development tool to build and preview UI components in isolation.
                 <b> MDX</b> (Markdown + JSX) lets you write rich documentation pages
-                alongside stories—mixing prose, code samples, and live components in a single file.
+                alongside stories - mixing prose, code samples, and live components in a single file.
             </Styled.Lead>
 
             {/* 1) Core definitions */}
@@ -92,7 +92,7 @@ Use **Button** for primary actions. Keep labels short (1–3 words).
                 </Styled.Pre>
                 <Styled.List>
                     <li>
-                        <b>{`<Meta />`}</b>: declares metadata—<code>title</code> (sidebar name) and the component (<code>of</code>).
+                        <b>{`<Meta />`}</b>: declares metadata - <code>title</code> (sidebar name) and the component (<code>of</code>).
                     </li>
                     <li>
                         <b>{`<Canvas />`}</b>: renders live stories (an interactive preview surface).
@@ -193,7 +193,7 @@ import { Meta, Canvas, Story, ArgsTable } from '@storybook/blocks';
                     <li><b>Do</b> keep stories focused: one clear scenario per story.</li>
                     <li><b>Do</b> show edge cases: long labels, loading, disabled, error.</li>
                     <li><b>Do</b> document accessibility expectations (keyboard, screen readers).</li>
-                    <li><b>Don't</b> hide critical behavior behind complex setups—prefer minimal, readable examples.</li>
+                    <li><b>Don't</b> hide critical behavior behind complex setups - prefer minimal, readable examples.</li>
                     <li><b>Don't</b> duplicate stories across MDX and CSF; import CSF into MDX when possible.</li>
                 </Styled.List>
             </Styled.Section>
@@ -260,7 +260,7 @@ import { Meta, Canvas, Story, ArgsTable } from '@storybook/blocks';
             <Styled.Callout>
                 Summary: Use MDX when you want narrative documentation with live examples.
                 Keep stories focused, wire up controls for key props, and import CSF stories to avoid duplication.
-                Treat docs as part of the component—update them with the code.
+                Treat docs as part of the component - update them with the code.
             </Styled.Callout>
         </Styled.Page>
     );

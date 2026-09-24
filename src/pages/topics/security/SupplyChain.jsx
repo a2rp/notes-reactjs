@@ -46,7 +46,7 @@ const SupplyChain = () => {
                     <li><b>Lockfile:</b> <code>package-lock.json</code>, <code>pnpm-lock.yaml</code>, or <code>yarn.lock</code> records the exact resolved versions + integrity hashes for reproducible builds.</li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`// package.json — safer pins for production apps
+                    {`// package.json  -  safer pins for production apps
 {
   "dependencies": {
     "react": "18.3.1",          // exact pin (example)
@@ -86,7 +86,7 @@ npm audit --production
 pnpm audit --prod`}
                 </Styled.Pre>
                 <Styled.Pre>
-                    {`# .npmrc — examples
+                    {`# .npmrc  -  examples
 audit=true
 fund=false
 @your-scope:registry=https://npm.pkg.github.com
@@ -135,7 +135,7 @@ jobs:
                     <li><b>License & provenance:</b> include a license and repository metadata for traceability.</li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`// package.json — safe publishing hints
+                    {`// package.json  -  safe publishing hints
 {
   "files": ["dist/", "README.md", "LICENSE"],
   "scripts": {
@@ -198,7 +198,7 @@ npm pack --dry-run`}
                     <li><b>Lockfile:</b> file that freezes exact versions + integrity hashes for reproducible installs.</li>
                     <li><b>Integrity hash:</b> cryptographic checksum in the lockfile that ensures the tarball content matches what was resolved.</li>
                     <li><b>Lifecycle script:</b> npm/pnpm script that runs automatically on install/publish (e.g., <code>postinstall</code>).</li>
-                    <li><b>SBOM:</b> Software Bill of Materials—machine-readable list of components in your build (SPDX/CycloneDX).</li>
+                    <li><b>SBOM:</b> Software Bill of Materials - machine-readable list of components in your build (SPDX/CycloneDX).</li>
                     <li><b>Provenance:</b> traceable evidence of how/where an artifact was built (who built it, from which source, with which tools).</li>
                     <li><b>Least privilege:</b> give every token/role only the permissions it strictly needs.</li>
                 </Styled.List>
@@ -207,7 +207,7 @@ npm pack --dry-run`}
             <Styled.Callout>
                 Summary: lock down versions and package manager, use lockfile-based installs, review and audit new deps,
                 restrict registries and lifecycle scripts, pin CI actions, protect secrets, generate SBOMs, and verify what
-                you publish and deploy. Treat every step—from install to release—as a potential trust boundary.
+                you publish and deploy. Treat every step - from install to release - as a potential trust boundary.
             </Styled.Callout>
         </Styled.Page>
     );

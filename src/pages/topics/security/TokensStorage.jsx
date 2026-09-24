@@ -66,7 +66,7 @@ const TokensStorage = () => {
                 <Styled.H2>Storage options (and risks)</Styled.H2>
                 <Styled.List>
                     <li>
-                        <b>In-memory (JS variable/state):</b> disappears on refresh. <i>Best for access tokens</i>—not
+                        <b>In-memory (JS variable/state):</b> disappears on refresh. <i>Best for access tokens</i> - not
                         readable by other tabs, reduces persistence if XSS occurs (attacker must be present “now”).
                     </li>
                     <li>
@@ -90,7 +90,7 @@ const TokensStorage = () => {
 
             {/* 3) Pattern A: Memory access token + HttpOnly refresh cookie */}
             <Styled.Section>
-                <Styled.H2>Pattern A — Memory access token + HttpOnly refresh cookie</Styled.H2>
+                <Styled.H2>Pattern A  -  Memory access token + HttpOnly refresh cookie</Styled.H2>
                 <Styled.List>
                     <li>
                         On login, server sets <b>refresh</b> token cookie (
@@ -99,7 +99,7 @@ const TokensStorage = () => {
                     </li>
                     <li>
                         Client keeps the access token <i>only in memory</i>. When it expires (401), call{" "}
-                        <Styled.InlineCode>/auth/refresh</Styled.InlineCode>—the browser sends the refresh cookie
+                        <Styled.InlineCode>/auth/refresh</Styled.InlineCode> - the browser sends the refresh cookie
                         automatically; server returns a new access token.
                     </li>
                     <li>
@@ -148,7 +148,7 @@ export async function apiFetch(input, init = {}) {
 
             {/* 4) Pattern B: Cookie-only session (no tokens in JS) */}
             <Styled.Section>
-                <Styled.H2>Pattern B — Cookie-only session (no tokens in JS)</Styled.H2>
+                <Styled.H2>Pattern B  -  Cookie-only session (no tokens in JS)</Styled.H2>
                 <Styled.List>
                     <li>
                         Server issues a <b>session cookie</b> (<Styled.InlineCode>HttpOnly; Secure; SameSite=Lax</Styled.InlineCode>).
@@ -199,7 +199,7 @@ async function postWithCsrf(url, body) {
                     <li><b>Do</b> rotate refresh tokens; revoke on logout or suspicion.</li>
                     <li><b>Don’t</b> put long-lived refresh tokens in <Styled.InlineCode>localStorage</Styled.InlineCode>.</li>
                     <li><b>Don’t</b> expose secrets (API keys) in frontend code; those belong on the server.</li>
-                    <li><b>Don’t</b> rely on CORS alone for CSRF protection—CORS is about who can <i>read</i> responses.</li>
+                    <li><b>Don’t</b> rely on CORS alone for CSRF protection - CORS is about who can <i>read</i> responses.</li>
                 </Styled.List>
             </Styled.Section>
 

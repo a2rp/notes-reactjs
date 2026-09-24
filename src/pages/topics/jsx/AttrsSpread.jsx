@@ -164,7 +164,7 @@ return <span className={cls} style={style} {...rest} />;`}
                         Don't forward <Styled.InlineCode>dangerouslySetInnerHTML</Styled.InlineCode> from untrusted sources.
                     </li>
                     <li>
-                        Keep <Styled.InlineCode>aria-*</Styled.InlineCode> and <Styled.InlineCode>data-*</Styled.InlineCode> props flowing—these are valid on DOM nodes.
+                        Keep <Styled.InlineCode>aria-*</Styled.InlineCode> and <Styled.InlineCode>data-*</Styled.InlineCode> props flowing - these are valid on DOM nodes.
                     </li>
                     <li>
                         Set an explicit <Styled.InlineCode>type="button"</Styled.InlineCode> on custom buttons to avoid unintended form submits.
@@ -188,7 +188,7 @@ return <span className={cls} style={style} {...rest} />;`}
                     <li><b>Do</b>: put spreads first, then explicit attributes to lock critical values.</li>
                     <li><b>Do</b>: merge <Styled.InlineCode>className</Styled.InlineCode> and <Styled.InlineCode>style</Styled.InlineCode> instead of replacing them.</li>
                     <li><b>Don't</b>: spread <Styled.InlineCode>{`{...props}`}</Styled.InlineCode> blindly onto DOM; strip internal props.</li>
-                    <li><b>Don't</b>: rely on spread order accidentally—make intent obvious.</li>
+                    <li><b>Don't</b>: rely on spread order accidentally - make intent obvious.</li>
                     <li><b>Don't</b>: forward unsafe props (e.g., user-provided <Styled.InlineCode>dangerouslySetInnerHTML</Styled.InlineCode>).</li>
                 </Styled.List>
             </Styled.Section>

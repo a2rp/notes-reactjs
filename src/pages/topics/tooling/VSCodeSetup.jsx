@@ -60,25 +60,25 @@ const VSCodeSetup = () => {
                 <Styled.H2>Recommended Extensions</Styled.H2>
                 <Styled.List>
                     <li>
-                        <b>ESLint</b> — integrates ESLint into VS Code (shows errors/warnings inline).
+                        <b>ESLint</b>  -  integrates ESLint into VS Code (shows errors/warnings inline).
                     </li>
                     <li>
-                        <b>Prettier – Code Formatter</b> — consistent code formatting.
+                        <b>Prettier – Code Formatter</b>  -  consistent code formatting.
                     </li>
                     <li>
-                        <b>JavaScript and TypeScript Nightly</b> (optional) — newer TS/JS language features.
+                        <b>JavaScript and TypeScript Nightly</b> (optional)  -  newer TS/JS language features.
                     </li>
                     <li>
-                        <b>Path Intellisense</b> — autocompletes file paths in imports.
+                        <b>Path Intellisense</b>  -  autocompletes file paths in imports.
                     </li>
                     <li>
-                        <b>Auto Rename Tag</b> — renames the closing tag when you rename the opening tag.
+                        <b>Auto Rename Tag</b>  -  renames the closing tag when you rename the opening tag.
                     </li>
                     <li>
-                        <b>ES7+ React/Redux/React-Native snippets</b> (optional) — quick React snippets.
+                        <b>ES7+ React/Redux/React-Native snippets</b> (optional)  -  quick React snippets.
                     </li>
                     <li>
-                        <b>Code Metrics</b> (for the "code-metrics" topic later) — visual complexity metrics.
+                        <b>Code Metrics</b> (for the "code-metrics" topic later)  -  visual complexity metrics.
                     </li>
                 </Styled.List>
                 <Styled.Small>

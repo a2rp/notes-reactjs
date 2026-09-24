@@ -315,8 +315,8 @@ const Menu = () => {
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: A great Menu respects platform conventions—one tab stop, arrow navigation,
-                typeahead, clear focus, and predictable dismissal—while staying flexible enough to host
+                Summary: A great Menu respects platform conventions - one tab stop, arrow navigation,
+                typeahead, clear focus, and predictable dismissal - while staying flexible enough to host
                 actions, separators, and submenus without surprises.
             </Styled.Callout>
         </Styled.Page>

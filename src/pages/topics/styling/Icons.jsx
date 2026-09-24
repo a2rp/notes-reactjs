@@ -27,11 +27,11 @@ const Icons = () => {
             <Styled.Section>
                 <Styled.H2>Common strategies in React</Styled.H2>
                 <Styled.List>
-                    <li><b>Inline SVG component</b> — maximum control, zero runtime dependency.</li>
-                    <li><b>react-icons</b> — curated packs (Feather, Material, etc.) with tree-shaking.</li>
-                    <li><b>SVG sprite &lt;use&gt;</b> — reference by id; great for many small icons.</li>
-                    <li><b>Icon fonts</b> — avoid for a11y/coloring; use SVG instead.</li>
-                    <li><b>Raster images (PNG/JPG)</b> — avoid for UI icons; not scalable.</li>
+                    <li><b>Inline SVG component</b>  -  maximum control, zero runtime dependency.</li>
+                    <li><b>react-icons</b>  -  curated packs (Feather, Material, etc.) with tree-shaking.</li>
+                    <li><b>SVG sprite &lt;use&gt;</b>  -  reference by id; great for many small icons.</li>
+                    <li><b>Icon fonts</b>  -  avoid for a11y/coloring; use SVG instead.</li>
+                    <li><b>Raster images (PNG/JPG)</b>  -  avoid for UI icons; not scalable.</li>
                 </Styled.List>
             </Styled.Section>
 

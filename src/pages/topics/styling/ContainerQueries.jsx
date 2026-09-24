@@ -49,7 +49,7 @@ const ContainerQueries = () => {
                 </Styled.List>
                 <Styled.Pre>
                     {`/* Plain CSS */
-.card { 
+.card {
   container-type: inline-size;      /* or: size */
   container-name: card;
   /* shorthand: container: card / inline-size; */
@@ -97,10 +97,10 @@ const Card = styled.div\`
                 <Styled.H2>Example: Adaptive Card</Styled.H2>
                 <Styled.Pre>
                     {`/* CSS/SCSS */
-.card { 
-  container: card / inline-size; 
-  display: grid; 
-  gap: 12px; 
+.card {
+  container: card / inline-size;
+  display: grid;
+  gap: 12px;
 }
 
 .card__media { aspect-ratio: 16/9; background: var(--surface-2); }
@@ -119,7 +119,7 @@ const Card = styled.div\`
                 </Styled.Pre>
                 <Styled.Small>
                     Drop the same <Styled.InlineCode>.card</Styled.InlineCode> into narrow sidebars or wide content
-                    areas—styles adapt to its container width automatically.
+                    areas - styles adapt to its container width automatically.
                 </Styled.Small>
             </Styled.Section>
 
@@ -213,9 +213,9 @@ const Card = styled.div\`
                 </Styled.List>
                 <Styled.Pre>
                     {`/* Container with a custom property that toggles variant */
-.card { 
-  container: card / inline-size; 
-  --variant: "compact"; 
+.card {
+  container: card / inline-size;
+  --variant: "compact";
 }
 
 /* Apply styles when the container exposes a matching custom property value */
@@ -242,7 +242,7 @@ const Card = styled.div\`
                         thresholds.
                     </li>
                     <li>
-                        <b>Nesting</b>: queries resolve to the nearest matching container—name them to avoid
+                        <b>Nesting</b>: queries resolve to the nearest matching container - name them to avoid
                         surprises.
                     </li>
                 </Styled.List>

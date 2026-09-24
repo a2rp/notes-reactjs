@@ -2,7 +2,7 @@ import React from "react";
 import { Styled } from "./styled";
 
 /**
- * Render Props — Architecture & Patterns
+ * Render Props  -  Architecture & Patterns
  *
  * A "render prop" is a component API where the component receives a function
  * and INVOKES that function to decide WHAT to render. The parent (consumer)
@@ -193,7 +193,7 @@ function Profile() {
                 <Styled.H2>When to Use (vs Hooks & Context)</Styled.H2>
                 <Styled.List>
                     <li>
-                        <b>Prefer Hooks</b> for sharing logic in modern React—hooks are simpler and avoid extra
+                        <b>Prefer Hooks</b> for sharing logic in modern React - hooks are simpler and avoid extra
                         component layers. Render props remain useful when you need to <b>control rendering</b>
                         from the parent or combine with <b>headless components</b>.
                     </li>
@@ -214,7 +214,7 @@ function Profile() {
                     </li>
                     <li>
                         <b>Deep trees:</b> render-prop components add to the tree. Excessive nesting can reduce
-                        readability—consider hooks or composition.
+                        readability - consider hooks or composition.
                     </li>
                     <li>
                         <b>Accessibility:</b> expose prop getters that include required ARIA/keyboard handlers.
@@ -231,7 +231,7 @@ function Profile() {
                 <Styled.List>
                     <li><b>Do</b> keep the API tiny: return a well-named object with state + actions.</li>
                     <li><b>Do</b> document whether children or <Styled.InlineCode>render</Styled.InlineCode> is used.</li>
-                    <li><b>Don’t</b> hard-code markup in the logic component—stay headless.</li>
+                    <li><b>Don’t</b> hard-code markup in the logic component - stay headless.</li>
                     <li><b>Don’t</b> overuse when a simple custom hook is enough.</li>
                 </Styled.List>
             </Styled.Section>

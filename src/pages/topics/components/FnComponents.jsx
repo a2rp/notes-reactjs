@@ -87,7 +87,7 @@ const FnComponents = () => {
             <Styled.Section>
                 <Styled.H2>Props are read-only (destructure & defaults)</Styled.H2>
                 <Styled.List>
-                    <li>Treat props as immutable—never modify them inside the child.</li>
+                    <li>Treat props as immutable - never modify them inside the child.</li>
                     <li>Destructure for clarity; provide defaults in the parameter list.</li>
                 </Styled.List>
                 <Styled.Pre>

@@ -8,7 +8,7 @@ const Generics = () => {
             <Styled.Lead>
                 <b>Generics</b> let you write <i>reusable, type-safe</i> code that works with many kinds of
                 values while keeping the exact types. A generic is a function, type, or class that takes
-                <b> type parameters</b> like <Styled.InlineCode>&lt;T&gt;</Styled.InlineCode>—placeholders for
+                <b> type parameters</b> like <Styled.InlineCode>&lt;T&gt;</Styled.InlineCode> - placeholders for
                 real types supplied by the compiler (inferred) or by you (explicit).
             </Styled.Lead>
 
@@ -38,7 +38,7 @@ const Generics = () => {
                         <Styled.InlineCode>&lt;T = string&gt;</Styled.InlineCode> if no type is inferred/passed.
                     </li>
                     <li>
-                        <b>Indexed access type:</b> <Styled.InlineCode>T[K]</Styled.InlineCode> — the type of
+                        <b>Indexed access type:</b> <Styled.InlineCode>T[K]</Styled.InlineCode>  -  the type of
                         property <Styled.InlineCode>K</Styled.InlineCode> on <Styled.InlineCode>T</Styled.InlineCode>.
                     </li>
                     <li>
@@ -65,7 +65,7 @@ const c = identity({ id: 1 });   // c: { id: number }`}
                 </Styled.Pre>
                 <Styled.Small>
                     The type parameter <Styled.InlineCode>T</Styled.InlineCode> "captures" the input type and
-                    carries it to the output—so TypeScript preserves exact types.
+                    carries it to the output - so TypeScript preserves exact types.
                 </Styled.Small>
             </Styled.Section>
 
@@ -273,7 +273,7 @@ function useAsync<T>(fn: () => Promise<T>, deps: React.DependencyList = []): Asy
                     </li>
                     <li>
                         Returning fresh object/array instances from hooks/components without memoization may
-                        cause unnecessary re-renders—pair generics with{" "}
+                        cause unnecessary re-renders - pair generics with{" "}
                         <Styled.InlineCode>useMemo</Styled.InlineCode>/<Styled.InlineCode>useCallback</Styled.InlineCode>{" "}
                         when identity stability matters.
                     </li>

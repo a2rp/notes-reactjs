@@ -45,13 +45,13 @@ const MeasureLayout = () => {
             <Styled.Section>
                 <Styled.H2>Core APIs for measuring</Styled.H2>
                 <Styled.List>
-                    <li><b>ref + getBoundingClientRect()</b> — returns <i>position</i> &amp; <i>size</i> in viewport coordinates.</li>
-                    <li><b>offsetWidth/offsetHeight</b> — round, includes borders; excludes margins.</li>
-                    <li><b>clientWidth/clientHeight</b> — inner box (padding included, border excluded).</li>
-                    <li><b>scrollWidth/scrollHeight</b> — content size including overflow area.</li>
-                    <li><b>ResizeObserver</b> — async notifications when an element’s box size changes.</li>
-                    <li><b>IntersectionObserver</b> — visibility/overlap of a target with a root (useful for lazy UI).</li>
-                    <li><b>getComputedStyle(el)</b> — read resolved styles (expensive; avoid in hot paths).</li>
+                    <li><b>ref + getBoundingClientRect()</b>  -  returns <i>position</i> &amp; <i>size</i> in viewport coordinates.</li>
+                    <li><b>offsetWidth/offsetHeight</b>  -  round, includes borders; excludes margins.</li>
+                    <li><b>clientWidth/clientHeight</b>  -  inner box (padding included, border excluded).</li>
+                    <li><b>scrollWidth/scrollHeight</b>  -  content size including overflow area.</li>
+                    <li><b>ResizeObserver</b>  -  async notifications when an element’s box size changes.</li>
+                    <li><b>IntersectionObserver</b>  -  visibility/overlap of a target with a root (useful for lazy UI).</li>
+                    <li><b>getComputedStyle(el)</b>  -  read resolved styles (expensive; avoid in hot paths).</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -218,7 +218,7 @@ function Chart() {
                     <li><b>Do</b> use <Styled.InlineCode>ResizeObserver</Styled.InlineCode> for ongoing size tracking.</li>
                     <li><b>Don’t</b> interleave reads and writes in one tick; avoid repeated <Styled.InlineCode>getBoundingClientRect()</Styled.InlineCode> in loops.</li>
                     <li><b>Don’t</b> rely on layout measurements during SSR; guard for <Styled.InlineCode>window</Styled.InlineCode>/API availability.</li>
-                    <li><b>Don’t</b> forget fonts/images can change layout after load—listen or re-measure if needed.</li>
+                    <li><b>Don’t</b> forget fonts/images can change layout after load - listen or re-measure if needed.</li>
                 </Styled.List>
             </Styled.Section>
 

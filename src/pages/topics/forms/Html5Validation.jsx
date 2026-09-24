@@ -12,7 +12,7 @@ const Html5Validation = () => {
                 <Styled.InlineCode>min</Styled.InlineCode>/<Styled.InlineCode>max</Styled.InlineCode>, etc. It shows native error UI,
                 sets CSS states (<Styled.InlineCode>:invalid</Styled.InlineCode>, <Styled.InlineCode>:valid</Styled.InlineCode>), and exposes a JS API
                 (<Styled.InlineCode>checkValidity()</Styled.InlineCode>, <Styled.InlineCode>reportValidity()</Styled.InlineCode>, <Styled.InlineCode>setCustomValidity()</Styled.InlineCode>).
-                In React, you still rely on the browser engine—React just wires events to your handlers.
+                In React, you still rely on the browser engine - React just wires events to your handlers.
             </Styled.Lead>
 
             {/* 1) What is constraint validation? */}
@@ -29,14 +29,14 @@ const Html5Validation = () => {
             <Styled.Section>
                 <Styled.H2>Core Constraints (Attributes)</Styled.H2>
                 <Styled.List>
-                    <li><b>required</b> — value must be non-empty.</li>
-                    <li><b>type</b> — built-in checks for <Styled.InlineCode>email</Styled.InlineCode>, <Styled.InlineCode>url</Styled.InlineCode>, <Styled.InlineCode>number</Styled.InlineCode>, <Styled.InlineCode>date</Styled.InlineCode>, etc.</li>
-                    <li><b>min / max / step</b> — numeric/range/date limits (and step granularity).</li>
-                    <li><b>minLength / maxLength</b> — string length bounds.</li>
-                    <li><b>pattern</b> — regex that the value must match (anchors implied for the whole value).</li>
-                    <li><b>multiple</b> — allows comma-separated emails/files to be multiple (where supported).</li>
-                    <li><b>accept</b> (file) — hint for allowed MIME types/extensions (not strict validation).</li>
-                    <li><b>autocomplete</b> — improves UX; not a validator but impacts native autofill.</li>
+                    <li><b>required</b>  -  value must be non-empty.</li>
+                    <li><b>type</b>  -  built-in checks for <Styled.InlineCode>email</Styled.InlineCode>, <Styled.InlineCode>url</Styled.InlineCode>, <Styled.InlineCode>number</Styled.InlineCode>, <Styled.InlineCode>date</Styled.InlineCode>, etc.</li>
+                    <li><b>min / max / step</b>  -  numeric/range/date limits (and step granularity).</li>
+                    <li><b>minLength / maxLength</b>  -  string length bounds.</li>
+                    <li><b>pattern</b>  -  regex that the value must match (anchors implied for the whole value).</li>
+                    <li><b>multiple</b>  -  allows comma-separated emails/files to be multiple (where supported).</li>
+                    <li><b>accept</b> (file)  -  hint for allowed MIME types/extensions (not strict validation).</li>
+                    <li><b>autocomplete</b>  -  improves UX; not a validator but impacts native autofill.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// Examples of declarative constraints
@@ -51,8 +51,8 @@ const Html5Validation = () => {
             <Styled.Section>
                 <Styled.H2>Form-level Flags</Styled.H2>
                 <Styled.List>
-                    <li><b>noValidate</b> — disable native validation UI on submit (React prop: <Styled.InlineCode>noValidate</Styled.InlineCode>).</li>
-                    <li><b>formNoValidate</b> — per-button opt-out (React prop on a submit button).</li>
+                    <li><b>noValidate</b>  -  disable native validation UI on submit (React prop: <Styled.InlineCode>noValidate</Styled.InlineCode>).</li>
+                    <li><b>formNoValidate</b>  -  per-button opt-out (React prop on a submit button).</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// React form that disables native validation popups
@@ -67,10 +67,10 @@ const Html5Validation = () => {
             <Styled.Section>
                 <Styled.H2>Styling with Pseudo-classes</Styled.H2>
                 <Styled.List>
-                    <li><b>:invalid / :valid</b> — overall validity.</li>
-                    <li><b>:required / :optional</b> — presence of <Styled.InlineCode>required</Styled.InlineCode>.</li>
-                    <li><b>:in-range / :out-of-range</b> — numbers/dates relative to <Styled.InlineCode>min</Styled.InlineCode>/<Styled.InlineCode>max</Styled.InlineCode>.</li>
-                    <li><b>:placeholder-shown</b> — useful to avoid showing errors when nothing typed yet.</li>
+                    <li><b>:invalid / :valid</b>  -  overall validity.</li>
+                    <li><b>:required / :optional</b>  -  presence of <Styled.InlineCode>required</Styled.InlineCode>.</li>
+                    <li><b>:in-range / :out-of-range</b>  -  numbers/dates relative to <Styled.InlineCode>min</Styled.InlineCode>/<Styled.InlineCode>max</Styled.InlineCode>.</li>
+                    <li><b>:placeholder-shown</b>  -  useful to avoid showing errors when nothing typed yet.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`/* Example */
@@ -84,10 +84,10 @@ input:required:placeholder-shown { outline-color: transparent; }`}
             <Styled.Section>
                 <Styled.H2>Constraint Validation API</Styled.H2>
                 <Styled.List>
-                    <li><b>checkValidity()</b> — returns <Styled.InlineCode>true/false</Styled.InlineCode> without showing messages.</li>
-                    <li><b>reportValidity()</b> — like <Styled.InlineCode>checkValidity()</Styled.InlineCode> but shows native messages.</li>
-                    <li><b>setCustomValidity(msg)</b> — set/clear (<i>empty string clears</i>) a custom error on a control.</li>
-                    <li><b>validity</b> — a <i>ValidityState</i> object: <Styled.InlineCode>valueMissing</Styled.InlineCode>, <Styled.InlineCode>typeMismatch</Styled.InlineCode>, <Styled.InlineCode>tooShort</Styled.InlineCode>, <Styled.InlineCode>tooLong</Styled.InlineCode>, <Styled.InlineCode>patternMismatch</Styled.InlineCode>, <Styled.InlineCode>rangeUnderflow</Styled.InlineCode>, <Styled.InlineCode>rangeOverflow</Styled.InlineCode>, <Styled.InlineCode>stepMismatch</Styled.InlineCode>, <Styled.InlineCode>badInput</Styled.InlineCode>, <Styled.InlineCode>customError</Styled.InlineCode>, <Styled.InlineCode>valid</Styled.InlineCode>.</li>
+                    <li><b>checkValidity()</b>  -  returns <Styled.InlineCode>true/false</Styled.InlineCode> without showing messages.</li>
+                    <li><b>reportValidity()</b>  -  like <Styled.InlineCode>checkValidity()</Styled.InlineCode> but shows native messages.</li>
+                    <li><b>setCustomValidity(msg)</b>  -  set/clear (<i>empty string clears</i>) a custom error on a control.</li>
+                    <li><b>validity</b>  -  a <i>ValidityState</i> object: <Styled.InlineCode>valueMissing</Styled.InlineCode>, <Styled.InlineCode>typeMismatch</Styled.InlineCode>, <Styled.InlineCode>tooShort</Styled.InlineCode>, <Styled.InlineCode>tooLong</Styled.InlineCode>, <Styled.InlineCode>patternMismatch</Styled.InlineCode>, <Styled.InlineCode>rangeUnderflow</Styled.InlineCode>, <Styled.InlineCode>rangeOverflow</Styled.InlineCode>, <Styled.InlineCode>stepMismatch</Styled.InlineCode>, <Styled.InlineCode>badInput</Styled.InlineCode>, <Styled.InlineCode>customError</Styled.InlineCode>, <Styled.InlineCode>valid</Styled.InlineCode>.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// Checking a single control
@@ -110,9 +110,9 @@ if (emailRef.current.validity.typeMismatch) {
             <Styled.Section>
                 <Styled.H2>React Patterns & Events</Styled.H2>
                 <Styled.List>
-                    <li><b>onInvalid</b> — fires when a control becomes invalid (bubble); great place to set custom messages.</li>
-                    <li><b>onInput / onChange</b> — clear custom errors as the user types (<Styled.InlineCode>setCustomValidity("")</Styled.InlineCode>).</li>
-                    <li><b>Controlled vs. Uncontrolled:</b> Either approach works with native validation. Don’t fight the browser—use the attributes.</li>
+                    <li><b>onInvalid</b>  -  fires when a control becomes invalid (bubble); great place to set custom messages.</li>
+                    <li><b>onInput / onChange</b>  -  clear custom errors as the user types (<Styled.InlineCode>setCustomValidity("")</Styled.InlineCode>).</li>
+                    <li><b>Controlled vs. Uncontrolled:</b> Either approach works with native validation. Don’t fight the browser - use the attributes.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`function EmailField() {

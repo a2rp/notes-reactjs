@@ -7,7 +7,7 @@ const E2eCypress = () => {
             <Styled.Title>End-to-End (E2E) Testing with Cypress</Styled.Title>
 
             <Styled.Lead>
-                <b>E2E testing</b> verifies your app the way a real user would—by driving the browser and
+                <b>E2E testing</b> verifies your app the way a real user would - by driving the browser and
                 asserting on the final UI and network side-effects. <b>Cypress</b> is a test runner that
                 runs inside the browser, giving <em>automatic waiting</em>, <em>time-travel debugging</em>,
                 and a simple command API.
@@ -24,9 +24,9 @@ const E2eCypress = () => {
                     <li><b>Assertion:</b> A check that must be true (e.g., <Styled.InlineCode>cy.contains('Welcome')</Styled.InlineCode>).</li>
                     <li><b>Selector:</b> A way to find elements (e.g., <Styled.InlineCode>[data-cy="submit"]</Styled.InlineCode>) in the DOM.</li>
                     <li><b>Command queue:</b> Cypress schedules commands (e.g., <Styled.InlineCode>cy.get()</Styled.InlineCode>) and runs them with built-in retries and waits.</li>
-                    <li><b>Automatic waiting:</b> Cypress retries commands/assertions until they pass or time out—no manual <Styled.InlineCode>sleep()</Styled.InlineCode> needed.</li>
+                    <li><b>Automatic waiting:</b> Cypress retries commands/assertions until they pass or time out - no manual <Styled.InlineCode>sleep()</Styled.InlineCode> needed.</li>
                     <li><b>Fixture:</b> A static file (JSON, etc.) used as test data (<Styled.InlineCode>cypress/fixtures</Styled.InlineCode>).</li>
-                    <li><b>Stub/Spy:</b> Test doubles—stubs replace a function/endpoint; spies observe calls.</li>
+                    <li><b>Stub/Spy:</b> Test doubles - stubs replace a function/endpoint; spies observe calls.</li>
                     <li><b>Intercept:</b> Cypress API (<Styled.InlineCode>cy.intercept()</Styled.InlineCode>) to observe or mock network requests.</li>
                     <li><b>Flaky test:</b> A test that sometimes passes and sometimes fails without code changes (usually timing or selector issues).</li>
                 </Styled.List>
@@ -173,7 +173,7 @@ export default defineConfig({
             <Styled.Section>
                 <Styled.H2>Reducing Flaky Tests</Styled.H2>
                 <Styled.List>
-                    <li><b>Assert UI that users see:</b> text, roles, visible elements—not internal state.</li>
+                    <li><b>Assert UI that users see:</b> text, roles, visible elements - not internal state.</li>
                     <li><b>Avoid fixed waits:</b> don't use <Styled.InlineCode>cy.wait(1000)</Styled.InlineCode>. Prefer query + assertion; Cypress will retry.</li>
                     <li><b>Use stable selectors:</b> <Styled.InlineCode>data-cy</Styled.InlineCode> everywhere critical.</li>
                     <li><b>Control network:</b> mock or seed test data for deterministic scenarios.</li>
@@ -189,7 +189,7 @@ export default defineConfig({
                     <li><b>Do</b> prefer semantic/role queries for accessibility.</li>
                     <li><b>Do</b> isolate “mocked” vs “real API” specs to make failures meaningful.</li>
                     <li><b>Don't</b> test implementation details (classes, internals).</li>
-                    <li><b>Don't</b> stack multiple unrelated assertions in one test—failures become hard to debug.</li>
+                    <li><b>Don't</b> stack multiple unrelated assertions in one test - failures become hard to debug.</li>
                 </Styled.List>
             </Styled.Section>
 

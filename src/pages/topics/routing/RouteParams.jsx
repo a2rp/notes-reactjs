@@ -112,7 +112,7 @@ function FileViewer() {
             <Styled.Section>
                 <Styled.H2>Validating Params</Styled.H2>
                 <Styled.List>
-                    <li>All params are strings—validate and coerce before using.</li>
+                    <li>All params are strings - validate and coerce before using.</li>
                     <li>For numbers, check <Styled.InlineCode>Number.isFinite(Number(v))</Styled.InlineCode>.</li>
                     <li>For IDs with known shapes (e.g., UUID), validate with a regex and handle invalid cases (redirect or show 404).</li>
                 </Styled.List>
@@ -172,7 +172,7 @@ function Search() {
                     <li><b>Do</b> keep param names descriptive (<Styled.InlineCode>:userId</Styled.InlineCode>, <Styled.InlineCode>:slug</Styled.InlineCode>).</li>
                     <li><b>Do</b> coerce and validate before using params in logic or network calls.</li>
                     <li><b>Do</b> use <Styled.InlineCode>generatePath()</Styled.InlineCode> or helper functions to create URLs.</li>
-                    <li><b>Don’t</b> overload a single route with unrelated meanings—create clear routes.</li>
+                    <li><b>Don’t</b> overload a single route with unrelated meanings - create clear routes.</li>
                     <li><b>Don’t</b> confuse route params (path) with search params (query string).</li>
                 </Styled.List>
             </Styled.Section>

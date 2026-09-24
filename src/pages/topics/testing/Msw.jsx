@@ -8,7 +8,7 @@ const Msw = () => {
 
             <Styled.Lead>
                 <b>Mock Service Worker (MSW)</b> lets you intercept network requests and return
-                <em> realistic </em> mocked responses — in the <b>browser</b> (via a Service Worker) and
+                <em> realistic </em> mocked responses  -  in the <b>browser</b> (via a Service Worker) and
                 in <b>Node test environments</b>. You can build UI before a backend exists, reproduce edge
                 cases, and write stable integration tests that don't hit real servers.
             </Styled.Lead>

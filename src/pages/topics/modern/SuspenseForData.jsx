@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Styled } from "./styled";
 
 /**
- * Suspense for Data — Modern React
+ * Suspense for Data  -  Modern React
  * Beginner-friendly notes page using only existing Styled tokens.
  */
 
@@ -64,7 +64,7 @@ const SuspenseForData = () => {
             <Styled.Lead>
                 <b>Suspense</b> lets components “wait” for something (like data) before they render.
                 While a component is waiting, React shows a <em>fallback</em>. When the data arrives,
-                the real UI appears automatically—no manual loading state plumbing.
+                the real UI appears automatically - no manual loading state plumbing.
             </Styled.Lead>
 
             {/* 1) Why Suspense exists */}

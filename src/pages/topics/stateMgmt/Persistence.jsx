@@ -31,7 +31,7 @@ const Persistence = () => {
                 <Styled.H2>What to Persist (and What to Avoid)</Styled.H2>
                 <Styled.List>
                     <li><b>Good candidates:</b> theme, language, sidebar open/close, form drafts, filters/sorts, onboarding flags, cart (if size is small), last visited screen.</li>
-                    <li><b>Use caution:</b> large lists, server caches, or anything that becomes stale quickly—prefer refetch or short TTL.</li>
+                    <li><b>Use caution:</b> large lists, server caches, or anything that becomes stale quickly - prefer refetch or short TTL.</li>
                     <li><b>Do not persist:</b> secrets (access tokens), sensitive PII, passwords. Store tokens in <i>httpOnly cookies</i> via the server, not in JavaScript storage.</li>
                 </Styled.List>
             </Styled.Section>
@@ -222,7 +222,7 @@ function App() {
                     <li><b>Debounce writes:</b> batch frequent changes (e.g., form drafts) to avoid blocking the main thread.</li>
                     <li><b>Size limits:</b> keep payloads small. Prefer IndexedDB for large data.</li>
                     <li><b>SSR guard:</b> check <Styled.InlineCode>typeof window !== "undefined"</Styled.InlineCode> before touching browser storage.</li>
-                    <li><b>Security:</b> nothing in web storage is truly private—assume attackers with XSS can read it.</li>
+                    <li><b>Security:</b> nothing in web storage is truly private - assume attackers with XSS can read it.</li>
                     <li><b>Migrations:</b> always include a version and migration path to keep old users working.</li>
                 </Styled.List>
             </Styled.Section>

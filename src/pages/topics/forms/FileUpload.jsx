@@ -72,7 +72,7 @@ const FileUpload = () => {
       />
       <ul>
         {files.map((f) => (
-          <li key={f.name}>{f.name} — {(f.size/1024).toFixed(1)} KB — {f.type || "unknown"}</li>
+          <li key={f.name}>{f.name}  -  {(f.size/1024).toFixed(1)} KB  -  {f.type || "unknown"}</li>
         ))}
       </ul>
       <button type="button" onClick={clear}>Clear</button>
@@ -81,7 +81,7 @@ const FileUpload = () => {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    Use <Styled.InlineCode>accept</Styled.InlineCode> as a hint only—always validate on the client <i>and</i> the server.
+                    Use <Styled.InlineCode>accept</Styled.InlineCode> as a hint only - always validate on the client <i>and</i> the server.
                 </Styled.Small>
             </Styled.Section>
 
@@ -90,10 +90,10 @@ const FileUpload = () => {
                 <Styled.H2>Client-Side Validation (Type, Size, Extension)</Styled.H2>
                 <Styled.List>
                     <li>
-                        <b>MIME type:</b> use <Styled.InlineCode>file.type</Styled.InlineCode> (e.g., <i>image/png</i>) — not 100% trustworthy.
+                        <b>MIME type:</b> use <Styled.InlineCode>file.type</Styled.InlineCode> (e.g., <i>image/png</i>)  -  not 100% trustworthy.
                     </li>
                     <li>
-                        <b>Extension:</b> check <Styled.InlineCode>file.name</Styled.InlineCode> endings (<i>.png, .jpg</i>) — can be spoofed.
+                        <b>Extension:</b> check <Styled.InlineCode>file.name</Styled.InlineCode> endings (<i>.png, .jpg</i>)  -  can be spoofed.
                     </li>
                     <li>
                         <b>Size:</b> enforce a max in bytes (e.g., 5&nbsp;MB = 5 * 1024 * 1024).
@@ -311,7 +311,7 @@ function UploadWithProgress({ files }) {
                     <li><b>Do</b> show progress and allow cancel on long uploads.</li>
                     <li><b>Don’t</b> trust <Styled.InlineCode>accept</Styled.InlineCode> alone; it’s only a hint.</li>
                     <li><b>Don’t</b> read massive files fully into memory unless necessary; stream or chunk on the server.</li>
-                    <li><b>Don’t</b> block keyboard-only users—always keep a hidden real input with a label.</li>
+                    <li><b>Don’t</b> block keyboard-only users - always keep a hidden real input with a label.</li>
                 </Styled.List>
             </Styled.Section>
 

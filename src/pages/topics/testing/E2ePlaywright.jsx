@@ -146,18 +146,18 @@ test.describe('Home', () => {
 });`}
                 </Styled.Pre>
                 <Styled.Small>
-                    <b>getByRole</b> uses ARIA roles—great for accessibility and stability. Assertions auto-wait until they pass or time out.
+                    <b>getByRole</b> uses ARIA roles - great for accessibility and stability. Assertions auto-wait until they pass or time out.
                 </Styled.Small>
             </Styled.Section>
 
-            {/* 5) Locators — stable selectors */}
+            {/* 5) Locators  -  stable selectors */}
             <Styled.Section>
                 <Styled.H2>Locators: Stable Selectors</Styled.H2>
                 <Styled.List>
-                    <li><b>By role:</b> <Styled.InlineCode>getByRole('button', {`{ '{'} name: /save/i {'}'}`})</Styled.InlineCode> — prefer semantic roles.</li>
-                    <li><b>By label:</b> <Styled.InlineCode>getByLabel('Email')</Styled.InlineCode> — matches form labels.</li>
-                    <li><b>By placeholder:</b> <Styled.InlineCode>getByPlaceholder('Search')</Styled.InlineCode> — quick for inputs.</li>
-                    <li><b>By test id:</b> <Styled.InlineCode>getByTestId('cart-count')</Styled.InlineCode> — add <Styled.InlineCode>data-testid</Styled.InlineCode> only when needed.</li>
+                    <li><b>By role:</b> <Styled.InlineCode>getByRole('button', {`{ '{'} name: /save/i {'}'}`})</Styled.InlineCode>  -  prefer semantic roles.</li>
+                    <li><b>By label:</b> <Styled.InlineCode>getByLabel('Email')</Styled.InlineCode>  -  matches form labels.</li>
+                    <li><b>By placeholder:</b> <Styled.InlineCode>getByPlaceholder('Search')</Styled.InlineCode>  -  quick for inputs.</li>
+                    <li><b>By test id:</b> <Styled.InlineCode>getByTestId('cart-count')</Styled.InlineCode>  -  add <Styled.InlineCode>data-testid</Styled.InlineCode> only when needed.</li>
                     <li><b>Filter & nth:</b> <Styled.InlineCode>locator('.row').filter({`{ '{'}} hasText: 'Total' {{ '}'}`}).nth(0)</Styled.InlineCode>.</li>
                 </Styled.List>
                 <Styled.Pre>
@@ -218,7 +218,7 @@ use: {
 };`}
                 </Styled.Pre>
                 <Styled.Small>
-                    With <b>storageState</b>, tests start already authenticated—fast and consistent.
+                    With <b>storageState</b>, tests start already authenticated - fast and consistent.
                 </Styled.Small>
             </Styled.Section>
 
@@ -355,8 +355,8 @@ jobs:
                     <li><b>Do</b> use role/label based locators first; add <Styled.InlineCode>data-testid</Styled.InlineCode> only when necessary.</li>
                     <li><b>Do</b> keep tests independent; reset backend state or mock network per test.</li>
                     <li><b>Do</b> capture traces/screenshots on failures to debug quickly.</li>
-                    <li><b>Don’t</b> sleep with fixed timeouts—let Playwright auto-wait or assert on UI state.</li>
-                    <li><b>Don’t</b> log in via UI for every test—reuse <b>storageState</b> to speed up suites.</li>
+                    <li><b>Don’t</b> sleep with fixed timeouts - let Playwright auto-wait or assert on UI state.</li>
+                    <li><b>Don’t</b> log in via UI for every test - reuse <b>storageState</b> to speed up suites.</li>
                 </Styled.List>
             </Styled.Section>
 

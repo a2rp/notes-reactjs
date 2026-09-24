@@ -7,7 +7,7 @@ const InfiniteScroll = () => {
 
             <Styled.Lead>
                 <b>Infinite scroll</b> is a pattern where new items are fetched and appended as the user
-                nears the end of a list—no manual pagination UI. It reduces clicks and keeps users "in flow,"
+                nears the end of a list - no manual pagination UI. It reduces clicks and keeps users "in flow,"
                 but requires careful <i>fetching, caching, performance</i>, and <i>accessibility</i>.
             </Styled.Lead>
 
@@ -30,7 +30,7 @@ const InfiniteScroll = () => {
                         <b>Sentinel</b>: A tiny, invisible element at the list's end that, when visible in the viewport, triggers fetching more items.
                     </li>
                     <li>
-                        <b>IntersectionObserver (IO)</b>: Browser API that tells you when an element enters/leaves the viewport—great for sentinels. Doesn't run every scroll tick (efficient).
+                        <b>IntersectionObserver (IO)</b>: Browser API that tells you when an element enters/leaves the viewport - great for sentinels. Doesn't run every scroll tick (efficient).
                     </li>
                     <li>
                         <b>Virtualization / Windowing</b>: Rendering only the visible rows (e.g., via <i>react-window</i>) to keep the DOM small and fast.
@@ -49,7 +49,7 @@ const InfiniteScroll = () => {
 
             {/* 2) Pattern A: IntersectionObserver (preferred) */}
             <Styled.Section>
-                <Styled.H2>Pattern A — IntersectionObserver (Preferred)</Styled.H2>
+                <Styled.H2>Pattern A  -  IntersectionObserver (Preferred)</Styled.H2>
                 <Styled.List>
                     <li>Attach an IO to a bottom <b>sentinel</b>.</li>
                     <li>When the sentinel intersects and you have <b>more</b> data, fetch the next page.</li>
@@ -82,7 +82,7 @@ const InfiniteScroll = () => {
       );
       if (!res.ok) throw new Error(\`HTTP \${res.status}\`);
       const data = await res.json();          // { items: [], total: 123 } or { items: [], hasMore: true }
-      
+
       // Basic last-page detection:
       const newItems = data.items ?? [];
       setItems(prev => {
@@ -155,7 +155,7 @@ function Feed() {
 
             {/* 3) Pattern B: Window scroll fallback */}
             <Styled.Section>
-                <Styled.H2>Pattern B — Window Scroll Fallback</Styled.H2>
+                <Styled.H2>Pattern B  -  Window Scroll Fallback</Styled.H2>
                 <Styled.List>
                     <li>
                         Works when <Styled.InlineCode>IntersectionObserver</Styled.InlineCode> isn't available.

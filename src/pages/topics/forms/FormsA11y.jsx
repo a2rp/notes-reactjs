@@ -132,7 +132,7 @@ const FormsA11y = () => {
             <Styled.Section>
                 <Styled.H2>Keyboard First</Styled.H2>
                 <Styled.List>
-                    <li>Tab order follows DOM order—structure your markup logically.</li>
+                    <li>Tab order follows DOM order - structure your markup logically.</li>
                     <li>Use <Styled.InlineCode>&lt;button type="submit"&gt;</Styled.InlineCode> for submits; avoid clickable <Styled.InlineCode>&lt;div&gt;</Styled.InlineCode>s.</li>
                     <li>Avoid <Styled.InlineCode>tabIndex &gt; 0</Styled.InlineCode>; it breaks natural flow. Use <Styled.InlineCode>tabIndex=0</Styled.InlineCode> only for custom interactive elements.</li>
                 </Styled.List>

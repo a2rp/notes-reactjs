@@ -218,7 +218,7 @@ function LoadUsers() {
                     <li><b>Do</b> respect <Styled.InlineCode>Retry-After</Styled.InlineCode> headers when present.</li>
                     <li><b>Do</b> retry only <b>retryable</b> errors; fail fast for invalid inputs.</li>
                     <li><b>Do</b> make writes idempotent before retrying (idempotency keys or server-side safeguards).</li>
-                    <li><b>Don't</b> retry blindly — you can amplify load during an outage.</li>
+                    <li><b>Don't</b> retry blindly  -  you can amplify load during an outage.</li>
                     <li><b>Don't</b> forget timeouts and user cancellation (e.g., close modal / navigate away).</li>
                     <li><b>Don't</b> show cryptic errors; guide the user with a helpful message and a retry option.</li>
                 </Styled.List>

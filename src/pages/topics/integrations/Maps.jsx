@@ -336,8 +336,8 @@ function useVisibleStores(bounds, allStores) {
                     <li><b>Do</b> store keys in <Styled.InlineCode>.env</Styled.InlineCode> and use <Styled.InlineCode>import.meta.env</Styled.InlineCode>.</li>
                     <li><b>Do</b> read provider T&amp;Cs for attribution and usage limits.</li>
                     <li><b>Do</b> provide graceful fallbacks (errors, no-data, offline).</li>
-                    <li><b>Don't</b> push secret keys to the client—proxy sensitive calls via backend.</li>
-                    <li><b>Don't</b> render thousands of DOM markers—cluster or use canvas/WebGL layers.</li>
+                    <li><b>Don't</b> push secret keys to the client - proxy sensitive calls via backend.</li>
+                    <li><b>Don't</b> render thousands of DOM markers - cluster or use canvas/WebGL layers.</li>
                 </Styled.List>
             </Styled.Section>
 

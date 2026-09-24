@@ -72,7 +72,7 @@ const Slots = () => {
 
             {/* 3) Example: basic named slots as nodes */}
             <Styled.Section>
-                <Styled.H2>Example 1 — Named Slots as Nodes</Styled.H2>
+                <Styled.H2>Example 1  -  Named Slots as Nodes</Styled.H2>
                 <Styled.Pre>
                     {`// Card exposes three slots: header, children (default), footer
 function Card({ header, children, footer }) {
@@ -102,7 +102,7 @@ function Card({ header, children, footer }) {
 
             {/* 4) Example: slots as render props (access internal state) */}
             <Styled.Section>
-                <Styled.H2>Example 2 — Slots as Render Props</Styled.H2>
+                <Styled.H2>Example 2  -  Slots as Render Props</Styled.H2>
                 <Styled.List>
                     <li>
                         Use a render prop when the slot needs <b>access to internal state</b>{" "}
@@ -151,7 +151,7 @@ function Card({ header, children, footer }) {
 
             {/* 5) Example: mixing default/compound styles */}
             <Styled.Section>
-                <Styled.H2>Example 3 — Mixing Slots & Compound Components</Styled.H2>
+                <Styled.H2>Example 3  -  Mixing Slots & Compound Components</Styled.H2>
                 <Styled.List>
                     <li>
                         Some teams use <b>slots for quick injection</b> and{" "}

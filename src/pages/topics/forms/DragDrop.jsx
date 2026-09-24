@@ -26,12 +26,12 @@ const DragDrop = () => {
 
             {/* 2) Native DnD fundamentals */}
             <Styled.Section>
-                <Styled.H2>Native HTML5 DnD — fundamentals</Styled.H2>
+                <Styled.H2>Native HTML5 DnD  -  fundamentals</Styled.H2>
                 <Styled.List>
                     <li>Make a thing draggable with <Styled.InlineCode>draggable</Styled.InlineCode> and handle <Styled.InlineCode>onDragStart</Styled.InlineCode>.</li>
                     <li>Allow dropping by calling <Styled.InlineCode>e.preventDefault()</Styled.InlineCode> in <Styled.InlineCode>onDragOver</Styled.InlineCode>.</li>
                     <li>Complete the drop in <Styled.InlineCode>onDrop</Styled.InlineCode> (read <Styled.InlineCode>dataTransfer</Styled.InlineCode> or <Styled.InlineCode>files</Styled.InlineCode>).</li>
-                    <li>Mobile/touch: native DnD has limited support — consider Pointer events or a library.</li>
+                    <li>Mobile/touch: native DnD has limited support  -  consider Pointer events or a library.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// Minimal pattern:
@@ -195,7 +195,7 @@ export function FileDropzone({ accept = ["image/png", "image/jpeg"], maxSizeMB =
       {files.length > 0 && (
         <ul style={{ marginTop: 12 }}>
           {files.map((f, i) => (
-            <li key={i}>{f.name} — {(f.size / 1024).toFixed(0)} KB</li>
+            <li key={i}>{f.name}  -  {(f.size / 1024).toFixed(0)} KB</li>
           ))}
         </ul>
       )}

@@ -272,7 +272,7 @@ function TabPanel({ value, children }) {
                     <li><b>Do</b> keep pieces small and focused; pass behavior via callbacks.</li>
                     <li><b>Don’t</b> inherit from other components; specialize by composing.</li>
                     <li><b>Don’t</b> drill props deeply; lift or use context instead.</li>
-                    <li><b>Don’t</b> hardcode tags where flexibility is needed—offer an <Styled.InlineCode>as</Styled.InlineCode> prop carefully.</li>
+                    <li><b>Don’t</b> hardcode tags where flexibility is needed - offer an <Styled.InlineCode>as</Styled.InlineCode> prop carefully.</li>
                 </Styled.List>
             </Styled.Section>
 

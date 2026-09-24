@@ -362,7 +362,7 @@ test("image has accessible name via alt", () => {
                     <li><b>Do</b> use semantic HTML and query by role/label in tests.</li>
                     <li><b>Do</b> ensure all interactions are keyboard accessible and focus is visible.</li>
                     <li><b>Do</b> manage focus on dialogs, route changes, and after async actions.</li>
-                    <li><b>Don't</b> rely only on snapshots—use behavior-focused assertions.</li>
+                    <li><b>Don't</b> rely only on snapshots - use behavior-focused assertions.</li>
                     <li><b>Don't</b> overuse ARIA; prefer native controls.</li>
                 </Styled.List>
             </Styled.Section>
@@ -371,7 +371,7 @@ test("image has accessible name via alt", () => {
             <Styled.Section>
                 <Styled.H2>Glossary (Terms Used Here)</Styled.H2>
                 <Styled.List>
-                    <li><b>WCAG:</b> Web Content Accessibility Guidelines—industry standards for web accessibility.</li>
+                    <li><b>WCAG:</b> Web Content Accessibility Guidelines - industry standards for web accessibility.</li>
                     <li><b>Assistive technology (AT):</b> software/hardware that helps people interact with UIs (e.g., screen readers).</li>
                     <li><b>Accessible name:</b> the label announced by AT; derived from visible text, labels, or ARIA.</li>
                     <li><b>Role:</b> semantic type of an element (button, link, main, navigation, dialog).</li>
@@ -384,7 +384,7 @@ test("image has accessible name via alt", () => {
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: Write tests that mirror how people use your app—by role, name, and keyboard.
+                Summary: Write tests that mirror how people use your app - by role, name, and keyboard.
                 Combine RTL queries, <i>user-event</i>, and <i>axe</i> checks. Prefer semantic elements, manage focus,
                 label every control, and verify landmarks and status messages.
             </Styled.Callout>

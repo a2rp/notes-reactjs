@@ -317,7 +317,7 @@ function AvatarForm() {
                     <li><b>Do</b> use <Styled.InlineCode>mode</Styled.InlineCode> intentionally (<Styled.InlineCode>onChange</Styled.InlineCode> for live feedback, <Styled.InlineCode>onTouched</Styled.InlineCode> for gentler UX).</li>
                     <li><b>Do</b> mark errors accessibly: <Styled.InlineCode>aria-invalid</Styled.InlineCode> on inputs and <Styled.InlineCode>role="alert"</Styled.InlineCode> for messages.</li>
                     <li><b>Don’t</b> mix controlled and uncontrolled patterns on the same input (e.g., changing <Styled.InlineCode>value</Styled.InlineCode> from undefined to string).</li>
-                    <li><b>Don’t</b> forget to pass <Styled.InlineCode>name</Styled.InlineCode> and register each field—RHF needs it to track values.</li>
+                    <li><b>Don’t</b> forget to pass <Styled.InlineCode>name</Styled.InlineCode> and register each field - RHF needs it to track values.</li>
                     <li><b>Don’t</b> rely only on client-side validation; re-validate on the server and display server errors via <Styled.InlineCode>setError</Styled.InlineCode>.</li>
                 </Styled.List>
             </Styled.Section>

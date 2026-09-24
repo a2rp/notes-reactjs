@@ -190,7 +190,7 @@ npx lint-staged`}
                 <Styled.H2>Troubleshooting helpers</Styled.H2>
                 <Styled.List>
                     <li>
-                        Large projects: increase Node memory for builds —{" "}
+                        Large projects: increase Node memory for builds  - {" "}
                         <Styled.InlineCode>cross-env NODE_OPTIONS="--max-old-space-size=4096"</Styled.InlineCode>{' '}
                         before the build command (needs <code>cross-env</code> on Windows).
                     </li>

@@ -150,7 +150,7 @@ export default function Login() {
                 <Styled.H2>Role-Based Guards (<code>RequireRole</code>)</Styled.H2>
                 <Styled.List>
                     <li><b>Role:</b> a label on the user (e.g., <code>"admin"</code>, <code>"manager"</code>, <code>"user"</code>) that controls access.</li>
-                    <li><b>RBAC:</b> Role-Based Access Control—authorize by checking roles/permissions.</li>
+                    <li><b>RBAC:</b> Role-Based Access Control - authorize by checking roles/permissions.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// src/routes/guards/RequireRole.jsx
@@ -240,10 +240,10 @@ export default function PersistLogin() {
             <Styled.Section>
                 <Styled.H2>Do &amp; Don’t</Styled.H2>
                 <Styled.List>
-                    <li><b>Do</b> keep guards tiny and pure—just read auth state and return <code>&lt;Outlet /&gt;</code> or <code>&lt;Navigate /&gt;</code>.</li>
+                    <li><b>Do</b> keep guards tiny and pure - just read auth state and return <code>&lt;Outlet /&gt;</code> or <code>&lt;Navigate /&gt;</code>.</li>
                     <li><b>Do</b> use <code>replace</code> on redirects to avoid history spam.</li>
                     <li><b>Do</b> preserve intent with <code>state.from</code> and redirect back after login.</li>
-                    <li><b>Don’t</b> mutate the DOM or use <code>window.location</code> for navigation—use React Router APIs.</li>
+                    <li><b>Don’t</b> mutate the DOM or use <code>window.location</code> for navigation - use React Router APIs.</li>
                     <li><b>Don’t</b> fetch on every render inside guards. If needed, show a lightweight “checking session…” state.</li>
                     <li><b>Don’t</b> mix role checks and heavy data fetching inside the guard; keep responsibilities separate.</li>
                 </Styled.List>

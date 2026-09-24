@@ -57,7 +57,7 @@ const Dropdown = () => {
                 <Styled.H2>When to use what?</Styled.H2>
                 <Styled.List>
                     <li>
-                        Use <b>native select</b> for simple form selection—best mobile support, minimal code.
+                        Use <b>native select</b> for simple form selection - best mobile support, minimal code.
                     </li>
                     <li>
                         Use a <b>menu dropdown</b> for performing actions (Edit, Duplicate, Delete).
@@ -73,7 +73,7 @@ const Dropdown = () => {
 
             {/* 3) Minimal patterns */}
             <Styled.Section>
-                <Styled.H2>Pattern 1 — Native Select (fastest path)</Styled.H2>
+                <Styled.H2>Pattern 1  -  Native Select (fastest path)</Styled.H2>
                 <Styled.Pre>
                     {`function NativeSelect() {
   const [value, setValue] = React.useState("apple");
@@ -95,7 +95,7 @@ const Dropdown = () => {
             </Styled.Section>
 
             <Styled.Section>
-                <Styled.H2>Pattern 2 — Menu Dropdown (actions)</Styled.H2>
+                <Styled.H2>Pattern 2  -  Menu Dropdown (actions)</Styled.H2>
                 <Styled.List>
                     <li>
                         Structure: <Styled.InlineCode>&lt;button&gt;</Styled.InlineCode> (trigger) +{" "}
@@ -182,7 +182,7 @@ const Dropdown = () => {
             </Styled.Section>
 
             <Styled.Section>
-                <Styled.H2>Pattern 3 — Listbox Dropdown (choose one)</Styled.H2>
+                <Styled.H2>Pattern 3  -  Listbox Dropdown (choose one)</Styled.H2>
                 <Styled.List>
                     <li>
                         Structure: trigger button shows current value; popup is{" "}
@@ -338,7 +338,7 @@ const Dropdown = () => {
                     <li><b>Do</b> use a real button for the trigger; not a div.</li>
                     <li><b>Do</b> close on outside click, Escape, and selection (unless multi-select).</li>
                     <li><b>Don't</b> trap focus inside a <em>menu</em>; it should close when tabbing away.</li>
-                    <li><b>Don't</b> rely only on hover—support click and keyboard.</li>
+                    <li><b>Don't</b> rely only on hover - support click and keyboard.</li>
                     <li><b>Don't</b> forget touch targets (at least ~40px) on mobile.</li>
                 </Styled.List>
             </Styled.Section>

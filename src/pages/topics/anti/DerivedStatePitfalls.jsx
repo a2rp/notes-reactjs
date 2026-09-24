@@ -101,7 +101,7 @@ function ListFixed({ items, query }) {
 
             {/* 3) Forms: when you DO need a local copy (draft) */}
             <Styled.Section>
-                <Styled.H2>3) Forms: The valid exception — “local draft”</Styled.H2>
+                <Styled.H2>3) Forms: The valid exception  -  “local draft”</Styled.H2>
                 <Styled.List>
                     <li>
                         You often need a <b>draft</b> copy of incoming data for editing.
@@ -253,7 +253,7 @@ function Checkout({ currentPrice }) {
                     <li><b>Do</b> memoize heavy calculations with <Styled.InlineCode>useMemo</Styled.InlineCode>.</li>
                     <li><b>Do</b> keep drafts for editing flows; reset by ID or component key.</li>
                     <li><b>Don't</b> copy props to state “just in case.”</li>
-                    <li><b>Don't</b> maintain totals/counters separately—derive them.</li>
+                    <li><b>Don't</b> maintain totals/counters separately - derive them.</li>
                 </Styled.List>
             </Styled.Section>
 

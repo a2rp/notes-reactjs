@@ -267,7 +267,7 @@ function Todos() {
             <Styled.Section>
                 <Styled.H2>Files & Special Inputs</Styled.H2>
                 <Styled.List>
-                    <li><b>Files:</b> set via <Styled.InlineCode>setFieldValue(name, file)</Styled.InlineCode>—don’t rely on default change.</li>
+                    <li><b>Files:</b> set via <Styled.InlineCode>setFieldValue(name, file)</Styled.InlineCode> - don’t rely on default change.</li>
                     <li><b>Checkbox groups:</b> manage arrays with <Styled.InlineCode>FieldArray</Styled.InlineCode> or custom logic.</li>
                     <li><b>Selects:</b> make sure the <Styled.InlineCode>value</Styled.InlineCode> matches an option; for multi-select use arrays.</li>
                 </Styled.List>
@@ -314,7 +314,7 @@ function AvatarForm() {
                     <li><b>Do</b> align each input’s <Styled.InlineCode>name</Styled.InlineCode> with a key in <Styled.InlineCode>values</Styled.InlineCode> (including dotted paths).</li>
                     <li><b>Do</b> show errors when a field is both <i>touched</i> and has an <i>error</i>.</li>
                     <li><b>Don’t</b> mix uncontrolled patterns (<Styled.InlineCode>defaultValue</Styled.InlineCode>) with Formik-controlled inputs.</li>
-                    <li><b>Don’t</b> mutate <Styled.InlineCode>values</Styled.InlineCode> directly—use Formik helpers (<Styled.InlineCode>setFieldValue</Styled.InlineCode>, <Styled.InlineCode>setValues</Styled.InlineCode>).</li>
+                    <li><b>Don’t</b> mutate <Styled.InlineCode>values</Styled.InlineCode> directly - use Formik helpers (<Styled.InlineCode>setFieldValue</Styled.InlineCode>, <Styled.InlineCode>setValues</Styled.InlineCode>).</li>
                     <li><b>Don’t</b> block the main thread in <Styled.InlineCode>onSubmit</Styled.InlineCode>; mark async work and use <Styled.InlineCode>setSubmitting(false)</Styled.InlineCode> in <i>finally</i>.</li>
                 </Styled.List>
             </Styled.Section>

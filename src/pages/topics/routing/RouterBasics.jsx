@@ -9,7 +9,7 @@ const RouterBasics = () => {
             <Styled.Lead>
                 A <b>router</b> keeps the UI in sync with the URL. In React Router v6, you declare a
                 <b> route tree</b> and use <Styled.InlineCode>&lt;Link/&gt;</Styled.InlineCode>,
-                <Styled.InlineCode>&lt;NavLink/&gt;</Styled.InlineCode>, and hooks to navigate—without full
+                <Styled.InlineCode>&lt;NavLink/&gt;</Styled.InlineCode>, and hooks to navigate - without full
                 page reloads.
             </Styled.Lead>
 

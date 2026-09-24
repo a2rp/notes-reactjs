@@ -248,9 +248,9 @@ bubble: OUTER
                 <Styled.List>
                     <li><b>Do</b> prefer semantic controls (<Styled.InlineCode>&lt;button&gt;</Styled.InlineCode>, <Styled.InlineCode>&lt;label&gt;</Styled.InlineCode>).</li>
                     <li><b>Do</b> keep handlers stable when passing deep to avoid needless re-renders.</li>
-                    <li><b>Do</b> scope <Styled.InlineCode>stopPropagation()</Styled.InlineCode> to real conflicts—overuse can hide bugs.</li>
+                    <li><b>Do</b> scope <Styled.InlineCode>stopPropagation()</Styled.InlineCode> to real conflicts - overuse can hide bugs.</li>
                     <li><b>Don’t</b> nest interactive elements (e.g., button inside link). It confuses focus/AT and complicates propagation.</li>
-                    <li><b>Don’t</b> assume <Styled.InlineCode>preventDefault()</Styled.InlineCode> stops bubbling—it doesn’t.</li>
+                    <li><b>Don’t</b> assume <Styled.InlineCode>preventDefault()</Styled.InlineCode> stops bubbling - it doesn’t.</li>
                 </Styled.List>
             </Styled.Section>
 

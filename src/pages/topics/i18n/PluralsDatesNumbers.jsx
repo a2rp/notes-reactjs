@@ -27,7 +27,7 @@ const PluralsDatesNumbers = () => {
                         <Styled.InlineCode>zh-Hant-TW</Styled.InlineCode>).
                     </li>
                     <li>
-                        <b>CLDR:</b> Unicode's Common Locale Data Repository—reference data for plural rules,
+                        <b>CLDR:</b> Unicode's Common Locale Data Repository - reference data for plural rules,
                         calendars, number systems, names, etc.
                     </li>
                     <li>
@@ -102,7 +102,7 @@ function formatItemCount(n, locale = 'en') {
                 </Styled.Pre>
 
                 <Styled.Small>
-                    <b>Tip:</b> Libraries (i18next, FormatJS) hide this mapping—just supply the count and the
+                    <b>Tip:</b> Libraries (i18next, FormatJS) hide this mapping - just supply the count and the
                     library selects the correct plural form per locale.
                 </Styled.Small>
             </Styled.Section>
@@ -130,7 +130,7 @@ function formatItemCount(n, locale = 'en') {
                     {`// Basic decimal
 new Intl.NumberFormat('en-IN').format(1234567.89)   // "12,34,567.89" (Indian grouping)
 
-// Currency (INR) — never build currency strings manually
+// Currency (INR)  -  never build currency strings manually
 new Intl.NumberFormat('hi-IN', { style: 'currency', currency: 'INR' })
   .format(2599.5)                                   // "₹ 2,599.50" (Hindi, India)
 
@@ -255,7 +255,7 @@ new Intl.DateTimeFormat('th-TH-u-ca-buddhist', { dateStyle: 'medium' })
                         <b>FormatJS (react-intl):</b> declarative components & helpers for ICU messages.
                     </li>
                     <li>
-                        <b>i18next:</b> translation keys with pluralization—pass <Styled.InlineCode>count</Styled.InlineCode>.
+                        <b>i18next:</b> translation keys with pluralization - pass <Styled.InlineCode>count</Styled.InlineCode>.
                     </li>
                 </Styled.List>
 
@@ -282,10 +282,10 @@ new Intl.DateTimeFormat('th-TH-u-ca-buddhist', { dateStyle: 'medium' })
             <Styled.Section>
                 <Styled.H2>Do &amp; Don't</Styled.H2>
                 <Styled.List>
-                    <li><b>Do</b> use <Styled.InlineCode>Intl.NumberFormat</Styled.InlineCode> for currency/percent—never build strings manually.</li>
+                    <li><b>Do</b> use <Styled.InlineCode>Intl.NumberFormat</Styled.InlineCode> for currency/percent - never build strings manually.</li>
                     <li><b>Do</b> pass an explicit <Styled.InlineCode>timeZone</Styled.InlineCode> when rendering cross-region times.</li>
                     <li><b>Do</b> use plural APIs/libraries; avoid <i>if (n === 1)</i> logic in app code.</li>
-                    <li><b>Don't</b> concatenate raw numbers and symbols (e.g., "₹" + 1000) — formatting varies by locale.</li>
+                    <li><b>Don't</b> concatenate raw numbers and symbols (e.g., "₹" + 1000)  -  formatting varies by locale.</li>
                     <li><b>Don't</b> assume 12-hour or 24-hour clocks; respect locale or set <Styled.InlineCode>hourCycle</Styled.InlineCode>.</li>
                 </Styled.List>
             </Styled.Section>

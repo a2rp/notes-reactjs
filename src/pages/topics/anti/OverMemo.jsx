@@ -8,7 +8,7 @@ const OverMemo = () => {
             <Styled.Lead>
                 <b>Over-memoization</b> is the habit of sprinkling <Styled.InlineCode>useMemo</Styled.InlineCode>,{" "}
                 <Styled.InlineCode>useCallback</Styled.InlineCode>, and <Styled.InlineCode>React.memo</Styled.InlineCode> everywhere "just in case".
-                Memoization is a tool to avoid expensive recalculations or rerenders—<i>not</i> a default setting.
+                Memoization is a tool to avoid expensive recalculations or rerenders - <i>not</i> a default setting.
             </Styled.Lead>
 
             {/* 1) Definitions */}
@@ -70,7 +70,7 @@ const OverMemo = () => {
                         <b>Event handlers passed deep:</b> Memoize with <Styled.InlineCode>useCallback</Styled.InlineCode> when a stable identity avoids avoidable renders.
                     </li>
                 </Styled.List>
-                <Styled.Small>Rule of thumb: Do it because you measured a bottleneck or a child truly benefits—not by default.</Styled.Small>
+                <Styled.Small>Rule of thumb: Do it because you measured a bottleneck or a child truly benefits - not by default.</Styled.Small>
             </Styled.Section>
 
             {/* 4) Bad example: gratuitous useMemo/useCallback */}
@@ -139,7 +139,7 @@ function Dashboard({ data }) {
                         <b>Memo "pinball":</b> Adding <Styled.InlineCode>useMemo</Styled.InlineCode> causes you to add{" "}
                         <Styled.InlineCode>useCallback</Styled.InlineCode>, then{" "}
                         <Styled.InlineCode>React.memo</Styled.InlineCode>, and so on, to "make it work."
-                        Step back—measure first.
+                        Step back - measure first.
                     </li>
                 </Styled.List>
                 <Styled.Pre>
@@ -216,7 +216,7 @@ console.log("heavyTransform took", (t1 - t0).toFixed(2), "ms");`}
                     <li><b>Do</b> memoize heavy computations or props passed to memoized children.</li>
                     <li><b>Do</b> keep dependency arrays complete to avoid stale values.</li>
                     <li><b>Don't</b> memoize trivial computations (formatting a single number, small maps).</li>
-                    <li><b>Don't</b> force <Styled.InlineCode>React.memo</Styled.InlineCode> everywhere—props often change legitimately.</li>
+                    <li><b>Don't</b> force <Styled.InlineCode>React.memo</Styled.InlineCode> everywhere - props often change legitimately.</li>
                     <li><b>Don't</b> chase referential equality at the cost of clarity and correctness.</li>
                 </Styled.List>
             </Styled.Section>

@@ -211,10 +211,10 @@ function TabPanel({ value, children }) {
             <Styled.Section>
                 <Styled.H2>React.Children utilities</Styled.H2>
                 <Styled.List>
-                    <li><Styled.InlineCode>Children.map(children, fn)</Styled.InlineCode> — safe map over possibly-single or array children.</li>
-                    <li><Styled.InlineCode>Children.toArray(children)</Styled.InlineCode> — flattens and adds keys where needed.</li>
-                    <li><Styled.InlineCode>Children.only(children)</Styled.InlineCode> — asserts exactly one child.</li>
-                    <li><Styled.InlineCode>Children.count(children)</Styled.InlineCode> — counts children.</li>
+                    <li><Styled.InlineCode>Children.map(children, fn)</Styled.InlineCode>  -  safe map over possibly-single or array children.</li>
+                    <li><Styled.InlineCode>Children.toArray(children)</Styled.InlineCode>  -  flattens and adds keys where needed.</li>
+                    <li><Styled.InlineCode>Children.only(children)</Styled.InlineCode>  -  asserts exactly one child.</li>
+                    <li><Styled.InlineCode>Children.count(children)</Styled.InlineCode>  -  counts children.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`const items = React.Children.toArray(children);
@@ -260,10 +260,10 @@ function TabPanel({ value, children }) {
             <Styled.Section>
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
-                    <li>Assuming <Styled.InlineCode>children</Styled.InlineCode> is an array—single child is not an array. Use <Styled.InlineCode>Children</Styled.InlineCode> helpers.</li>
-                    <li>Overusing cloning to force behavior—prefer context or explicit props.</li>
+                    <li>Assuming <Styled.InlineCode>children</Styled.InlineCode> is an array - single child is not an array. Use <Styled.InlineCode>Children</Styled.InlineCode> helpers.</li>
+                    <li>Overusing cloning to force behavior - prefer context or explicit props.</li>
                     <li>Leaking internal flags to DOM elements when cloning/spreading.</li>
-                    <li>Using functions as children everywhere—keep APIs simple unless customization is required.</li>
+                    <li>Using functions as children everywhere - keep APIs simple unless customization is required.</li>
                 </Styled.List>
             </Styled.Section>
 

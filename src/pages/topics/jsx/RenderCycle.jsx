@@ -15,9 +15,9 @@ const RenderCycle = () => {
             <Styled.Section>
                 <Styled.H2>Big picture (timeline)</Styled.H2>
                 <Styled.List>
-                    <li><b>Render</b> — call components (pure functions) → produce JSX (a virtual tree).</li>
-                    <li><b>Diff</b> — compare previous tree vs next (reconciliation).</li>
-                    <li><b>Commit</b> — update DOM (mutations), then run layout effects, browser paints, then run passive effects.</li>
+                    <li><b>Render</b>  -  call components (pure functions) → produce JSX (a virtual tree).</li>
+                    <li><b>Diff</b>  -  compare previous tree vs next (reconciliation).</li>
+                    <li><b>Commit</b>  -  update DOM (mutations), then run layout effects, browser paints, then run passive effects.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// High-level order (per update)
@@ -75,11 +75,11 @@ function Comp({ url }) {
                 <Styled.H2>Effect timing</Styled.H2>
                 <Styled.List>
                     <li>
-                        <b>useLayoutEffect</b> — runs <em>after</em> DOM mutations but <em>before</em> the browser paints. Use for
+                        <b>useLayoutEffect</b>  -  runs <em>after</em> DOM mutations but <em>before</em> the browser paints. Use for
                         measuring layout or synchronously adjusting layout. Blocks paint; keep it quick.
                     </li>
                     <li>
-                        <b>useEffect</b> — runs <em>after</em> paint. Use for subscriptions, network requests, timers, logging.
+                        <b>useEffect</b>  -  runs <em>after</em> paint. Use for subscriptions, network requests, timers, logging.
                     </li>
                     <li>
                         Cleanups run before the next time the effect runs, and on unmount.
@@ -146,7 +146,7 @@ flushSync(() => setOpen(true));
                         React can <b>start, pause, abandon, and retry</b> rendering before commit. Nothing shows until commit.
                     </li>
                     <li>
-                        Keep render functions pure and idempotent—no side effects—since they may run multiple times.
+                        Keep render functions pure and idempotent - no side effects - since they may run multiple times.
                     </li>
                     <li>
                         Mark non-urgent updates as <b>transitions</b> to keep the UI responsive.

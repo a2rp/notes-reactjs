@@ -57,7 +57,7 @@ const AsyncTests = () => {
 
             {/* 2) findBy* (waits for DOM to appear) */}
             <Styled.Section>
-                <Styled.H2>Pattern 1 — Use <code>findBy*</code> to wait for UI after fetch</Styled.H2>
+                <Styled.H2>Pattern 1  -  Use <code>findBy*</code> to wait for UI after fetch</Styled.H2>
                 <Styled.Pre>
                     {`// Component: loads users on mount
 function Users() {
@@ -94,7 +94,7 @@ test("loads and renders users", async () => {
 
             {/* 3) waitFor for conditions (no single element to await) */}
             <Styled.Section>
-                <Styled.H2>Pattern 2 — Use <code>waitFor</code> when there's no single “findable” element</Styled.H2>
+                <Styled.H2>Pattern 2  -  Use <code>waitFor</code> when there's no single “findable” element</Styled.H2>
                 <Styled.Pre>
                     {`// Component: button enabled after async validation
 function Form() {
@@ -143,7 +143,7 @@ test("enables submit after async validation", async () => {
 
             {/* 4) Debounce + Fake Timers */}
             <Styled.Section>
-                <Styled.H2>Pattern 3 — Debounced logic with <code>jest.useFakeTimers()</code></Styled.H2>
+                <Styled.H2>Pattern 3  -  Debounced logic with <code>jest.useFakeTimers()</code></Styled.H2>
                 <Styled.List>
                     <li>
                         <b>Debounce:</b> delay running a function until input “goes quiet” for N ms.
@@ -195,7 +195,7 @@ test("updates after debounce", async () => {
 
             {/* 5) Loading / error states */}
             <Styled.Section>
-                <Styled.H2>Pattern 4 — Assert loading and error states</Styled.H2>
+                <Styled.H2>Pattern 4  -  Assert loading and error states</Styled.H2>
                 <Styled.Pre>
                     {`function Loader() {
   const [state, setState] = React.useState({ status: "idle", data: null, error: null });
@@ -249,7 +249,7 @@ test("shows error on failure", async () => {
                     <li><b>Do</b> prefer <Styled.InlineCode>userEvent</Styled.InlineCode> over <Styled.InlineCode>fireEvent</Styled.InlineCode> to simulate real user behavior.</li>
                     <li><b>Do</b> use Jest fake timers for debounce/throttle/interval tests.</li>
                     <li><b>Don't</b> sprinkle arbitrary <Styled.InlineCode>setTimeout</Styled.InlineCode> in tests; they slow and flake.</li>
-                    <li><b>Don't</b> assert immediately after an async action—<i>wait</i> for the UI.</li>
+                    <li><b>Don't</b> assert immediately after an async action - <i>wait</i> for the UI.</li>
                     <li><b>Don't</b> over-mock React internals; test visible behavior, not implementation details.</li>
                 </Styled.List>
             </Styled.Section>
@@ -260,14 +260,14 @@ test("shows error on failure", async () => {
                 <Styled.List>
                     <li><b>Resolution:</b> a Promise finishing successfully.</li>
                     <li><b>Rejection:</b> a Promise finishing with an error.</li>
-                    <li><b>Flaky test:</b> sometimes passes, sometimes fails—often due to real time or network.</li>
+                    <li><b>Flaky test:</b> sometimes passes, sometimes fails - often due to real time or network.</li>
                     <li><b>Deterministic:</b> same input → same output every time (goal of good tests).</li>
                     <li><b>MSW:</b> Mock Service Worker; intercepts requests and returns mock responses like a real server.</li>
                 </Styled.List>
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: Async tests wait for the UI to reflect reality—use <i>findBy*</i> for elements,
+                Summary: Async tests wait for the UI to reflect reality - use <i>findBy*</i> for elements,
                 <i> waitFor</i> for conditions, and fake timers for time-based logic. Keep tests deterministic
                 by mocking I/O and avoiding real delays.
             </Styled.Callout>

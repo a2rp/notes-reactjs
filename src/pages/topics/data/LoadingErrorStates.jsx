@@ -112,7 +112,7 @@ type RemoteData<T> =
           : { status: "success", data });
       })
       .catch((err) => {
-        // If aborted, err.name === "AbortError" — treat as non-error UI-wise
+        // If aborted, err.name === "AbortError"  -  treat as non-error UI-wise
         if (err.name === "AbortError") return;
         setRemote({ status: "error", error: err });
       });

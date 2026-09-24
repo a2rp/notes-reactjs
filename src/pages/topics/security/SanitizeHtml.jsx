@@ -95,7 +95,7 @@ function UnsafeHtml({ html }) {
                         everything else.
                     </li>
                     <li>
-                        <b>Blocklist (unsafe):</b> trying to list all bad things is brittle—new vectors appear.
+                        <b>Blocklist (unsafe):</b> trying to list all bad things is brittle - new vectors appear.
                     </li>
                 </Styled.List>
             </Styled.Section>
@@ -246,7 +246,7 @@ const config = {
                         functions, preventing DOM XSS sinks (where supported).
                     </li>
                     <li>
-                        <b>Escape everywhere else:</b> for attributes, URLs, and text—escape/encode appropriately
+                        <b>Escape everywhere else:</b> for attributes, URLs, and text - escape/encode appropriately
                         even if you sanitize.
                     </li>
                 </Styled.List>

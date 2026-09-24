@@ -63,7 +63,7 @@ const AppManifest = () => {
                 <Styled.Pre>
                     {`{
   "id": "/",
-  "name": "Notes — ReactJS",
+  "name": "Notes  -  ReactJS",
   "short_name": "Notes React",
   "start_url": "/",
   "scope": "/",
@@ -238,7 +238,7 @@ const AppManifest = () => {
                     <li><b>Do</b> keep <Styled.InlineCode>name</Styled.InlineCode> and <Styled.InlineCode>short_name</Styled.InlineCode> clear and human-friendly.</li>
                     <li><b>Do</b> supply crisp PNG icons (192 & 512) and a maskable version.</li>
                     <li><b>Do</b> pick <Styled.InlineCode>display: "standalone"</Styled.InlineCode> for an app-like feel.</li>
-                    <li><b>Don't</b> forget <Styled.InlineCode>theme_color</Styled.InlineCode> and <Styled.InlineCode>background_color</Styled.InlineCode>—they control splash and UI accents.</li>
+                    <li><b>Don't</b> forget <Styled.InlineCode>theme_color</Styled.InlineCode> and <Styled.InlineCode>background_color</Styled.InlineCode> - they control splash and UI accents.</li>
                     <li><b>Don't</b> assume manifest == offline; you still need a Service Worker + caching strategy.</li>
                 </Styled.List>
             </Styled.Section>

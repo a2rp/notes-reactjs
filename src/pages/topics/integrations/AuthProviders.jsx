@@ -60,16 +60,16 @@ const AuthProviders = () => {
             <Styled.Section>
                 <Styled.H2>Minimal React Wiring (Start &amp; Callback)</Styled.H2>
                 <Styled.Pre>
-                    {`// LoginButton.jsx — "Start" auth by navigating to your backend's /auth/start
+                    {`// LoginButton.jsx  -  "Start" auth by navigating to your backend's /auth/start
 function LoginButton() {
   const startLogin = () => {
     // Backend builds the authorize URL (with PKCE) and redirects to IdP
-    window.location.href = "/api/auth/google/start"; 
+    window.location.href = "/api/auth/google/start";
   };
   return <button onClick={startLogin}>Continue with Google</button>;
 }
 
-// CallbackPage.jsx — receives ?code & ?state on /auth/callback
+// CallbackPage.jsx  -  receives ?code & ?state on /auth/callback
 function CallbackPage() {
   const [status, setStatus] = React.useState("working");
 
@@ -100,8 +100,8 @@ function CallbackPage() {
             <Styled.Section>
                 <Styled.H2>Common Provider Types</Styled.H2>
                 <Styled.List>
-                    <li><b>Consumer “social” IdPs:</b> Google, GitHub, Apple, Facebook—quick onboarding and public profiles.</li>
-                    <li><b>Enterprise IdPs:</b> Azure AD / Entra, Okta, Auth0, Keycloak—SSO, SAML/OIDC, org management.</li>
+                    <li><b>Consumer “social” IdPs:</b> Google, GitHub, Apple, Facebook - quick onboarding and public profiles.</li>
+                    <li><b>Enterprise IdPs:</b> Azure AD / Entra, Okta, Auth0, Keycloak - SSO, SAML/OIDC, org management.</li>
                     <li><b>Passwordless:</b> Magic links or WebAuthn (passkeys) via dedicated providers.</li>
                 </Styled.List>
             </Styled.Section>
@@ -184,8 +184,8 @@ fetch("/api/me", { credentials: "include" })
                     <li><b>Do</b> keep secrets on the server. The SPA should never hold client secrets.</li>
                     <li><b>Do</b> store session in httpOnly cookies; avoid putting raw tokens in <Styled.InlineCode>localStorage</Styled.InlineCode>.</li>
                     <li><b>Do</b> verify ID tokens (signature, issuer, audience) on the backend.</li>
-                    <li><b>Don’t</b> skip PKCE, state, or nonce—these are not optional.</li>
-                    <li><b>Don’t</b> accept arbitrary <Styled.InlineCode>redirect_uri</Styled.InlineCode>—validate against a allowlist.</li>
+                    <li><b>Don’t</b> skip PKCE, state, or nonce - these are not optional.</li>
+                    <li><b>Don’t</b> accept arbitrary <Styled.InlineCode>redirect_uri</Styled.InlineCode> - validate against a allowlist.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -197,7 +197,7 @@ fetch("/api/me", { credentials: "include" })
                     <li><b>Relying Party:</b> the app that relies on IdP assertions (your app).</li>
                     <li><b>Claim:</b> a piece of info in a token (e.g., <Styled.InlineCode>sub</Styled.InlineCode> = user id).</li>
                     <li><b>Grant:</b> a way to obtain tokens (Authorization Code, Client Credentials, etc.).</li>
-                    <li><b>SSO:</b> Single Sign-On—one login across many apps.</li>
+                    <li><b>SSO:</b> Single Sign-On - one login across many apps.</li>
                     <li><b>SAML:</b> XML-based enterprise SSO standard, often used by older/enterprise IdPs.</li>
                 </Styled.List>
             </Styled.Section>

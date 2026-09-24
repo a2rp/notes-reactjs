@@ -6,7 +6,7 @@ const XState = () => {
             <Styled.Title>XState (State Machines &amp; Statecharts)</Styled.Title>
 
             <Styled.Lead>
-                <b>XState</b> lets you model UI logic as a <i>state machine/statechart</i>—a graph of
+                <b>XState</b> lets you model UI logic as a <i>state machine/statechart</i> - a graph of
                 <b> states</b> and <b>events</b> with strict, predictable transitions. Instead of
                 “if/else soup,” you enumerate valid states and how the app moves between them.
             </Styled.Lead>
@@ -58,7 +58,7 @@ export const toggleMachine = createMachine({
 });`}
                 </Styled.Pre>
                 <Styled.Small>
-                    A machine is just a config object. No UI here—pure behavior you can test.
+                    A machine is just a config object. No UI here - pure behavior you can test.
                 </Styled.Small>
             </Styled.Section>
 
@@ -270,9 +270,9 @@ const routeGuard = createMachine({
                 <Styled.List>
                     <li><b>Do</b> name states clearly; avoid overloaded “flags” in context.</li>
                     <li><b>Do</b> keep async work in <code>invoke</code>, not inside actions.</li>
-                    <li><b>Do</b> test transitions without rendering UI—machines are pure data.</li>
+                    <li><b>Do</b> test transitions without rendering UI - machines are pure data.</li>
                     <li><b>Don't</b> duplicate UI state in context that can be derived from <code>state.matches()</code>.</li>
-                    <li><b>Don't</b> mutate context directly—use <code>assign</code>.</li>
+                    <li><b>Don't</b> mutate context directly - use <code>assign</code>.</li>
                 </Styled.List>
             </Styled.Section>
 

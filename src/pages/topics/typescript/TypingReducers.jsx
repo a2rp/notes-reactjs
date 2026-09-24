@@ -28,10 +28,10 @@ const TypingReducers = () => {
 
             {/* 2) useReducer typing approach */}
             <Styled.Section>
-                <Styled.H2>Typing <code>useReducer</code> — Overview</Styled.H2>
+                <Styled.H2>Typing <code>useReducer</code>  -  Overview</Styled.H2>
                 <Styled.List>
                     <li><b>State type:</b> describes your state shape.</li>
-                    <li><b>Action type:</b> use a <i>discriminated union</i>—one variant per action <Styled.InlineCode>type</Styled.InlineCode>.</li>
+                    <li><b>Action type:</b> use a <i>discriminated union</i> - one variant per action <Styled.InlineCode>type</Styled.InlineCode>.</li>
                     <li><b>Reducer type:</b> <Styled.InlineCode>React.Reducer&lt;State, Action&gt;</Styled.InlineCode>.</li>
                     <li><b>Dispatch type:</b> <Styled.InlineCode>React.Dispatch&lt;Action&gt;</Styled.InlineCode>.</li>
                 </Styled.List>
@@ -58,7 +58,7 @@ const reducer: React.Reducer<State, Action> = (state, action) => {
 
             {/* 3) Example: Counter (small, focused) */}
             <Styled.Section>
-                <Styled.H2>Example 1 — Counter (Discriminated Union)</Styled.H2>
+                <Styled.H2>Example 1  -  Counter (Discriminated Union)</Styled.H2>
                 <Styled.Pre>
                     {`type CounterState = { count: number };
 
@@ -102,13 +102,13 @@ function Counter() {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    <b>Why a union?</b> It lets TypeScript <i>narrow</i> to the correct shape per case—no unsafe casting.
+                    <b>Why a union?</b> It lets TypeScript <i>narrow</i> to the correct shape per case - no unsafe casting.
                 </Styled.Small>
             </Styled.Section>
 
             {/* 4) Example: Todo list with payloads */}
             <Styled.Section>
-                <Styled.H2>Example 2 — Todos with Payloads</Styled.H2>
+                <Styled.H2>Example 2  -  Todos with Payloads</Styled.H2>
                 <Styled.Pre>
                     {`type Todo = { id: string; text: string; done: boolean };
 type TodosState = { items: Todo[] };
@@ -226,7 +226,7 @@ function Example() {
                     <li><b>Do</b> model actions as a discriminated union with clear <Styled.InlineCode>type</Styled.InlineCode> strings.</li>
                     <li><b>Do</b> keep reducers <i>pure</i>; put side effects (fetch, timers, analytics) in <Styled.InlineCode>useEffect</Styled.InlineCode> or caller code.</li>
                     <li><b>Do</b> return <i>new</i> state objects (immutability) rather than mutating inputs.</li>
-                    <li><b>Don't</b> overuse enums for action types—string literal unions work great and are ergonomic.</li>
+                    <li><b>Don't</b> overuse enums for action types - string literal unions work great and are ergonomic.</li>
                     <li><b>Don't</b> put React elements or DOM refs into reducer state unless you know why (keep state serializable when possible).</li>
                 </Styled.List>
             </Styled.Section>

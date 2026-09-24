@@ -72,7 +72,7 @@ const RerenderTriggers = () => {
                 <Styled.List>
                     <li>When a parent renders, all children render by default.</li>
                     <li>Use <Styled.InlineCode>React.memo(Child)</Styled.InlineCode> to skip rendering if props are shallow-equal.</li>
-                    <li>Be careful with inline objects/functions—new identity ≠ shallow-equal.</li>
+                    <li>Be careful with inline objects/functions - new identity ≠ shallow-equal.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`const Child = React.memo(function Child({ label, onClick }) {
@@ -205,7 +205,7 @@ const value = useSyncExternalStore(store.subscribe, store.getSnapshot);
                     <li><b>Do</b> lift state thoughtfully; colocate where it's used to avoid cascading parent re-renders.</li>
                     <li><b>Do</b> memoize context <Styled.InlineCode>value</Styled.InlineCode> objects and event handlers passed deep.</li>
                     <li><b>Do</b> use <Styled.InlineCode>React.memo</Styled.InlineCode> for pure presentational children that receive stable props.</li>
-                    <li><b>Don't</b> store derived data in state—derive with <Styled.InlineCode>useMemo</Styled.InlineCode> instead.</li>
+                    <li><b>Don't</b> store derived data in state - derive with <Styled.InlineCode>useMemo</Styled.InlineCode> instead.</li>
                     <li><b>Don't</b> over-memoize blindly; profile first.</li>
                 </Styled.List>
             </Styled.Section>

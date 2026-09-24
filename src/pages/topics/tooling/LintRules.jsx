@@ -7,7 +7,7 @@ const LintRules = () => {
 
             <Styled.Lead>
                 <b>Lint rules</b> are automatic checks that scan your code for mistakes, risky patterns,
-                and style inconsistencies—before bugs reach production. A <b>linter</b> (like ESLint)
+                and style inconsistencies - before bugs reach production. A <b>linter</b> (like ESLint)
                 reads your files and reports <i>problems</i> (errors/warnings) using a set of <b>rules</b>.
                 Good rules act like seatbelts: you barely notice them, but they save you when it matters.
             </Styled.Lead>
@@ -55,7 +55,7 @@ const LintRules = () => {
                         <Styled.InlineCode>no-implicit-coercion</Styled.InlineCode>).
                     </li>
                     <li>
-                        <b>Stylistic:</b> spacing, quotes, semicolons—usually delegated to <b>Prettier</b>, while ESLint focuses on correctness.
+                        <b>Stylistic:</b> spacing, quotes, semicolons - usually delegated to <b>Prettier</b>, while ESLint focuses on correctness.
                     </li>
                     <li>
                         <b>React:</b> component/JSX rules (e.g.,{" "}
@@ -125,7 +125,7 @@ module.exports = {
                 <Styled.Small>
                     <b>Note:</b> Prefer <Styled.InlineCode>plugin:prettier/recommended</Styled.InlineCode> (which turns on{" "}
                     <Styled.InlineCode>eslint-config-prettier</Styled.InlineCode>) over{" "}
-                    <Styled.InlineCode>eslint-plugin-prettier</Styled.InlineCode> in most setups—simpler and faster.
+                    <Styled.InlineCode>eslint-plugin-prettier</Styled.InlineCode> in most setups - simpler and faster.
                 </Styled.Small>
             </Styled.Section>
 
@@ -137,7 +137,7 @@ module.exports = {
                         <b>react-hooks/rules-of-hooks:</b> Only call hooks at the top level of React functions; never in loops, conditions, or nested functions.
                     </li>
                     <li>
-                        <b>react-hooks/exhaustive-deps:</b> Verify effect dependency arrays so your effect runs when its inputs change—avoids stale values and infinite loops.
+                        <b>react-hooks/exhaustive-deps:</b> Verify effect dependency arrays so your effect runs when its inputs change - avoids stale values and infinite loops.
                     </li>
                 </Styled.List>
 
@@ -189,7 +189,7 @@ function Search({ query, onResult }) {
                         <b>react/jsx-key:</b> Every list child needs a <Styled.InlineCode>key</Styled.InlineCode> for stable identity.
                     </li>
                     <li>
-                        <b>react/no-array-index-key:</b> Avoid using the array index as key when list order can change—it breaks state retention.
+                        <b>react/no-array-index-key:</b> Avoid using the array index as key when list order can change - it breaks state retention.
                     </li>
                     <li>
                         <b>react/jsx-no-target-blank:</b> When using <Styled.InlineCode>target="_blank"</Styled.InlineCode>, add{" "}
@@ -203,12 +203,12 @@ function Search({ query, onResult }) {
   <li key={todo.id}>{todo.title}</li>
 ))}
 
-// RISKY (index key) — reordering can cause weird UI bugs
+// RISKY (index key)  -  reordering can cause weird UI bugs
 {items.map((todo, i) => (
   <li key={i}>{todo.title}</li>
 ))}
 
-// Links — safe external link
+// Links  -  safe external link
 <a href="https://example.com" target="_blank" rel="noopener noreferrer">Docs</a>`}
                 </Styled.Pre>
             </Styled.Section>
@@ -251,7 +251,7 @@ function Search({ query, onResult }) {
                 <Styled.H2>General JS rules that quietly save hours</Styled.H2>
                 <Styled.List>
                     <li>
-                        <b>no-unused-vars:</b> remove dead variables—signals incomplete refactors or typos.
+                        <b>no-unused-vars:</b> remove dead variables - signals incomplete refactors or typos.
                     </li>
                     <li>
                         <b>no-undef:</b> prevents references to variables that don't exist.
@@ -260,7 +260,7 @@ function Search({ query, onResult }) {
                         <b>eqeqeq:</b> use strict equality <Styled.InlineCode>===</Styled.InlineCode> to avoid coercion traps.
                     </li>
                     <li>
-                        <b>curly:</b> always use braces around blocks—keeps diffs/bugs small.
+                        <b>curly:</b> always use braces around blocks - keeps diffs/bugs small.
                     </li>
                     <li>
                         <b>import/order:</b> consistent, readable import grouping.
@@ -276,7 +276,7 @@ function greet(name) {
 }
 
 // eqeqeq
-if (count === 0) { /* ... */ } // strict check — good
+if (count === 0) { /* ... */ } // strict check  -  good
 
 // curly
 if (ok) { doThing(); } else { doOther(); }
@@ -292,11 +292,11 @@ import MyWidget from "@/components/MyWidget";`}
             <Styled.Section>
                 <Styled.H2>Do &amp; Don't</Styled.H2>
                 <Styled.List>
-                    <li><b>Do</b> keep rules actionable—too many warnings become noise.</li>
+                    <li><b>Do</b> keep rules actionable - too many warnings become noise.</li>
                     <li><b>Do</b> let Prettier handle formatting; keep ESLint for correctness and React specifics.</li>
                     <li><b>Do</b> fix warnings regularly; don't let them pile up.</li>
-                    <li><b>Don't</b> disable a rule globally just to fix one file—prefer local <Styled.InlineCode>// eslint-disable-next-line</Styled.InlineCode> with a reason.</li>
-                    <li><b>Don't</b> ignore hooks rules—most “random” bugs come from incorrect effects or stale closures.</li>
+                    <li><b>Don't</b> disable a rule globally just to fix one file - prefer local <Styled.InlineCode>// eslint-disable-next-line</Styled.InlineCode> with a reason.</li>
+                    <li><b>Don't</b> ignore hooks rules - most “random” bugs come from incorrect effects or stale closures.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -308,14 +308,14 @@ import MyWidget from "@/components/MyWidget";`}
                     <li><b>Rule:</b> a single check that reports an error/warning when violated.</li>
                     <li><b>Plugin:</b> an add-on that provides rules for a specific ecosystem (React, a11y).</li>
                     <li><b>Preset (extends):</b> a bundle of recommended rules you can apply at once.</li>
-                    <li><b>Formatter:</b> a tool (Prettier) that rewrites code style automatically—spacing, quotes, etc.</li>
+                    <li><b>Formatter:</b> a tool (Prettier) that rewrites code style automatically - spacing, quotes, etc.</li>
                 </Styled.List>
             </Styled.Section>
 
             <Styled.Callout>
                 Summary: keep ESLint focused on correctness and React rules; let Prettier format.
                 Enforce hooks and accessibility rules, add a few high-impact JS rules, and you'll
-                prevent the most common bugs—without slowing anyone down.
+                prevent the most common bugs - without slowing anyone down.
             </Styled.Callout>
         </Styled.Page>
     );

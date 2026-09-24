@@ -2,7 +2,7 @@ import React from "react";
 import { Styled } from "./styled";
 
 /**
- * Compound Components — Architecture & Patterns
+ * Compound Components  -  Architecture & Patterns
  *
  * Definition (plain English):
  * A "compound component" is a group of components that work together to form a single UI widget.
@@ -53,7 +53,7 @@ const CompoundComponents = () => {
                 </Styled.List>
             </Styled.Section>
 
-            {/* 2) Minimal example — Tabs (Uncontrolled, Context-based) */}
+            {/* 2) Minimal example  -  Tabs (Uncontrolled, Context-based) */}
             <Styled.Section>
                 <Styled.H2>Example: Tabs (Uncontrolled, Context)</Styled.H2>
                 <Styled.Small>
@@ -160,7 +160,7 @@ Tabs.Panel = Panel;`}
                 </Styled.Pre>
             </Styled.Section>
 
-            {/* 4) Alternatives to context — React.Children / cloneElement */}
+            {/* 4) Alternatives to context  -  React.Children / cloneElement */}
             <Styled.Section>
                 <Styled.H2>Alternatives: <code>React.Children</code> &amp; <code>cloneElement</code></Styled.H2>
                 <Styled.List>
@@ -220,7 +220,7 @@ Tabs.Panel = Panel;`}
                     <li><b>Do</b> expose a small, composable API (List, Tab, Panels, Panel).</li>
                     <li><b>Do</b> prefer context to avoid prop drilling.</li>
                     <li><b>Do</b> support both uncontrolled and controlled usage when feasible.</li>
-                    <li><b>Don’t</b> bury rendering logic inside “logic” components—keep subcomponents UI-focused, state in the coordinator.</li>
+                    <li><b>Don’t</b> bury rendering logic inside “logic” components - keep subcomponents UI-focused, state in the coordinator.</li>
                     <li><b>Don’t</b> overuse <Styled.InlineCode>cloneElement</Styled.InlineCode>; it couples implementation to element types.</li>
                 </Styled.List>
             </Styled.Section>
@@ -236,7 +236,7 @@ Tabs.Panel = Panel;`}
                         <b>Provider Pattern:</b> Compound components typically rely on a Context Provider internally.
                     </li>
                     <li>
-                        <b>Headless Components:</b> Logic-only components that expose state via render props or context—pair well with compounds.
+                        <b>Headless Components:</b> Logic-only components that expose state via render props or context - pair well with compounds.
                     </li>
                     <li>
                         <b>State Reducer:</b> For advanced control, let consumers intercept state changes (see Downshift pattern).

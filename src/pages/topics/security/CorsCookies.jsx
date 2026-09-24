@@ -193,7 +193,7 @@ app.use((req, res, next) => {
                     <li><b>Origin:</b> scheme + host + port tuple.</li>
                     <li><b>Simple request:</b> a request that avoids preflight due to method/headers/content-type constraints.</li>
                     <li><b>Preflight:</b> the browser's permission check (<Styled.InlineCode>OPTIONS</Styled.InlineCode>) before the actual request.</li>
-                    <li><b>Credentials:</b> cookies, Authorization headers, TLS client certs—user-specific data attached to requests.</li>
+                    <li><b>Credentials:</b> cookies, Authorization headers, TLS client certs - user-specific data attached to requests.</li>
                     <li><b>First-party vs Third-party cookie:</b> whether the cookie's site matches the top-level page's site.</li>
                 </Styled.List>
             </Styled.Section>

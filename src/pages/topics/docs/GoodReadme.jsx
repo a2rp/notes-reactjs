@@ -7,7 +7,7 @@ const GoodReadme = () => {
 
             <Styled.Lead>
                 A <b>README</b> is the front door to your project. It explains <i>what</i> the project is,
-                <i>why</i> it exists, and <i>how</i> to use, build, and contribute to it—without making anyone
+                <i>why</i> it exists, and <i>how</i> to use, build, and contribute to it - without making anyone
                 dig through the code.
             </Styled.Lead>
 
@@ -95,11 +95,11 @@ VITE_ANALYTICS_KEY=dev-123
 Defaults live in \`.env.example\`.
 
 ## Scripts
-- \`npm run dev\` — start dev server
-- \`npm run build\` — production build
-- \`npm run preview\` — preview prod build
-- \`npm run test\` — run tests
-- \`npm run lint\`, \`npm run format\` — code quality
+- \`npm run dev\`  -  start dev server
+- \`npm run build\`  -  production build
+- \`npm run preview\`  -  preview prod build
+- \`npm run test\`  -  run tests
+- \`npm run lint\`, \`npm run format\`  -  code quality
 
 ## Tech Stack
 - Vite, React 18, styled-components
@@ -115,7 +115,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) and our [Code of Conduct](./CODE_OF_CON
 - [ ] Dark mode polish
 
 ## FAQ
-**Q:** Build fails on Node 16  
+**Q:** Build fails on Node 16
 **A:** Use Node 18+ (see \`.nvmrc\`).
 
 ## License
@@ -144,7 +144,7 @@ MIT © Your Name
             <Styled.Section>
                 <Styled.H2>Screenshots & GIFs</Styled.H2>
                 <Styled.List>
-                    <li>Show the "aha!" moment—home screen, key workflow, before/after.</li>
+                    <li>Show the "aha!" moment - home screen, key workflow, before/after.</li>
                     <li>Export short, focused GIFs (2-8s). Add a caption if needed.</li>
                     <li>Keep media under <b>docs/</b> and reference with relative paths.</li>
                 </Styled.List>
@@ -220,7 +220,7 @@ Key implementation points.
                     <li><b>Do</b> write copy for humans. Short sentences. Bulleted instructions.</li>
                     <li><b>Do</b> show a working command sequence (copy-paste friendly).</li>
                     <li><b>Don't</b> bury install steps below long philosophy sections.</li>
-                    <li><b>Don't</b> flood with 20 badges or 10 screenshots—curate.</li>
+                    <li><b>Don't</b> flood with 20 badges or 10 screenshots - curate.</li>
                 </Styled.List>
             </Styled.Section>
 

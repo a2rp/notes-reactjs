@@ -6,7 +6,7 @@ const OverContext = () => {
             <Styled.Title>Over-Context (Anti-Pattern)</Styled.Title>
 
             <Styled.Lead>
-                <b>Over-Context</b> is the habit of pushing too much state into React Context—especially
+                <b>Over-Context</b> is the habit of pushing too much state into React Context - especially
                 <i>fast-changing</i> or <i>local-only</i> state. Context is best for <b>globally relevant, stable</b> data
                 (theme, auth session, i18n, feature flags). Using it as a global store for everything triggers extra
                 re-renders and tight coupling.
@@ -92,7 +92,7 @@ function FooterThemeToggle() {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    <b>Problem:</b> Header and Footer are now coupled—typing in the header forces the footer to re-render.
+                    <b>Problem:</b> Header and Footer are now coupled - typing in the header forces the footer to re-render.
                 </Styled.Small>
             </Styled.Section>
 
@@ -194,7 +194,7 @@ function useCartItems() { return React.useContext(CartItemsContext); }
 function useCartActions() { return React.useContext(CartActionsContext); }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    <b>Benefit:</b> components that only need actions don't re-render when items change—and vice versa.
+                    <b>Benefit:</b> components that only need actions don't re-render when items change - and vice versa.
                 </Styled.Small>
             </Styled.Section>
 

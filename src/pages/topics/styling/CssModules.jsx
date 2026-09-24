@@ -246,7 +246,7 @@ export function Switch({ on, ...props }) {
                     <li><b>Do</b> keep module files small and co-located with their component.</li>
                     <li><b>Do</b> use <Styled.InlineCode>data-*</Styled.InlineCode> attributes for state/variants.</li>
                     <li><b>Do</b> prefer composition over deep selector chains.</li>
-                    <li><b>Don’t</b> overuse <Styled.InlineCode>:global</Styled.InlineCode>—it defeats scoping.</li>
+                    <li><b>Don’t</b> overuse <Styled.InlineCode>:global</Styled.InlineCode> - it defeats scoping.</li>
                     <li><b>Don’t</b> rely on class name strings; always reference via <Styled.InlineCode>styles.name</Styled.InlineCode>.</li>
                 </Styled.List>
             </Styled.Section>
@@ -265,7 +265,7 @@ export function Switch({ on, ...props }) {
                     </li>
                     <li>
                         <b>Leaky globals:</b> sprinkling <Styled.InlineCode>:global</Styled.InlineCode> everywhere
-                        reintroduces global collisions—use sparingly.
+                        reintroduces global collisions - use sparingly.
                     </li>
                 </Styled.List>
             </Styled.Section>

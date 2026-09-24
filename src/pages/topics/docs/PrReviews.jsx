@@ -190,7 +190,7 @@ Refs: #482`}
             <Styled.Section>
                 <Styled.H2>Glossary</Styled.H2>
                 <Styled.List>
-                    <li><b>LGTM:</b> "Looks Good To Me" — an informal approval.</li>
+                    <li><b>LGTM:</b> "Looks Good To Me"  -  an informal approval.</li>
                     <li><b>Nit:</b> a small, non-blocking suggestion.</li>
                     <li><b>Blocking:</b> stops merge until fixed.</li>
                     <li><b>CLA/DCO:</b> Contributor License Agreement / Developer Certificate of Origin (legal compliance for contributions).</li>

@@ -1,13 +1,11 @@
 import ScrollToTop from './components/ScrollToTop'
 import { Styled } from './App.styled'
-import { Navigate, NavLink, Route, Routes } from 'react-router-dom'
+import { Navigate, NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { lazy, Suspense, useState } from 'react'
 import { MdMenuOpen } from 'react-icons/md'
 import { Box, CircularProgress } from '@mui/material'
 import Footer from './components/footer'
 import NavList from './components/navList'
-
-import ar_logo from "./assets/ar_logo.png";
 
 // ✅ Toasts
 import { ToastContainer } from 'react-toastify';
@@ -271,6 +269,7 @@ const PrReviews = lazy(() => import("./pages/topics/docs/PrReviews"));
 const Conventions = lazy(() => import("./pages/topics/docs/Conventions"));
 
 const App = () => {
+    const location = useLocation();
     const [displayNav, setDisplayNav] = useState(true);
     const handleDisplayNav = () => setDisplayNav(prev => !prev);
 
@@ -284,12 +283,8 @@ const App = () => {
                     <NavLink to="/" title="ReactJS Notes">ReactJS Notes</NavLink>
                 </Styled.LogoLinkWrapper>
                 <Styled.Heading>
-                    <a
-                        href="https://www.ashishranjan.net"
-                        target="_blank"
-                        title="Ashish Ranjan"
-                    >
-                        <img src={ar_logo} alt="ar_logo" />
+                    <a href="https://www.ashishranjan.net" target="_blank" rel="noopener noreferrer" title="Ashish Ranjan">
+                        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Ashish Ranjan logo" />
                     </a>
                 </Styled.Heading>
             </Styled.Header>
@@ -303,7 +298,7 @@ const App = () => {
 
                 <Styled.ContentWrapper id="scroll-root" data-scroll-root>
                     <Styled.RoutesWrapper>
-                        <Suspense
+                        <Suspense key={location.pathname}
                             fallback={<Box
                                 sx={{
                                     // border: "1px solid #f00",
@@ -649,7 +644,7 @@ const App = () => {
 
             <ScrollToTop />
 
-            {/* ✅ Toasts live here (rendered once for the whole app) */}
+            {/* Toasts live here for the whole app. */}
             <ToastContainer position="bottom-center" autoClose={4000} newestOnTop />
         </Styled.Wrapper>
     )

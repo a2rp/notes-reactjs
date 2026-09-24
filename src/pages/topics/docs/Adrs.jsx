@@ -28,7 +28,7 @@ const Adrs = () => {
                 <Styled.H2>Key Terms (Beginner Friendly)</Styled.H2>
                 <Styled.List>
                     <li><b>Context:</b> the background facts/constraints driving the decision (requirements, risks, deadlines).</li>
-                    <li><b>Options (Alternatives):</b> feasible paths you considered, not strawmen—each with pros/cons.</li>
+                    <li><b>Options (Alternatives):</b> feasible paths you considered, not strawmen - each with pros/cons.</li>
                     <li><b>Decision:</b> the chosen option and the reasons it wins <i>now</i>.</li>
                     <li><b>Consequences:</b> follow-on effects of the decision (cost, complexity, lock-in, team workflows).</li>
                     <li><b>Status:</b> lifecycle of the ADR: <Styled.InlineCode>Proposed</Styled.InlineCode>, <Styled.InlineCode>Accepted</Styled.InlineCode>, <Styled.InlineCode>Deprecated</Styled.InlineCode>, <Styled.InlineCode>Superseded</Styled.InlineCode>.</li>
@@ -51,9 +51,9 @@ What problem are we solving? What constraints matter (time, budget, skills, scal
 What option did we choose? Why this over others? Summarize the reasoning.
 
 ## Alternatives
-- Option A — Pros / Cons
-- Option B — Pros / Cons
-- Option C — Pros / Cons
+- Option A  -  Pros / Cons
+- Option B  -  Pros / Cons
+- Option C  -  Pros / Cons
 
 ## Consequences
 Positive and negative outcomes. New risks introduced. Cost of reversal. Operational impact.
@@ -66,7 +66,7 @@ Links to tickets, docs, benchmarks, PRs, spikes.`}
 
             {/* 4) Example ADR */}
             <Styled.Section>
-                <Styled.H2>Example ADR — “Adopt React Query for Server State”</Styled.H2>
+                <Styled.H2>Example ADR  -  “Adopt React Query for Server State”</Styled.H2>
                 <Styled.Pre>
                     {`# ADR 7: Adopt React Query for Server State
 Date: 2025-09-18
@@ -137,8 +137,8 @@ Reasoning: batteries-included caching, stale-while-revalidate, pagination helper
                     <li><b>Do</b> keep ADRs concise (1-2 pages). Link out to detail/PRs/benchmarks.</li>
                     <li><b>Do</b> record <em>real alternatives</em> you actually compared, with honest trade-offs.</li>
                     <li><b>Do</b> timestamp and set <Styled.InlineCode>Status</Styled.InlineCode>; update when reality changes.</li>
-                    <li><b>Don't</b> write after-the-fact fiction—ADRs are not marketing copy.</li>
-                    <li><b>Don't</b> cram multiple big decisions into one ADR—split them and cross-link.</li>
+                    <li><b>Don't</b> write after-the-fact fiction - ADRs are not marketing copy.</li>
+                    <li><b>Don't</b> cram multiple big decisions into one ADR - split them and cross-link.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -168,9 +168,9 @@ Status: Proposed
 <Chosen option and the reasoning>
 
 ## Alternatives
-- <Option A> — Pros / Cons
-- <Option B> — Pros / Cons
-- <Option C> — Pros / Cons
+- <Option A>  -  Pros / Cons
+- <Option B>  -  Pros / Cons
+- <Option C>  -  Pros / Cons
 
 ## Consequences
 <Positive/negative outcomes, risks, migration, ops impact>
@@ -203,7 +203,7 @@ Status: Proposed
 
             <Styled.Callout>
                 Summary: ADRs are your team's collective memory for important technical choices.
-                Keep them small, honest, and current—one decision per record, with clear context,
+                Keep them small, honest, and current - one decision per record, with clear context,
                 real alternatives, and explicit consequences.
             </Styled.Callout>
         </Styled.Page>

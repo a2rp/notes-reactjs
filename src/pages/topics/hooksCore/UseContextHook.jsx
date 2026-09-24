@@ -196,7 +196,7 @@ function Button() {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    Nested providers override parent values—useful for theming and localized overrides.
+                    Nested providers override parent values - useful for theming and localized overrides.
                 </Styled.Small>
             </Styled.Section>
 
@@ -205,7 +205,7 @@ function Button() {
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
                     <li>Creating a new <Styled.InlineCode>value</Styled.InlineCode> object every render → re-renders all consumers. Memoize it.</li>
-                    <li>Overusing context for values only needed by a couple of siblings—prefer lifting state or props.</li>
+                    <li>Overusing context for values only needed by a couple of siblings - prefer lifting state or props.</li>
                     <li>Putting side effects in render based on context; use effects instead.</li>
                     <li>Storing frequently changing, high-frequency values in a top-level context (e.g., keystrokes) → many re-renders. Colocate or split providers.</li>
                     <li>Forgetting default/required provider checks; use a strict custom hook to throw when missing.</li>

@@ -276,7 +276,7 @@ function BulkActions() {
                     <li><b>Do</b> keep selectors <i>pure</i> (no side-effects). Use async <Styled.InlineCode>get</Styled.InlineCode> for fetching.</li>
                     <li><b>Do</b> colocate atoms/selectors with the feature using them (modular design).</li>
                     <li><b>Don't</b> mutate objects in place; create new objects (immutability helps predictable updates).</li>
-                    <li><b>Don't</b> over-centralize—Recoil is great for <i>shared</i> state; use <Styled.InlineCode>useState</Styled.InlineCode> for truly local concerns.</li>
+                    <li><b>Don't</b> over-centralize - Recoil is great for <i>shared</i> state; use <Styled.InlineCode>useState</Styled.InlineCode> for truly local concerns.</li>
                 </Styled.List>
             </Styled.Section>
 

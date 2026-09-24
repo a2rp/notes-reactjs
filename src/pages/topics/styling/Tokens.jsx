@@ -140,7 +140,7 @@ const Button = styled.button\`
 `}
                 </Styled.Pre>
                 <Styled.Small>
-                    Prefer tokens over hard-coded values. If a token doesn’t exist yet, add it—don’t inline numbers.
+                    Prefer tokens over hard-coded values. If a token doesn’t exist yet, add it - don’t inline numbers.
                 </Styled.Small>
             </Styled.Section>
 
@@ -223,8 +223,8 @@ if (prefersDark.matches) document.documentElement.setAttribute("data-theme", "da
                     <li><b>Do</b> store every repeated value as a token (color, spacing, radius, shadow, z-index).</li>
                     <li><b>Do</b> use <i>semantic</i> tokens in components (e.g., <Styled.InlineCode>bg-default</Styled.InlineCode>) not raw primitives.</li>
                     <li><b>Do</b> centralize tokens and avoid overrides scattered across components.</li>
-                    <li><b>Don’t</b> hard-code “random” pixel values—extend the scale instead.</li>
-                    <li><b>Don’t</b> invent new colors for each feature—map to the palette.</li>
+                    <li><b>Don’t</b> hard-code “random” pixel values - extend the scale instead.</li>
+                    <li><b>Don’t</b> invent new colors for each feature - map to the palette.</li>
                     <li><b>Don’t</b> couple tokens to a component’s internal class names.</li>
                 </Styled.List>
             </Styled.Section>

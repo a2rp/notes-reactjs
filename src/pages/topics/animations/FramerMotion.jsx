@@ -253,7 +253,7 @@ function FadeInSection() {
                     <li><b>Do</b> use <Styled.InlineCode>whileInView</Styled.InlineCode> for one-off reveal animations on long pages.</li>
                     <li><b>Do</b> prefer <Styled.InlineCode>layout</Styled.InlineCode> for size/position changes from state updates.</li>
                     <li><b>Don't</b> over-animate; keep motion purposeful and subtle.</li>
-                    <li><b>Don't</b> forget exit states—UI should feel complete when elements leave.</li>
+                    <li><b>Don't</b> forget exit states - UI should feel complete when elements leave.</li>
                 </Styled.List>
             </Styled.Section>
 

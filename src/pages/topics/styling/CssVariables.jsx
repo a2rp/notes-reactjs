@@ -60,7 +60,7 @@ const CssVariables = () => {
                 <Styled.H2>Inheritance &amp; Scope</Styled.H2>
                 <Styled.List>
                     <li>
-                        Custom properties <b>inherit</b>—children see the value from their nearest ancestor unless overridden.
+                        Custom properties <b>inherit</b> - children see the value from their nearest ancestor unless overridden.
                     </li>
                     <li>
                         Override locally on any container to create contextual themes without extra classes on each child.
@@ -195,7 +195,7 @@ export const Button = styled.button\`
             <Styled.Section>
                 <Styled.H2>Performance &amp; Constraints</Styled.H2>
                 <Styled.List>
-                    <li>CSS variables update at <b>computed value</b> time—generally fast, even at scale.</li>
+                    <li>CSS variables update at <b>computed value</b> time - generally fast, even at scale.</li>
                     <li>
                         You <b>cannot</b> use <Styled.InlineCode>var()</Styled.InlineCode> for property names, selectors,
                         or to define media queries. Use them for <i>values</i>.
@@ -231,7 +231,7 @@ export const Button = styled.button\`
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: Use CSS variables as your **design token layer**—define defaults at <i>:root</i>, map semantic
+                Summary: Use CSS variables as your **design token layer** - define defaults at <i>:root</i>, map semantic
                 tokens per theme, override locally for context, and plug them directly into styled-components.
             </Styled.Callout>
         </Styled.Page>

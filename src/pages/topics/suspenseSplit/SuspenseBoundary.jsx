@@ -34,7 +34,7 @@ const SuspenseBoundary = () => {
                         <b>Fallback UI:</b> temporary placeholder (spinner, skeleton, message) shown while loading.
                     </li>
                     <li>
-                        <b>Suspending:</b> the state when a child signals "I'm not ready yet"—with code splitting,
+                        <b>Suspending:</b> the state when a child signals "I'm not ready yet" - with code splitting,
                         this happens while the chunk is fetching.
                     </li>
                     <li>
@@ -71,7 +71,7 @@ export default function Page() {
                 <Styled.List>
                     <li>
                         Wrap the <i>smallest meaningful</i> area that might load separately
-                        (card list, side panel, tab content), not the entire page—this avoids "spinner everything."
+                        (card list, side panel, tab content), not the entire page - this avoids "spinner everything."
                     </li>
                     <li>
                         Use a <b>page-level</b> boundary around routes for first-visit loads, plus
@@ -145,7 +145,7 @@ export function AppRoutes() {
                         so chunks are cached by the time the user navigates.
                     </li>
                     <li>
-                        Keep the logic simple—call the same dynamic import used by{" "}
+                        Keep the logic simple - call the same dynamic import used by{" "}
                         <Styled.InlineCode>React.lazy</Styled.InlineCode>.
                     </li>
                 </Styled.List>
@@ -183,7 +183,7 @@ const UserPanel = React.lazy(() => import("./user-panel"));`}
             <Styled.Section>
                 <Styled.H2>Designing Good Fallbacks</Styled.H2>
                 <Styled.List>
-                    <li><b>Skeletons over spinners</b>—hint at layout; reduce perceived wait.</li>
+                    <li><b>Skeletons over spinners</b> - hint at layout; reduce perceived wait.</li>
                     <li>Keep fallbacks <b>stable in size</b> to avoid layout shift.</li>
                     <li>Group related UI under one boundary so a single fallback covers all of it coherently.</li>
                 </Styled.List>
@@ -225,7 +225,7 @@ class ErrorBoundary extends React.Component {
                     <li><b>Do</b> place boundaries near slow code (routes, big widgets, image galleries).</li>
                     <li><b>Do</b> prefer skeleton fallbacks sized like final content.</li>
                     <li><b>Do</b> preload on hover/idle for popular paths.</li>
-                    <li><b>Don't</b> wrap your entire app in a single boundary—one spinner for everything hurts UX.</li>
+                    <li><b>Don't</b> wrap your entire app in a single boundary - one spinner for everything hurts UX.</li>
                     <li><b>Don't</b> block critical UI (e.g., nav/header) inside a loading boundary.</li>
                 </Styled.List>
             </Styled.Section>

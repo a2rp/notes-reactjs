@@ -187,9 +187,9 @@ function Editor({ value, version }) {
             <Styled.Section>
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
-                    <li>Expecting <Styled.InlineCode>setState</Styled.InlineCode> to change the variable immediately in the same render—read the new value on the next render.</li>
+                    <li>Expecting <Styled.InlineCode>setState</Styled.InlineCode> to change the variable immediately in the same render - read the new value on the next render.</li>
                     <li>Updating based on an old value without the functional updater (e.g., inside timers or multiple sets in one handler).</li>
-                    <li>Mutating arrays/objects in place—always return new copies.</li>
+                    <li>Mutating arrays/objects in place - always return new copies.</li>
                     <li>Switching between different shapes or types for the same state, causing conditional logic bugs.</li>
                 </Styled.List>
             </Styled.Section>

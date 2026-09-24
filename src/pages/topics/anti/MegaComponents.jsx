@@ -6,7 +6,7 @@ const MegaComponents = () => {
             <Styled.Title>Anti-Pattern: Mega Components</Styled.Title>
 
             <Styled.Lead>
-                A <b>mega component</b> is a single React component that tries to do “everything” —
+                A <b>mega component</b> is a single React component that tries to do “everything”  -
                 too many responsibilities, too many states, and too much markup. It becomes hard to read,
                 test, reuse, and change without breaking things.
             </Styled.Lead>

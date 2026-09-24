@@ -55,7 +55,7 @@ const TypingProps = () => {
             <Styled.Section>
                 <Styled.H2>Basic Props: Required vs Optional</Styled.H2>
                 <Styled.Pre>
-                    {`// interface or type — both are fine
+                    {`// interface or type  -  both are fine
 interface BadgeProps {
   label: string;           // required
   count?: number;          // optional
@@ -297,7 +297,7 @@ function SmartButton(props: SmartButtonProps) {
                     </li>
                     <li>
                         <b>Declaration merging:</b> Interfaces with the same name can merge shapes (advanced
-                        pattern—use sparingly).
+                        pattern - use sparingly).
                     </li>
                 </Styled.List>
             </Styled.Section>

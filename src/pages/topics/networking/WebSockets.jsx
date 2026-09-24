@@ -204,7 +204,7 @@ ws.addEventListener("message", (e) => {
             <Styled.Section>
                 <Styled.H2>Common Pitfalls</Styled.H2>
                 <Styled.List>
-                    <li>Creating multiple sockets per page accidentally (e.g., in each render) — <b>always</b> keep the instance in a ref and initialize in <Styled.InlineCode>useEffect</Styled.InlineCode>.</li>
+                    <li>Creating multiple sockets per page accidentally (e.g., in each render)  -  <b>always</b> keep the instance in a ref and initialize in <Styled.InlineCode>useEffect</Styled.InlineCode>.</li>
                     <li>Forgetting to close on unmount → memory leaks and duplicate messages.</li>
                     <li>Blocking the main thread (heavy work) in <Styled.InlineCode>message</Styled.InlineCode> handlers; offload parsing or heavy CPU via Web Workers if needed.</li>
                     <li>Sending raw objects without a schema → versioning hell. Define <Styled.InlineCode>{`{ type, payload }`}</Styled.InlineCode> early.</li>

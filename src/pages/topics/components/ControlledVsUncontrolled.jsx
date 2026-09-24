@@ -26,7 +26,7 @@ const ControlledVsUncontrolled = () => {
                         <Styled.InlineCode>defaultValue</Styled.InlineCode>/<Styled.InlineCode>defaultChecked</Styled.InlineCode>. Read the value via the DOM (refs) or form submission.
                     </li>
                     <li>
-                        <b>Source of truth:</b> where the canonical value lives—React state for controlled, the DOM for uncontrolled.
+                        <b>Source of truth:</b> where the canonical value lives - React state for controlled, the DOM for uncontrolled.
                     </li>
                     <li>
                         <b>Ref:</b> an object with <Styled.InlineCode>.current</Styled.InlineCode> used to imperatively access a DOM node or component instance.

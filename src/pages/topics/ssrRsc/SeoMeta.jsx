@@ -100,13 +100,13 @@ const SeoMeta = () => {
                     </li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`<meta property="og:title" content="React Notes — SEO & Metadata" />
+                    {`<meta property="og:title" content="React Notes  -  SEO & Metadata" />
 <meta property="og:description" content="A guide to SEO tags in React." />
 <meta property="og:url" content="https://example.com/ssr-rsc/seo-meta" />
 <meta property="og:type" content="article" />
 <meta property="og:image" content="https://example.com/og/seo-meta.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="React Notes — SEO & Metadata" />
+<meta name="twitter:title" content="React Notes  -  SEO & Metadata" />
 <meta name="twitter:description" content="A guide to SEO tags in React." />
 <meta name="twitter:image" content="https://example.com/og/seo-meta.png" />`}
                 </Styled.Pre>
@@ -174,7 +174,7 @@ function useMeta({ title, description, canonical, robots }) {
 
 export default function SeoMetaPage() {
   useMeta({
-    title: "SEO & Metadata — React Notes",
+    title: "SEO & Metadata  -  React Notes",
     description: "Guide to head tags, social cards, and JSON-LD.",
     canonical: "https://example.com/ssr-rsc/seo-meta",
     robots: "index,follow"
@@ -205,12 +205,12 @@ export function SeoMetaHelmet() {
   return (
     <>
       <Helmet prioritizeSeoTags>
-        <title>SEO & Metadata — React Notes</title>
+        <title>SEO & Metadata  -  React Notes</title>
         <meta name="description" content="Guide to head tags, social cards, JSON-LD." />
         <link rel="canonical" href="https://example.com/ssr-rsc/seo-meta" />
         <meta name="robots" content="index,follow" />
         {/* Open Graph */}
-        <meta property="og:title" content="SEO & Metadata — React Notes" />
+        <meta property="og:title" content="SEO & Metadata  -  React Notes" />
         <meta property="og:description" content="Guide to head tags, social cards, JSON-LD." />
         <meta property="og:image" content="https://example.com/og/seo-meta.png" />
         <meta property="og:type" content="article" />
@@ -290,7 +290,7 @@ Sitemap: https://example.com/sitemap.xml
                     <li><b>Do</b> provide a stable, absolute <i>canonical</i> URL for each page.</li>
                     <li><b>Do</b> host <i>og:image</i> at a permanent, crawlable URL; keep it under ~5MB.</li>
                     <li><b>Don’t</b> stuff keywords; keep copy human and accurate.</li>
-                    <li><b>Don’t</b> switch canonical per user (UTMs, sort order)—pick one canonical.</li>
+                    <li><b>Don’t</b> switch canonical per user (UTMs, sort order) - pick one canonical.</li>
                     <li><b>Don’t</b> block JS/CSS in robots unless you know the impact; crawlers render pages.</li>
                 </Styled.List>
             </Styled.Section>

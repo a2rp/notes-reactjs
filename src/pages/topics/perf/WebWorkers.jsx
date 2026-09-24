@@ -9,7 +9,7 @@ const WebWorkers = () => {
             <Styled.Lead>
                 <b>Web Workers</b> let you run JavaScript on a background thread so heavy CPU work
                 doesn't block the UI (scrolling, typing, animations). You send messages to a worker,
-                it computes, and sends results back—keeping the <b>main thread</b> responsive.
+                it computes, and sends results back - keeping the <b>main thread</b> responsive.
             </Styled.Lead>
 
             {/* 1) What & why */}
@@ -17,7 +17,7 @@ const WebWorkers = () => {
                 <Styled.H2>Definition & Purpose</Styled.H2>
                 <Styled.List>
                     <li><b>Main thread:</b> the browser's UI thread. It runs React rendering, layout, painting, and most JS.</li>
-                    <li><b>Web Worker:</b> a separate JS thread (no DOM access) for CPU-intensive tasks (parsing, encoding, math, AI inference, etc.).</li>
+                    <li><b>Web Worker:</b> a separate JS thread (no DOM access) for CPU-intensive tasks (parsing, encoding, math and other CPU-heavy work.).</li>
                     <li><b>Goal:</b> offload expensive work and keep interactions smooth (avoid “page is unresponsive”).</li>
                 </Styled.List>
             </Styled.Section>
@@ -29,7 +29,7 @@ const WebWorkers = () => {
                     <li><b>Dedicated Worker:</b> one page ↔ one worker instance. Best for component-local tasks.</li>
                     <li><b>Shared Worker:</b> multiple tabs/windows can talk to the same worker (shared context).</li>
                     <li><b>Service Worker:</b> background proxy between app and network (caching, offline, push). <i>Not</i> a compute worker for components.</li>
-                    <li><b>Module Worker:</b> a worker whose script is an ES module (<Styled.InlineCode>{`{ type: "module" }`}</Styled.InlineCode>)—supports imports and strict mode by default.</li>
+                    <li><b>Module Worker:</b> a worker whose script is an ES module (<Styled.InlineCode>{`{ type: "module" }`}</Styled.InlineCode>) - supports imports and strict mode by default.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -246,7 +246,7 @@ self.onmessage = (e) => {
                     <li><b>Do</b> terminate workers when done and reuse via pools for frequent jobs.</li>
                     <li><b>Don't</b> try to manipulate the DOM from a worker (impossible by design).</li>
                     <li><b>Don't</b> clone huge buffers; <b>transfer</b> them.</li>
-                    <li><b>Don't</b> create a new worker per keystroke—debounce or queue work.</li>
+                    <li><b>Don't</b> create a new worker per keystroke - debounce or queue work.</li>
                 </Styled.List>
             </Styled.Section>
 

@@ -42,7 +42,7 @@ const CssTransitions = () => {
                         <Styled.InlineCode>transform</Styled.InlineCode> and <Styled.InlineCode>opacity</Styled.InlineCode> (often only compositing).
                     </li>
                     <li>
-                        <b>Transition trigger:</b> a state change that modifies a property—hover/focus, adding/removing a class,
+                        <b>Transition trigger:</b> a state change that modifies a property - hover/focus, adding/removing a class,
                         toggling data attributes, or updating inline styles in JS/React.
                     </li>
                 </Styled.List>
@@ -90,7 +90,7 @@ const CssTransitions = () => {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    We set the <i>initial</i> state on the base selector, then the :hover state changes properties—transition runs automatically.
+                    We set the <i>initial</i> state on the base selector, then the :hover state changes properties - transition runs automatically.
                 </Styled.Small>
             </Styled.Section>
 
@@ -198,7 +198,7 @@ function Panel() {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    Here, <i>visibility</i> is delayed to switch after the fade finishes—so it's hidden when fully transparent.
+                    Here, <i>visibility</i> is delayed to switch after the fade finishes - so it's hidden when fully transparent.
                 </Styled.Small>
             </Styled.Section>
 
@@ -257,7 +257,7 @@ function Panel() {
                     <li><b>Do</b> list explicit properties instead of <Styled.InlineCode>all</Styled.InlineCode>.</li>
                     <li><b>Do</b> prefer <Styled.InlineCode>transform</Styled.InlineCode> &amp; <Styled.InlineCode>opacity</Styled.InlineCode> for performance.</li>
                     <li><b>Don't</b> transition <Styled.InlineCode>display</Styled.InlineCode> or rely on <Styled.InlineCode>height: auto</Styled.InlineCode> without a workaround.</li>
-                    <li><b>Don't</b> make transitions slow—UI should feel snappy (150-250ms typical for micro-interactions).</li>
+                    <li><b>Don't</b> make transitions slow - UI should feel snappy (150-250ms typical for micro-interactions).</li>
                 </Styled.List>
             </Styled.Section>
 

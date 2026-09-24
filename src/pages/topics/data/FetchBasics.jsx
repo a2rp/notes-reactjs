@@ -60,7 +60,7 @@ const FetchBasics = () => {
                 </Styled.Pre>
                 <Styled.Small>
                     <b>Key idea:</b> <Styled.InlineCode>fetch</Styled.InlineCode> only rejects the promise on
-                    <i>network failures</i>. HTTP errors (e.g., 404/500) still resolve — check{" "}
+                    <i>network failures</i>. HTTP errors (e.g., 404/500) still resolve  -  check{" "}
                     <Styled.InlineCode>res.ok</Styled.InlineCode>/<Styled.InlineCode>res.status</Styled.InlineCode>.
                 </Styled.Small>
             </Styled.Section>
@@ -216,7 +216,7 @@ const res = await fetch("/api/profile", {
 
             {/* 7) CORS (high level) */}
             <Styled.Section>
-                <Styled.H2>CORS (Cross-Origin Resource Sharing) — the 1-minute version</Styled.H2>
+                <Styled.H2>CORS (Cross-Origin Resource Sharing)  -  the 1-minute version</Styled.H2>
                 <Styled.List>
                     <li>
                         <b>Same-origin policy:</b> the browser restricts scripts from reading responses from a different

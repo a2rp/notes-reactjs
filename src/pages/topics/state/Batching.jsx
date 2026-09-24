@@ -95,7 +95,7 @@ function Counter() {
                         Updates inside a <Styled.InlineCode>flushSync</Styled.InlineCode> boundary (forced immediate flush).
                     </li>
                     <li>
-                        Updates from unrelated browser tasks like separate user events—each event forms its own batch.
+                        Updates from unrelated browser tasks like separate user events - each event forms its own batch.
                     </li>
                 </Styled.List>
                 <Styled.Pre>
@@ -121,7 +121,7 @@ function MeasureOnOpen() {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    Use <code>flushSync</code> sparingly—only when the DOM must reflect a change
+                    Use <code>flushSync</code> sparingly - only when the DOM must reflect a change
                     <em>before</em> the next line runs (measurements, imperative APIs).
                 </Styled.Small>
             </Styled.Section>
@@ -199,13 +199,13 @@ function Search({ items }) {
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
                     <li>
-                        Assuming each <Styled.InlineCode>setState</Styled.InlineCode> causes an immediate render—React batches in the same tick.
+                        Assuming each <Styled.InlineCode>setState</Styled.InlineCode> causes an immediate render - React batches in the same tick.
                     </li>
                     <li>
-                        Computing the next value from a possibly stale variable—use the functional updater.
+                        Computing the next value from a possibly stale variable - use the functional updater.
                     </li>
                     <li>
-                        Measuring layout right after <Styled.InlineCode>setState</Styled.InlineCode> without waiting for commit—use{" "}
+                        Measuring layout right after <Styled.InlineCode>setState</Styled.InlineCode> without waiting for commit - use{" "}
                         <Styled.InlineCode>useLayoutEffect</Styled.InlineCode> or <Styled.InlineCode>flushSync</Styled.InlineCode> when truly needed.
                     </li>
                     <li>
@@ -222,12 +222,12 @@ function Search({ items }) {
                     <li><b>Do</b> use functional updaters when next value depends on previous.</li>
                     <li><b>Do</b> use <Styled.InlineCode>flushSync</Styled.InlineCode> only for immediate DOM reads/measurements.</li>
                     <li><b>Don’t</b> assume state reads change instantly after <Styled.InlineCode>setState</Styled.InlineCode>.</li>
-                    <li><b>Don’t</b> sprinkle <Styled.InlineCode>flushSync</Styled.InlineCode> everywhere—it can hurt performance.</li>
+                    <li><b>Don’t</b> sprinkle <Styled.InlineCode>flushSync</Styled.InlineCode> everywhere - it can hurt performance.</li>
                 </Styled.List>
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: in React 18, updates queued in the same tick are automatically batched—
+                Summary: in React 18, updates queued in the same tick are automatically batched -
                 across events, timeouts, and promises. Use functional updaters for correctness,
                 and reach for <code>flushSync</code> only when immediate DOM reads are required.
             </Styled.Callout>

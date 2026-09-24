@@ -33,7 +33,7 @@ const StateColocation = () => {
                     <li><b>Who writes it?</b> Place state where updates originate; lift when multiple writers exist.</li>
                     <li><b>Is it navigational?</b> If it should persist in the URL (shareable/back-button), store it in route params/query.</li>
                     <li><b>Is it expensive to propagate?</b> High-frequency updates (typing, drag) should be colocated to avoid re-rendering large trees.</li>
-                    <li><b>Is it derived?</b> Don’t store—compute during render; memoize if costly or if stable reference is required.</li>
+                    <li><b>Is it derived?</b> Don’t store - compute during render; memoize if costly or if stable reference is required.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -67,7 +67,7 @@ function DeleteDialog() {
             <Styled.Section>
                 <Styled.H2>Example: Search + List</Styled.H2>
                 <Styled.Pre>
-                    {`// Case A — local: Search owns query, filters its own list (simple component)
+                    {`// Case A  -  local: Search owns query, filters its own list (simple component)
 function SearchList({ items }) {
   const [q, setQ] = React.useState("");
   const visible = React.useMemo(() => {
@@ -83,7 +83,7 @@ function SearchList({ items }) {
   );
 }
 
-// Case B — shared: search affects multiple components (list + stats + pager)
+// Case B  -  shared: search affects multiple components (list + stats + pager)
 function ProductsPage({ items }) {
   const [q, setQ] = React.useState(""); // lifted to the nearest common parent
   const visible = React.useMemo(() => {

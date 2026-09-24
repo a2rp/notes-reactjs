@@ -43,7 +43,7 @@ const RefsAsState = () => {
                 <Styled.List>
                     <li>
                         You update <Styled.InlineCode>ref.current</Styled.InlineCode> and expect the UI to
-                        change—but nothing happens until some unrelated state update occurs.
+                        change - but nothing happens until some unrelated state update occurs.
                     </li>
                     <li>
                         You start calling DOM APIs (like <Styled.InlineCode>innerText</Styled.InlineCode>) to
@@ -284,7 +284,7 @@ function GoodTodos() {
                         flags).
                     </li>
                     <li>
-                        <b>Don't</b> mutate the DOM to “sync” with ref values—let React render from state.
+                        <b>Don't</b> mutate the DOM to “sync” with ref values - let React render from state.
                     </li>
                     <li>
                         <b>Don't</b> hide important UI values inside refs to “optimize.” It breaks correctness.

@@ -60,7 +60,7 @@ const HeadlessComponents = () => {
 
             {/* 3) Minimal headless toggle (hook + render any UI) */}
             <Styled.Section>
-                <Styled.H2>Example 1 — Headless Toggle (Hook)</Styled.H2>
+                <Styled.H2>Example 1  -  Headless Toggle (Hook)</Styled.H2>
                 <Styled.Small>
                     Logic in a custom hook; UI composed by consumer. Both controlled and uncontrolled supported.
                 </Styled.Small>
@@ -100,13 +100,13 @@ function ToggleButton() {
                 </Styled.Pre>
                 <Styled.Small>
                     <b>Why headless?</b> The same <code>useToggle</code> logic can power a switch, a checkbox,
-                    a segmented control, or a custom icon button—your choice.
+                    a segmented control, or a custom icon button - your choice.
                 </Styled.Small>
             </Styled.Section>
 
             {/* 4) Headless with render-prop + ARIA (Listbox) */}
             <Styled.Section>
-                <Styled.H2>Example 2 — Headless Listbox (Render Prop + ARIA)</Styled.H2>
+                <Styled.H2>Example 2  -  Headless Listbox (Render Prop + ARIA)</Styled.H2>
                 <Styled.Small>
                     The component controls selection & keyboard; you render any list UI while keeping accessibility.
                 </Styled.Small>
@@ -187,9 +187,9 @@ function ColorPicker() {
 
             {/* 5) Compound + Context version */}
             <Styled.Section>
-                <Styled.H2>Example 3 — Compound Components + Context</Styled.H2>
+                <Styled.H2>Example 3  -  Compound Components + Context</Styled.H2>
                 <Styled.Small>
-                    Subcomponents read shared state via context. Still headless—no fixed styles.
+                    Subcomponents read shared state via context. Still headless - no fixed styles.
                 </Styled.Small>
                 <Styled.Pre>
                     {`const SelectContext = React.createContext(null);
@@ -288,7 +288,7 @@ const reducer = (state, changes, type) => {
                     <li><b>Do</b> document the API surface clearly (props, returned values, events).</li>
                     <li><b>Do</b> support both controlled and uncontrolled usage when practical.</li>
                     <li><b>Do</b> provide accessibility helpers (roles/ids/keyboard behavior) for interactive widgets.</li>
-                    <li><b>Don't</b> ship hardcoded markup/CSS—keep visuals to the consumer.</li>
+                    <li><b>Don't</b> ship hardcoded markup/CSS - keep visuals to the consumer.</li>
                     <li><b>Don't</b> leak internal DOM refs unless intentional; expose safe callbacks and props getters.</li>
                 </Styled.List>
             </Styled.Section>
@@ -298,7 +298,7 @@ const reducer = (state, changes, type) => {
                 <Styled.H2>Testing Headless Components</Styled.H2>
                 <Styled.List>
                     <li>
-                        Test <em>observable behavior</em>: state changes, invoked callbacks, and ARIA attributes—
+                        Test <em>observable behavior</em>: state changes, invoked callbacks, and ARIA attributes -
                         not internal implementation details.
                     </li>
                     <li>

@@ -87,7 +87,7 @@ export default [
 
             {/* 4) Legacy config example (if you still use .eslintrc) */}
             <Styled.Section>
-                <Styled.H2>ESLint (Legacy .eslintrc) — Optional</Styled.H2>
+                <Styled.H2>ESLint (Legacy .eslintrc)  -  Optional</Styled.H2>
                 <Styled.Pre>
                     {`// .eslintrc.cjs
 module.exports = {
@@ -169,7 +169,7 @@ coverage
             <Styled.Section>
                 <Styled.H2>Do &amp; Don't</Styled.H2>
                 <Styled.List>
-                    <li><b>Do</b> keep ESLint for quality and Prettier for formatting—separate concerns.</li>
+                    <li><b>Do</b> keep ESLint for quality and Prettier for formatting - separate concerns.</li>
                     <li><b>Do</b> add <Styled.InlineCode>eslint-config-prettier</Styled.InlineCode> to avoid rule conflicts.</li>
                     <li><b>Do</b> run <Styled.InlineCode>eslint --fix</Styled.InlineCode> and <Styled.InlineCode>prettier --write</Styled.InlineCode> in CI or a pre-commit hook.</li>
                     <li><b>Don't</b> double-format: if you use <Styled.InlineCode>eslint-plugin-prettier</Styled.InlineCode>, avoid also running Prettier separately on the same files in the same step.</li>

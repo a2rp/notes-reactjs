@@ -18,7 +18,7 @@ const ScrollRestore = () => {
                 <Styled.List>
                     <li><b>Scroll position:</b> the current X/Y offset of a scrollable area (e.g., window or a div).</li>
                     <li><b>Scroll restoration:</b> restoring that offset after navigation so content is where the user expects.</li>
-                    <li><b>Why it matters:</b> without restoration, users lose context—lists jump to top, long docs reset, etc.</li>
+                    <li><b>Why it matters:</b> without restoration, users lose context - lists jump to top, long docs reset, etc.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -42,7 +42,7 @@ const ScrollRestore = () => {
                     <li>It should <b>not</b> run on Back/Forward if you plan to restore position (see next section).</li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`// ScrollToTop.jsx — keep it simple and SSR-safe
+                    {`// ScrollToTop.jsx  -  keep it simple and SSR-safe
 import React from "react";
 import { useLocation, useNavigationType } from "react-router-dom";
 
@@ -76,7 +76,7 @@ export default function ScrollToTop() {
                     <li>On <b>PUSH/REPLACE</b>, usually start at the top (fresh page).</li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`// ScrollRestorer.jsx — window-level restoration
+                    {`// ScrollRestorer.jsx  -  window-level restoration
 import React from "react";
 import { useLocation, useNavigationType } from "react-router-dom";
 
@@ -101,14 +101,14 @@ export default function ScrollRestorer() {
     if (typeof window === "undefined") return;
 
     if (navType === "POP") {
-      // Back/Forward — try to restore
+      // Back/Forward  -  try to restore
       const pos = positions.get(location.key);
       if (pos) {
         window.scrollTo({ left: pos.x, top: pos.y, behavior: "auto" });
         return;
       }
     }
-    // New page — start at top
+    // New page  -  start at top
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [location, navType]);
 
@@ -128,7 +128,7 @@ export default function ScrollRestorer() {
                     <li>Store and restore <Styled.InlineCode>el.scrollTop</Styled.InlineCode>/<Styled.InlineCode>el.scrollLeft</Styled.InlineCode> for that element.</li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`// useScrollMemory.js — per-element restoration hook
+                    {`// useScrollMemory.js  -  per-element restoration hook
 import React from "react";
 
 export function useScrollMemory(ref, key) {
@@ -167,7 +167,7 @@ export function useScrollMemory(ref, key) {
                     <li>Use <Styled.InlineCode>useEffect</Styled.InlineCode> on <b>location.hash</b>. Handle missing targets gracefully.</li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`// HashScroll.jsx — smooth scroll to anchors
+                    {`// HashScroll.jsx  -  smooth scroll to anchors
 import React from "react";
 import { useLocation } from "react-router-dom";
 
@@ -251,7 +251,7 @@ function RootLayout() {
                     <li><b>Do</b> restore on Back/Forward; <b>Do</b> start at top on fresh navigations.</li>
                     <li><b>Do</b> prefer <Styled.InlineCode>useLayoutEffect</Styled.InlineCode> for restoration to reduce flicker.</li>
                     <li><b>Don’t</b> fight the browser: set <Styled.InlineCode>history.scrollRestoration = "manual"</Styled.InlineCode> only if you manage it yourself.</li>
-                    <li><b>Don’t</b> forget inner scroll containers—restore them too if your layout uses them.</li>
+                    <li><b>Don’t</b> forget inner scroll containers - restore them too if your layout uses them.</li>
                 </Styled.List>
             </Styled.Section>
 

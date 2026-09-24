@@ -13,7 +13,7 @@ const TypingContext = () => {
 
             {/* 1) Key terms */}
             <Styled.Section>
-                <Styled.H2>Key Terms — clear definitions</Styled.H2>
+                <Styled.H2>Key Terms  -  clear definitions</Styled.H2>
                 <Styled.List>
                     <li>
                         <b>Context:</b> a React mechanism created via{" "}
@@ -248,7 +248,7 @@ type ProfileCtx = {
                     <li><b>Do</b> <b>memoize</b> provider values (objects/functions) to reduce re-renders.</li>
                     <li><b>Do</b> split value/dispatch for reducer contexts when perf matters.</li>
                     <li><b>Don't</b> provide a real default value unless you truly want consumers to work without a Provider.</li>
-                    <li><b>Don't</b> put rapidly changing values in a single giant context—split into smaller contexts.</li>
+                    <li><b>Don't</b> put rapidly changing values in a single giant context - split into smaller contexts.</li>
                 </Styled.List>
             </Styled.Section>
 

@@ -48,7 +48,7 @@ const Workers = () => {
                         Send inputs to the worker; receive results; then update state.
                     </li>
                     <li>
-                        Workers can't touch the DOM or React state directly—only message passing is allowed.
+                        Workers can't touch the DOM or React state directly - only message passing is allowed.
                     </li>
                     <li>
                         Prefer a <b>pure function</b> interface for worker logic; it's easier to test and reuse.
@@ -58,7 +58,7 @@ const Workers = () => {
 
             {/* 3) Vite-friendly Web Worker example */}
             <Styled.Section>
-                <Styled.H2>Web Worker (Vite-friendly) — Example</Styled.H2>
+                <Styled.H2>Web Worker (Vite-friendly)  -  Example</Styled.H2>
                 <Styled.Small>Use <Styled.InlineCode>new URL("./file.js", import.meta.url)</Styled.InlineCode> and <Styled.InlineCode>{`{ type: "module" }`}</Styled.InlineCode>.</Styled.Small>
                 <Styled.Pre>
                     {`// src/pages/topics/integrations/examples/heavy.worker.js
@@ -173,7 +173,7 @@ worker.postMessage({ cmd: "process", buffer }, [buffer]);
                         functions as if they were local (Promises behind the scenes).
                     </li>
                     <li>
-                        It makes workers feel like modules with async functions—great for readability.
+                        It makes workers feel like modules with async functions - great for readability.
                     </li>
                 </Styled.List>
                 <Styled.Pre>
@@ -272,7 +272,7 @@ if ("serviceWorker" in navigator) {
                     <li><b>Do</b> move CPU-heavy logic (parsing, transform, crypto, image ops) into workers.</li>
                     <li><b>Do</b> keep the worker API small and pure; pass inputs, return outputs.</li>
                     <li><b>Do</b> use transferables for large binary data and consider OffscreenCanvas for rendering.</li>
-                    <li><b>Don't</b> try to touch the DOM from a worker—it's not allowed.</li>
+                    <li><b>Don't</b> try to touch the DOM from a worker - it's not allowed.</li>
                     <li><b>Don't</b> spam the bridge with many tiny messages; batch them if possible.</li>
                 </Styled.List>
             </Styled.Section>

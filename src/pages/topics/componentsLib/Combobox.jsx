@@ -225,7 +225,7 @@ function onOptionClick(i, api) {
                     <li>Moving focus into list items (breaks typing flow and SR expectations).</li>
                     <li>Forgetting unique ids for options (then <Styled.InlineCode>aria-activedescendant</Styled.InlineCode> can't point correctly).</li>
                     <li>Inconsistent controlled state (value vs filtered list vs highlight get out of sync).</li>
-                    <li>Closing the popup too aggressively (e.g., on every blur—even when clicking an option).</li>
+                    <li>Closing the popup too aggressively (e.g., on every blur - even when clicking an option).</li>
                 </Styled.List>
             </Styled.Section>
 

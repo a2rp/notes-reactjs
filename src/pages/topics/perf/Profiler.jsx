@@ -14,7 +14,6 @@ const ProfilerPage = () => {
             // commitTime    => when React committed the DOM updates
             // interactions  => deprecated scheduling traces (React <18 Tracing); omitted by React DevTools
             // Keep this callback FAST-log and bail. Heavy work will skew the numbers.
-            // eslint-disable-next-line no-console
             console.log(`[Profiler:${id}]`, { phase, actualDuration, baseDuration, startTime, commitTime });
         },
         []

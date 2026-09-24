@@ -64,10 +64,10 @@ import { Routes, Route, Link } from "react-router-dom";
                 <Styled.H2>When to choose which</Styled.H2>
                 <Styled.List>
                     <li>
-                        <b>SPA:</b> app-like experiences—dashboards, editors, chats, multi-step flows.
+                        <b>SPA:</b> app-like experiences - dashboards, editors, chats, multi-step flows.
                     </li>
                     <li>
-                        <b>MPA (or SSR/SSG frameworks):</b> content-heavy, SEO-first sites—docs, blogs, marketing.
+                        <b>MPA (or SSR/SSG frameworks):</b> content-heavy, SEO-first sites - docs, blogs, marketing.
                     </li>
                     <li>
                         Hybrid (SSR + SPA hydration) offers fast first paint with rich client interactivity.

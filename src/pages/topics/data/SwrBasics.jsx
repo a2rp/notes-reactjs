@@ -20,7 +20,7 @@ const SwrBasics = () => {
                         and simultaneously kicks off a re-fetch to refresh the cache. Once fresh data arrives, the UI updates.
                     </li>
                     <li>
-                        <b>SWR (library):</b> a React hook set—<Styled.InlineCode>useSWR</Styled.InlineCode> and helpers—
+                        <b>SWR (library):</b> a React hook set - <Styled.InlineCode>useSWR</Styled.InlineCode> and helpers -
                         that gives you caching, revalidation on focus/reconnect/interval, request deduping, and mutation APIs.
                     </li>
                 </Styled.List>
@@ -289,7 +289,7 @@ async function prefetchUser(id) {
             <Styled.Section>
                 <Styled.H2>Do &amp; Don't</Styled.H2>
                 <Styled.List>
-                    <li><b>Do</b> design <b>stable keys</b>—they are the identity of your data.</li>
+                    <li><b>Do</b> design <b>stable keys</b> - they are the identity of your data.</li>
                     <li><b>Do</b> keep your fetcher tiny and consistent (same errors, same JSON parsing).</li>
                     <li><b>Do</b> use <Styled.InlineCode>mutate</Styled.InlineCode> for optimistic UX and invalidation.</li>
                     <li><b>Don't</b> put non-deterministic values (like new Date()) in keys; it will destroy caching.</li>
@@ -303,7 +303,7 @@ async function prefetchUser(id) {
                 <Styled.List>
                     <li>
                         Both provide caching, revalidation, mutations, and invalidation. <b>TanStack Query</b> adds rich devtools,
-                        more mutation helpers, and advanced features (e.g., <i>queryClient</i>)—you'll cover it in the{" "}
+                        more mutation helpers, and advanced features (e.g., <i>queryClient</i>) - you'll cover it in the{" "}
                         <i>TanStack Query</i> topic.
                     </li>
                     <li>

@@ -171,8 +171,8 @@ function Tabs() {
             <Styled.Section>
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
-                    <li>Using <code>useId</code> for <b>React keys</b> — keys must come from data, not generated per render.</li>
-                    <li>Expecting <code>useId</code> to be stable across sessions or page loads — it is not a persistent identifier.</li>
+                    <li>Using <code>useId</code> for <b>React keys</b>  -  keys must come from data, not generated per render.</li>
+                    <li>Expecting <code>useId</code> to be stable across sessions or page loads  -  it is not a persistent identifier.</li>
                     <li>Calling hooks conditionally and changing the order → breaks stability (and violates the Rules of Hooks).</li>
                     <li>Generating a new object for <code>value</code> on every render when passing IDs via context; memoize bundles if needed.</li>
                 </Styled.List>

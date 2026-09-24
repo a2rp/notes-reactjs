@@ -84,7 +84,7 @@ const Charts = () => {
 
             {/* 7A) Example: Recharts */}
             <Styled.Section>
-                <Styled.H2>Example 1 — Recharts (declarative, SVG)</Styled.H2>
+                <Styled.H2>Example 1  -  Recharts (declarative, SVG)</Styled.H2>
                 <Styled.Pre>
                     {`// Install: npm i recharts
 // A simple responsive line chart (monthly sales)
@@ -121,7 +121,7 @@ function SalesLineChart() {
 
             {/* 7B) Example: Chart.js */}
             <Styled.Section>
-                <Styled.H2>Example 2 — Chart.js via react-chartjs-2 (Canvas)</Styled.H2>
+                <Styled.H2>Example 2  -  Chart.js via react-chartjs-2 (Canvas)</Styled.H2>
                 <Styled.Pre>
                     {`// Install: npm i chart.js react-chartjs-2
 // Quick bar chart (product counts)
@@ -160,7 +160,7 @@ function ProductBarChart() {
 
             {/* 7C) Example: D3 in React */}
             <Styled.Section>
-                <Styled.H2>Example 3 — D3 + React (custom SVG)</Styled.H2>
+                <Styled.H2>Example 3  -  D3 + React (custom SVG)</Styled.H2>
                 <Styled.Pre>
                     {`// Install: npm i d3
 // Pattern: useRef + useEffect; D3 draws inside <svg>

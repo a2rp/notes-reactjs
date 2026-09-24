@@ -20,8 +20,6 @@ const NavListCore = () => {
         }
     });
 
-    const [matchCount, setMatchCount] = useState(0);
-
     // Keep the active NavLink centered/visible in the sidebar
     useEffect(() => {
         const el = navRef.current?.querySelector("a.active");
@@ -66,7 +64,7 @@ const NavListCore = () => {
         // persist search
         try {
             sessionStorage.setItem(STORAGE_KEY, search);
-        } catch { }
+        } catch { /* Session storage may be unavailable. */ }
 
         const root = wrapperRef.current;
         if (!root) return;
@@ -75,7 +73,7 @@ const NavListCore = () => {
         const tokens = q.length ? q.split(/\s+/).filter(Boolean) : [];
 
         const links = Array.from(root.querySelectorAll("a[href]"));
-        let visibleCount = 0;
+
 
         // Filter links
         links.forEach((a) => {
@@ -88,7 +86,7 @@ const NavListCore = () => {
                 tokens.every((t) => hay.includes(t));
 
             a.setAttribute("data-hidden", isMatch ? "false" : "true");
-            if (isMatch) visibleCount += 1;
+
         });
 
         // Hide/show section headings that have zero visible links until next h3
@@ -106,7 +104,7 @@ const NavListCore = () => {
             h.setAttribute("data-hidden", hasVisible ? "false" : "true");
         });
 
-        setMatchCount(visibleCount);
+
     }, [search]);
 
     const handleSearchChange = (event) => {
@@ -331,8 +329,8 @@ const NavListCore = () => {
                 <NavLink to="/testing/hooks-tests" title="Hooks Tests">Hooks Tests</NavLink>
                 <NavLink to="/testing/router-tests" title="Router Tests">Router Tests</NavLink>
                 <NavLink to="/testing/msw" title="MSW (Mock Service Worker)">MSW</NavLink>
-                <NavLink to="/testing/e2e-cypress" title="E2E — Cypress">E2E — Cypress</NavLink>
-                <NavLink to="/testing/e2e-playwright" title="E2E — Playwright">E2E — Playwright</NavLink>
+                <NavLink to="/testing/e2e-cypress" title="E2E  -  Cypress">E2E  -  Cypress</NavLink>
+                <NavLink to="/testing/e2e-playwright" title="E2E  -  Playwright">E2E  -  Playwright</NavLink>
                 <NavLink to="/testing/a11y-tests" title="Accessibility (a11y) Tests">a11y Tests</NavLink>
                 <NavLink to="/testing/snapshots" title="Snapshots">Snapshots</NavLink>
 

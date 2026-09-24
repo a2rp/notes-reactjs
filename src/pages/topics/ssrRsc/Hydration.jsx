@@ -8,7 +8,7 @@ const Hydration = () => {
             <Styled.Lead>
                 <b>Hydration</b> is the process where React attaches event handlers and
                 reactivates a server-rendered HTML tree on the client, turning static
-                markup into an interactive app—without re-rendering everything from
+                markup into an interactive app - without re-rendering everything from
                 scratch.
             </Styled.Lead>
 

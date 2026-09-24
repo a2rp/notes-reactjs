@@ -177,7 +177,7 @@ React.useImperativeHandle(ref, () => ({ doSomething: () => console.log(state) })
             <Styled.Section>
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
-                    <li>Using it for data flow that should be props/state—keep imperative handles for <em>actions</em>, not state sharing.</li>
+                    <li>Using it for data flow that should be props/state - keep imperative handles for <em>actions</em>, not state sharing.</li>
                     <li>Exposing internal DOM nodes, causing tight coupling; expose verbs instead.</li>
                     <li>Stale closures in exposed methods; use refs for “latest” values or include deps.</li>
                     <li>Forgetting <Styled.InlineCode>forwardRef</Styled.InlineCode>; <Styled.InlineCode>useImperativeHandle</Styled.InlineCode> must be used inside a forwarded component.</li>
@@ -200,7 +200,7 @@ React.useImperativeHandle(ref, () => ({ doSomething: () => console.log(state) })
             <Styled.Callout>
                 Summary: <Styled.InlineCode>useImperativeHandle</Styled.InlineCode> provides a clean, minimal imperative API
                 for parents while preserving encapsulation. Combine with <Styled.InlineCode>forwardRef</Styled.InlineCode>,
-                avoid stale closures, and expose only safe actions—not internals.
+                avoid stale closures, and expose only safe actions - not internals.
             </Styled.Callout>
         </Styled.Page>
     );

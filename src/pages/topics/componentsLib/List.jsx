@@ -75,11 +75,11 @@ const List = () => {
                 <Styled.Pre>
                     {`/**
  * Props:
- * - items: any[] — the data
- * - renderItem: (item, state) => JSX — how to render each item
- * - keyExtractor?: (item, index) => string | number — unique key
- * - empty?: JSX — UI when no items
- * - loading?: boolean — show loading state
+ * - items: any[]  -  the data
+ * - renderItem: (item, state) => JSX  -  how to render each item
+ * - keyExtractor?: (item, index) => string | number  -  unique key
+ * - empty?: JSX  -  UI when no items
+ * - loading?: boolean  -  show loading state
  */
 export function ListPrimitive({
   items,
@@ -294,7 +294,7 @@ function ProjectsList({ projects, busy, error }) {
                     <li><b>Do</b> provide stable keys; avoid using the array index if items reorder.</li>
                     <li><b>Do</b> add keyboard support for selectable lists; test with a keyboard only.</li>
                     <li><b>Don't</b> mix selection and navigation on the same click without clear intent (e.g., use a dedicated “Open” affordance).</li>
-                    <li><b>Don't</b> render thousands of rows at once—use virtualization for big data.</li>
+                    <li><b>Don't</b> render thousands of rows at once - use virtualization for big data.</li>
                 </Styled.List>
             </Styled.Section>
 

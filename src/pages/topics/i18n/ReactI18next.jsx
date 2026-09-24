@@ -6,7 +6,7 @@ const ReactI18next = () => {
             <Styled.Title>React i18next</Styled.Title>
 
             <Styled.Lead>
-                <b>react-i18next</b> is the official React binding for <b>i18next</b> — a popular
+                <b>react-i18next</b> is the official React binding for <b>i18next</b>  -  a popular
                 internationalization (i18n) library. It lets you translate UI text, handle plurals,
                 interpolate variables, switch languages at runtime, and organize translations by locale
                 and namespace.

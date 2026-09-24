@@ -174,7 +174,7 @@ self.addEventListener("activate", (event) => {
                         Implement simple expiration by storing metadata (timestamp) in <Styled.InlineCode>IndexedDB</Styled.InlineCode> or using a library that supports expiration.
                     </li>
                     <li>
-                        <b>Opaque responses</b> (e.g., CDNs with <Styled.InlineCode>no-cors</Styled.InlineCode>) can't be validated and still consume space—cache carefully.
+                        <b>Opaque responses</b> (e.g., CDNs with <Styled.InlineCode>no-cors</Styled.InlineCode>) can't be validated and still consume space - cache carefully.
                     </li>
                 </Styled.List>
                 <Styled.Pre>
@@ -274,7 +274,7 @@ workbox.routing.registerRoute(
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: pick strategies per resource type—Cache-First for immutable assets, SWR or Network-First for data and pages,
+                Summary: pick strategies per resource type - Cache-First for immutable assets, SWR or Network-First for data and pages,
                 and always ship an offline fallback. Version caches, expire entries, and test with DevTools + Lighthouse.
             </Styled.Callout>
         </Styled.Page>

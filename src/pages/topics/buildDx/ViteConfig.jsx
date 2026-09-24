@@ -139,7 +139,7 @@ console.log(import.meta.env.VITE_APP_NAME);  // "Notes ReactJS"`}
             <Styled.Section>
                 <Styled.H2><code>define</code> (compile-time constants)</Styled.H2>
                 <Styled.List>
-                    <li><b>define:</b> replaces identifiers at build time—great for feature flags and version strings.</li>
+                    <li><b>define:</b> replaces identifiers at build time - great for feature flags and version strings.</li>
                     <li>Unlike env vars, <b>define</b> inlines values during build and doesn’t read from files automatically.</li>
                 </Styled.List>
                 <Styled.Pre>
@@ -211,7 +211,7 @@ if (__ENABLE_EXPERIMENT__) {
             <Styled.Section>
                 <Styled.H2>Preview Server</Styled.H2>
                 <Styled.List>
-                    <li><b>vite preview:</b> serves the built <Styled.InlineCode>dist</Styled.InlineCode> locally—useful to test prod behavior.</li>
+                    <li><b>vite preview:</b> serves the built <Styled.InlineCode>dist</Styled.InlineCode> locally - useful to test prod behavior.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`export default defineConfig({
@@ -271,7 +271,7 @@ export default defineConfig({
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: Vite’s config is small but powerful—set the correct <b>base</b>, organize imports
+                Summary: Vite’s config is small but powerful - set the correct <b>base</b>, organize imports
                 with <b>aliases</b>, use <b>env vars</b> via <b>import.meta.env</b>, optimize builds with
                 <b> rollupOptions</b>, and lean on <b>@vitejs/plugin-react</b> for React DX.
             </Styled.Callout>

@@ -131,7 +131,7 @@ function List({ items }) {
     <ul>
       {products.map(p => (
         <li key={p.id}>
-          {p.name} — Rs {p.price}
+          {p.name}  -  Rs {p.price}
           <button onClick={() => add(p.id, 1)}>Add</button>
         </li>
       ))}
@@ -174,7 +174,7 @@ const compute = React.useCallback((x) => x >= options.min && x <= options.max, [
                     <li>Empty deps (<Styled.InlineCode>[]</Styled.InlineCode>) while reading changing values inside → <b>stale closures</b>. Fix by including deps or using functional updaters/refs.</li>
                     <li>Omitting dependencies to silence lints → subtle bugs. Keep deps correct; restructure code if necessary.</li>
                     <li>Memoizing everything “just in case” → unnecessary complexity with minimal benefit.</li>
-                    <li>Using <Styled.InlineCode>useCallback</Styled.InlineCode> to avoid <em>parent</em> re-renders—memoizing a function won’t stop the parent rendering.</li>
+                    <li>Using <Styled.InlineCode>useCallback</Styled.InlineCode> to avoid <em>parent</em> re-renders - memoizing a function won’t stop the parent rendering.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// ❌ Stale closure (reads old 'value')
@@ -193,7 +193,7 @@ const onSaveOk = React.useCallback(() => console.log(value), [value]);`}
                     <li><b>Do</b> use functional updaters to keep deps minimal when next value depends on previous state.</li>
                     <li><b>Do</b> stabilize inputs (with <Styled.InlineCode>useMemo</Styled.InlineCode>) before depending on them in <Styled.InlineCode>useCallback</Styled.InlineCode>.</li>
                     <li><b>Don’t</b> overuse it for trivial handlers; identity only matters if something compares references.</li>
-                    <li><b>Don’t</b> omit dependencies to keep a function “stable”—use the right patterns instead.</li>
+                    <li><b>Don’t</b> omit dependencies to keep a function “stable” - use the right patterns instead.</li>
                 </Styled.List>
             </Styled.Section>
 

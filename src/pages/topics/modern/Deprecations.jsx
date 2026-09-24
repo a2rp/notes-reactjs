@@ -234,7 +234,7 @@ Button.defaultProps = { label: "Click" }; // 😐 avoid`}
             <Styled.Section>
                 <Styled.H2>Event Pooling (historical)</Styled.H2>
                 <Styled.P>
-                    Older React versions "pooled" events, requiring <Styled.InlineCode>event.persist()</Styled.InlineCode> for async access. Modern React no longer pools events—just
+                    Older React versions "pooled" events, requiring <Styled.InlineCode>event.persist()</Styled.InlineCode> for async access. Modern React no longer pools events - just
                     use the event normally.
                 </Styled.P>
             </Styled.Section>

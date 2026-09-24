@@ -1,10 +1,10 @@
 import React from "react";
-import { Link, useNavigate, useSearchParams, createSearchParams } from "react-router-dom";
+import { Link, useNavigate, createSearchParams } from "react-router-dom";
 import { Styled } from "./styled";
 
 const SearchParams = () => {
     const navigate = useNavigate();
-    const [searchParams, setSearchParams] = useSearchParams();
+
 
     return (
         <Styled.Page>
@@ -222,7 +222,7 @@ setSearchParams({ q: "react" }, { replace: true });`}
                 <Styled.H2>Do &amp; Don’t</Styled.H2>
                 <Styled.List>
                     <li><b>Do</b> use search params for sharable UI state: filters, pagination, sorting, tabs.</li>
-                    <li><b>Do</b> keep URLs tidy—remove empty keys; use repeated keys for arrays.</li>
+                    <li><b>Do</b> keep URLs tidy - remove empty keys; use repeated keys for arrays.</li>
                     <li><b>Don’t</b> store sensitive data in the URL (tokens, emails, PII).</li>
                     <li><b>Don’t</b> overuse JSON blobs if simple keys will do.</li>
                 </Styled.List>

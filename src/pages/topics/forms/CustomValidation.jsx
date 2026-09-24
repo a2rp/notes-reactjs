@@ -8,7 +8,7 @@ const CustomValidation = () => {
             <Styled.Lead>
                 <b>Custom validation</b> means implementing your own rules and messages (in addition to or
                 instead of the browser’s built-in HTML5 validation). You decide <i>what</i> is valid, <i>when</i> to
-                validate (change/blur/submit), and <i>how</i> to show errors—while keeping the server as the final authority.
+                validate (change/blur/submit), and <i>how</i> to show errors - while keeping the server as the final authority.
             </Styled.Lead>
 
             {/* 1) What & why */}
@@ -204,7 +204,7 @@ export default function ExampleControlled() {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    <b>Tip:</b> <Styled.InlineCode>onInvalid</Styled.InlineCode> runs when a field fails validity—use it to customize messages or styling. Use <Styled.InlineCode>noValidate</Styled.InlineCode> on the form to fully control UX yourself.
+                    <b>Tip:</b> <Styled.InlineCode>onInvalid</Styled.InlineCode> runs when a field fails validity - use it to customize messages or styling. Use <Styled.InlineCode>noValidate</Styled.InlineCode> on the form to fully control UX yourself.
                 </Styled.Small>
             </Styled.Section>
 
@@ -246,7 +246,7 @@ export const isAvailable = async (value) => {
                     <li><b>Do</b> keep client and server rules aligned (same shape/messages where possible).</li>
                     <li><b>Do</b> handle i18n for messages early if you plan to localize.</li>
                     <li><b>Don’t</b> depend solely on client validation; the server must re-validate.</li>
-                    <li><b>Don’t</b> show errors <i>while typing</i> before first blur—this feels hostile.</li>
+                    <li><b>Don’t</b> show errors <i>while typing</i> before first blur - this feels hostile.</li>
                 </Styled.List>
             </Styled.Section>
 

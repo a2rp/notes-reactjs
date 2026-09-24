@@ -237,7 +237,7 @@ const usersState = useFetch<User[]>("/api/users");`}
                     <li><b>Do</b> rely on inference; annotate only when inference isn't enough.</li>
                     <li><b>Do</b> model “not yet loaded” with unions (<Styled.InlineCode>T | null</Styled.InlineCode> or status enums).</li>
                     <li><b>Do</b> type DOM refs as <Styled.InlineCode>Element | null</Styled.InlineCode> and narrow before use.</li>
-                    <li><b>Don't</b> use <Styled.InlineCode>any</Styled.InlineCode>—prefer generics and proper unions.</li>
+                    <li><b>Don't</b> use <Styled.InlineCode>any</Styled.InlineCode> - prefer generics and proper unions.</li>
                     <li><b>Don't</b> store reactive state in refs (they don't trigger renders).</li>
                     <li><b>Don't</b> over-annotate simple cases; it adds noise without benefits.</li>
                 </Styled.List>

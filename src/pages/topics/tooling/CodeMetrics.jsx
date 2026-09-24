@@ -8,7 +8,7 @@ const CodeMetrics = () => {
             <Styled.Lead>
                 <b>Code metrics</b> are simple numbers that describe your code and its runtime behavior.
                 They help you spot complexity, risky files, large bundles, slow pages, and unnecessary re-renders.
-                Treat them as <i>signals</i> to guide refactors—not as strict rules.
+                Treat them as <i>signals</i> to guide refactors - not as strict rules.
             </Styled.Lead>
 
             {/* 1) Why metrics */}
@@ -174,7 +174,7 @@ function Dashboard() {
                 <Styled.H3>Coverage</Styled.H3>
                 <Styled.List>
                     <li><b>Definition:</b> % of code executed by tests (lines/branches/functions).</li>
-                    <li><b>Note:</b> 100% coverage doesn't guarantee quality—cover meaningful paths.</li>
+                    <li><b>Note:</b> 100% coverage doesn't guarantee quality - cover meaningful paths.</li>
                 </Styled.List>
 
                 <Styled.H3>Lint Rule Violations</Styled.H3>
@@ -212,7 +212,7 @@ function Dashboard() {
                     <li><b>Do</b> baseline metrics early, then track trends (getting better or worse?).</li>
                     <li><b>Do</b> tackle <i>high-churn + high-complexity</i> files first.</li>
                     <li><b>Do</b> code-split heavy routes and memoize expensive children.</li>
-                    <li><b>Don't</b> optimize blindly—measure first, then change.</li>
+                    <li><b>Don't</b> optimize blindly - measure first, then change.</li>
                     <li><b>Don't</b> chase perfect scores; ship incremental improvements.</li>
                 </Styled.List>
             </Styled.Section>

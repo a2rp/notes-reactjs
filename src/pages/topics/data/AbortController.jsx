@@ -31,7 +31,7 @@ const AbortController = () => {
                     </li>
                     <li>
                         <b>AbortError:</b> a <i>DOMException</i> name used by many APIs (e.g.,{" "}
-                        <Styled.InlineCode>fetch</Styled.InlineCode>) to indicate the operation ended because it was aborted—not
+                        <Styled.InlineCode>fetch</Styled.InlineCode>) to indicate the operation ended because it was aborted - not
                         because it truly failed.
                     </li>
                     <li>
@@ -239,7 +239,7 @@ controller.abort(); // removes the listener automatically`}
                     <li><b>Do</b> create a fresh controller per request or per logical batch of work.</li>
                     <li><b>Do</b> abort in <Styled.InlineCode>useEffect</Styled.InlineCode> cleanup to stop stale work.</li>
                     <li><b>Do</b> use it to avoid race conditions in typeahead, tab switches, or route changes.</li>
-                    <li><b>Don't</b> swallow all errors—only ignore <Styled.InlineCode>AbortError</Styled.InlineCode>.</li>
+                    <li><b>Don't</b> swallow all errors - only ignore <Styled.InlineCode>AbortError</Styled.InlineCode>.</li>
                     <li><b>Don't</b> mutate UI after abort; the request result is no longer relevant.</li>
                 </Styled.List>
             </Styled.Section>
@@ -257,7 +257,7 @@ controller.abort(); // removes the listener automatically`}
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: Use <b>AbortController</b> to cancel work you no longer need—on route changes, tab switches, or new
+                Summary: Use <b>AbortController</b> to cancel work you no longer need - on route changes, tab switches, or new
                 queries. Always pass the signal, abort in cleanup, and treat AbortError as a normal control-flow event.
             </Styled.Callout>
         </Styled.Page>

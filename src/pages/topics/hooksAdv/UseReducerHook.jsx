@@ -264,7 +264,7 @@ function useStore() {
                     <li><b>Do</b> use lazy initialization for expensive initial state.</li>
                     <li><b>Don’t</b> perform side effects in reducers.</li>
                     <li><b>Don’t</b> duplicate derived data in state; derive it.</li>
-                    <li><b>Don’t</b> let a single massive reducer handle unrelated concerns—split or compose.</li>
+                    <li><b>Don’t</b> let a single massive reducer handle unrelated concerns - split or compose.</li>
                 </Styled.List>
             </Styled.Section>
 

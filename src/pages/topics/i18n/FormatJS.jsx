@@ -312,7 +312,7 @@ if (!Intl.RelativeTimeFormat) await import("@formatjs/intl-relativetimeformat/po
                     <li><b>Do</b> give translators context via <Styled.InlineCode>description</Styled.InlineCode>.</li>
                     <li><b>Do</b> use ICU plural/select; avoid manual <Styled.InlineCode>if/else</Styled.InlineCode> for language rules.</li>
                     <li><b>Do</b> use rich-text placeholders for bold/links; avoid embedding raw HTML.</li>
-                    <li><b>Don't</b> concatenate strings like <Styled.InlineCode>{"'Hello ' + name"}</Styled.InlineCode>—always use variables in messages.</li>
+                    <li><b>Don't</b> concatenate strings like <Styled.InlineCode>{"'Hello ' + name"}</Styled.InlineCode> - always use variables in messages.</li>
                     <li><b>Don't</b> hide text inside images; translators can't change it.</li>
                 </Styled.List>
             </Styled.Section>

@@ -39,7 +39,7 @@ const GhPages = () => {
 
             {/* 3) Vite setup: base & router */}
             <Styled.Section>
-                <Styled.H2>Step 1 — Configure Vite base & Router basename</Styled.H2>
+                <Styled.H2>Step 1  -  Configure Vite base & Router basename</Styled.H2>
                 <Styled.List>
                     <li>
                         If the repo is <Styled.InlineCode>a2rp/notes-reactjs</Styled.InlineCode>, your Pages URL is
@@ -81,7 +81,7 @@ import { BrowserRouter } from "react-router-dom";
 
             {/* 4) SPA fallback */}
             <Styled.Section>
-                <Styled.H2>Step 2 — SPA Fallback (404.html)</Styled.H2>
+                <Styled.H2>Step 2  -  SPA Fallback (404.html)</Styled.H2>
                 <Styled.List>
                     <li>
                         GitHub Pages serves <Styled.InlineCode>index.html</Styled.InlineCode> only for the root URL. Deep links like{" "}
@@ -101,7 +101,7 @@ cp dist/index.html dist/404.html`}
 
             {/* 5) Option A: GitHub Actions */}
             <Styled.Section>
-                <Styled.H2>Option A — Auto-deploy with GitHub Actions (recommended)</Styled.H2>
+                <Styled.H2>Option A  -  Auto-deploy with GitHub Actions (recommended)</Styled.H2>
                 <Styled.List>
                     <li>Every push to <Styled.InlineCode>main</Styled.InlineCode> builds and publishes your site to the <b>Pages</b> environment.</li>
                     <li>Works well with Vite’s hashed assets (cache-friendly).</li>
@@ -166,7 +166,7 @@ jobs:
 
             {/* 6) Option B: gh-pages CLI */}
             <Styled.Section>
-                <Styled.H2>Option B — Manual deploy with <code>gh-pages</code> CLI</Styled.H2>
+                <Styled.H2>Option B  -  Manual deploy with <code>gh-pages</code> CLI</Styled.H2>
                 <Styled.List>
                     <li>Installs a dev dependency that pushes <Styled.InlineCode>dist/</Styled.InlineCode> to a <Styled.InlineCode>gh-pages</Styled.InlineCode> branch.</li>
                     <li>Good for quick demos; CI is better for teams/automation.</li>
@@ -217,7 +217,7 @@ notes.ashishranjan.in`}
                         <b>Vite hashed assets:</b> files like <Styled.InlineCode>chunk.abc123.js</Styled.InlineCode> let browsers cache forever. New builds get new hashes → automatic invalidation.
                     </li>
                     <li>
-                        <b>index.html:</b> avoid aggressive caching here—this file points to the latest hashes. GitHub Pages doesn’t let you set custom headers; rely on hash versioning.
+                        <b>index.html:</b> avoid aggressive caching here - this file points to the latest hashes. GitHub Pages doesn’t let you set custom headers; rely on hash versioning.
                     </li>
                     <li>
                         <b>Images:</b> prefer import-time asset hashing or put versioned filenames to leverage cache safely.
@@ -252,7 +252,7 @@ notes.ashishranjan.in`}
                     <li><b>Do</b> create <Styled.InlineCode>404.html</Styled.InlineCode> for SPA fallback.</li>
                     <li><b>Do</b> prefer GitHub Actions for automatic, repeatable deploys.</li>
                     <li><b>Don’t</b> expect server features (headers, redirects, SSR) on GitHub Pages.</li>
-                    <li><b>Don’t</b> check <Styled.InlineCode>dist/</Styled.InlineCode> into git—always build in CI or locally before deploy.</li>
+                    <li><b>Don’t</b> check <Styled.InlineCode>dist/</Styled.InlineCode> into git - always build in CI or locally before deploy.</li>
                 </Styled.List>
             </Styled.Section>
 

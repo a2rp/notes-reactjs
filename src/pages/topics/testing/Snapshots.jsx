@@ -9,7 +9,7 @@ const Snapshots = () => {
             <Styled.Lead>
                 <b>Snapshot testing</b> saves a “frozen” copy of a component's rendered output (or any
                 serializable value) and compares future test runs against it. If the output changes, the test
-                fails—prompting you to review whether the change was intentional.
+                fails - prompting you to review whether the change was intentional.
             </Styled.Lead>
 
             {/* 1) Definitions */}
@@ -75,7 +75,7 @@ test("Card snapshot", () => {
                 </Styled.Pre>
                 <Styled.Small>
                     First run creates a <Styled.InlineCode>.snap</Styled.InlineCode>. Subsequent runs must
-                    match—otherwise the test fails with a readable diff.
+                    match - otherwise the test fails with a readable diff.
                 </Styled.Small>
             </Styled.Section>
 
@@ -97,7 +97,7 @@ test("Badge inline snapshot", () => {
 });`}
                 </Styled.Pre>
                 <Styled.Small>
-                    Inline snapshots keep expectation and stored value side-by-side—great for review.
+                    Inline snapshots keep expectation and stored value side-by-side - great for review.
                 </Styled.Small>
             </Styled.Section>
 
@@ -180,7 +180,7 @@ afterAll(() => {
                     </li>
                     <li>
                         <b>Visual regression:</b> Tools like Percy/Chromatic take <i>pixel</i> snapshots across
-                        browsers—stronger for CSS/layout changes.
+                        browsers - stronger for CSS/layout changes.
                     </li>
                     <li>
                         <b>Story-based tests:</b> Snapshot the output of small, stateless stories instead of full app pages.

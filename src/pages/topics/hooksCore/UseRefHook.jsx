@@ -115,7 +115,7 @@ function Measure() {
 
 function Field({ value }) {
   const prev = usePrevious(value);
-  return <p>Prev: {String(prev)} — Now: {String(value)}</p>;
+  return <p>Prev: {String(prev)}  -  Now: {String(value)}</p>;
 }`}
                 </Styled.Pre>
             </Styled.Section>
@@ -209,7 +209,7 @@ function Demo() {
             <Styled.Section>
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
-                    <li>Expecting UI to update when changing <Styled.InlineCode>ref.current</Styled.InlineCode>—refs do not trigger re-renders.</li>
+                    <li>Expecting UI to update when changing <Styled.InlineCode>ref.current</Styled.InlineCode> - refs do not trigger re-renders.</li>
                     <li>Reading a ref before mount (it is <Styled.InlineCode>null</Styled.InlineCode> initially). Access it in effects or after conditional rendering.</li>
                     <li>Conditional refs (different nodes based on branches) without handling unmount; prefer stable ref usage.</li>
                     <li>Using refs to store derived state; compute during render or with memo instead.</li>

@@ -165,7 +165,7 @@ function ProductsPage() {
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
                     <li>Driving a <b>controlled input’s value</b> from the deferred copy → keystrokes feel laggy. Use the <em>immediate</em> value for inputs.</li>
-                    <li>Mutating or depending on incidental side effects from the deferred value—treat it as a pure, read-only signal.</li>
+                    <li>Mutating or depending on incidental side effects from the deferred value - treat it as a pure, read-only signal.</li>
                     <li>Assuming correctness depends on deferred timing; it is a scheduling hint, not logic.</li>
                     <li>Doing expensive work without memoization. Defer <em>and</em> memoize to reduce repeated computation.</li>
                 </Styled.List>

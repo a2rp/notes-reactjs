@@ -52,7 +52,7 @@ const Controlled = () => {
                 </Styled.Pre>
                 <Styled.Small>
                     The input renders <Styled.InlineCode>value</Styled.InlineCode> from state; typing triggers{" "}
-                    <Styled.InlineCode>onChange</Styled.InlineCode>, which updates state—and React re-renders.
+                    <Styled.InlineCode>onChange</Styled.InlineCode>, which updates state - and React re-renders.
                 </Styled.Small>
             </Styled.Section>
 
@@ -70,7 +70,7 @@ const Controlled = () => {
                     </li>
                     <li>
                         Do lightweight <b>formatting</b> (e.g., uppercase) in <Styled.InlineCode>onChange</Styled.InlineCode>; heavy
-                        formatting can cause caret jumps—prefer formatting on blur or on submit.
+                        formatting can cause caret jumps - prefer formatting on blur or on submit.
                     </li>
                 </Styled.List>
                 <Styled.Pre>

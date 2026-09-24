@@ -35,7 +35,7 @@ const ProdMonitoring = () => {
                     <li><b>Health check:</b> an endpoint that reports service health (e.g., dependencies OK, build info).</li>
                     <li><b>Alert:</b> an automated notification when a metric crosses a threshold (e.g., error_rate &gt; 2%).</li>
                     <li><b>SLO/SLA:</b> target reliability (e.g., "99.9% monthly uptime"); SLA is the external promise, SLO is the internal objective.</li>
-                    <li><b>Core Web Vitals:</b> key UX metrics—<b>LCP</b> (loading), <b>CLS</b> (visual stability), <b>INP</b> (interactivity; replaced FID), plus <b>TTFB</b>.</li>
+                    <li><b>Core Web Vitals:</b> key UX metrics - <b>LCP</b> (loading), <b>CLS</b> (visual stability), <b>INP</b> (interactivity; replaced FID), plus <b>TTFB</b>.</li>
                     <li><b>Source maps:</b> files that map minified code to your source so stack traces are readable.</li>
                     <li><b>Release tag:</b> a version label attached to errors/metrics so you can pinpoint which deploy introduced a problem.</li>
                 </Styled.List>
@@ -112,10 +112,10 @@ window.addEventListener("unhandledrejection", (e) => {
             <Styled.Section>
                 <Styled.H2>Performance (Core Web Vitals)</Styled.H2>
                 <Styled.List>
-                    <li><b>LCP</b>: time to largest element (image/text) becoming visible—keep &lt;2.5s.</li>
-                    <li><b>CLS</b>: sum of unexpected layout shifts—keep &lt;0.1.</li>
-                    <li><b>INP</b>: overall interaction latency for clicks/typing—keep &lt;200ms (good).</li>
-                    <li><b>TTFB</b>: server response start—affects all downstream performance.</li>
+                    <li><b>LCP</b>: time to largest element (image/text) becoming visible - keep &lt;2.5s.</li>
+                    <li><b>CLS</b>: sum of unexpected layout shifts - keep &lt;0.1.</li>
+                    <li><b>INP</b>: overall interaction latency for clicks/typing - keep &lt;200ms (good).</li>
+                    <li><b>TTFB</b>: server response start - affects all downstream performance.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// Collect Web Vitals (client) and send to your endpoint

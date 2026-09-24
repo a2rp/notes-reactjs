@@ -75,7 +75,7 @@ export function useTheme() {
 // Any component:
 function ThemeButton() {
   const { mode, toggle } = useTheme();
-  return <button onClick={toggle}>Current: {mode} — Toggle</button>;
+  return <button onClick={toggle}>Current: {mode}  -  Toggle</button>;
 }`}
                 </Styled.Pre>
                 <Styled.Small>
@@ -193,8 +193,8 @@ function Navbar() {
                     <li><b>Do</b> use the Provider Pattern to avoid prop drilling for truly shared state.</li>
                     <li><b>Do</b> memoize the provider value and callbacks to reduce consumer re-renders.</li>
                     <li><b>Do</b> split large contexts into multiple, smaller contexts by change frequency.</li>
-                    <li><b>Don't</b> put every piece of state into context—prefer local state unless multiple distant components need it.</li>
-                    <li><b>Don't</b> read context in hot, frequently re-rendering components if it causes performance issues—consider selectors or lifting logic.</li>
+                    <li><b>Don't</b> put every piece of state into context - prefer local state unless multiple distant components need it.</li>
+                    <li><b>Don't</b> read context in hot, frequently re-rendering components if it causes performance issues - consider selectors or lifting logic.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -211,7 +211,7 @@ function Navbar() {
                         Start local; move to context when clearly needed.
                     </li>
                     <li>
-                        <b>Using outside provider:</b> Accessing a context without the provider—guard with an explicit error.
+                        <b>Using outside provider:</b> Accessing a context without the provider - guard with an explicit error.
                     </li>
                 </Styled.List>
             </Styled.Section>

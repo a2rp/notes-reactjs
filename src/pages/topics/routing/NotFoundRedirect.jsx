@@ -48,11 +48,11 @@ const NotFoundRedirect = () => {
 
             {/* 2) Basic 404 page */}
             <Styled.Section>
-                <Styled.H2>Pattern 1 — A friendly 404 page (no auto-redirect)</Styled.H2>
+                <Styled.H2>Pattern 1  -  A friendly 404 page (no auto-redirect)</Styled.H2>
                 <Styled.List>
                     <li>Use a catch-all route (<Styled.InlineCode>path="*"</Styled.InlineCode>).</li>
                     <li>Show the unknown path, helpful links, and a button to go Home.</li>
-                    <li>Do <em>not</em> auto-redirect if users might be trying a deep link or a typo—they should decide.</li>
+                    <li>Do <em>not</em> auto-redirect if users might be trying a deep link or a typo - they should decide.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// src/pages/system/NotFound.jsx
@@ -80,7 +80,7 @@ export default function NotFound() {
 
             {/* 3) Delayed redirect */}
             <Styled.Section>
-                <Styled.H2>Pattern 2 — 404 with delayed redirect</Styled.H2>
+                <Styled.H2>Pattern 2  -  404 with delayed redirect</Styled.H2>
                 <Styled.List>
                     <li>Useful when you want to inform the user but still guide them away after a few seconds.</li>
                     <li>Pass <Styled.InlineCode>replace: true</Styled.InlineCode> to avoid cluttering history.</li>
@@ -121,7 +121,7 @@ export default function NotFoundRedirect({ to = "/home", seconds = 5 }) {
 
             {/* 4) Immediate redirect for legacy URLs */}
             <Styled.Section>
-                <Styled.H2>Pattern 3 — Immediate redirect (legacy → new URL)</Styled.H2>
+                <Styled.H2>Pattern 3  -  Immediate redirect (legacy → new URL)</Styled.H2>
                 <Styled.List>
                     <li>Use <Styled.InlineCode>&lt;Navigate /&gt;</Styled.InlineCode> when an old path should instantly map to a new one.</li>
                     <li>Keep <Styled.InlineCode>replace</Styled.InlineCode> to avoid leaving dead entries in history.</li>
@@ -178,7 +178,7 @@ import { Navigate } from "react-router-dom";
                     <li><b>Do</b> use <Styled.InlineCode>replace</Styled.InlineCode> for redirects that shouldn’t remain in history.</li>
                     <li><b>Do</b> keep <i>nested</i> 404s local to a section when appropriate.</li>
                     <li><b>Don’t</b> auto-redirect users so fast they can’t read the message (2–5s is reasonable).</li>
-                    <li><b>Don’t</b> create redirect loops—double-check source and target paths.</li>
+                    <li><b>Don’t</b> create redirect loops - double-check source and target paths.</li>
                 </Styled.List>
             </Styled.Section>
 

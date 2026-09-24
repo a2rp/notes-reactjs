@@ -8,7 +8,7 @@ const PresentationalVsContainer = () => {
             <Styled.Lead>
                 A classic way to separate concerns in React is to split components into
                 <b> presentational</b> (render UI) and <b>container</b> (fetch data, hold state, orchestrate behavior).
-                Modern React often replaces “container” classes with function components, custom hooks, and composition—but
+                Modern React often replaces “container” classes with function components, custom hooks, and composition - but
                 the mental model is still useful.
             </Styled.Lead>
 
@@ -64,7 +64,7 @@ function ProductListView({ items, loading, error, onRetry }) {
     <ul>
       {items.map(p => (
         <li key={p.id}>
-          <b>{p.name}</b> — $\${p.price.toFixed(2)}
+          <b>{p.name}</b>  -  $\${p.price.toFixed(2)}
         </li>
       ))}
     </ul>
@@ -248,7 +248,7 @@ function ProductsSection() {
                     <li><b>Do</b> extract logic into custom hooks; compose them in pages or containers.</li>
                     <li><b>Do</b> pass view-model props (already shaped for UI) to keep views simple.</li>
                     <li><b>Don’t</b> fetch data inside deeply presentational components.</li>
-                    <li><b>Don’t</b> over-engineer tiny UIs—split only when it adds clarity.</li>
+                    <li><b>Don’t</b> over-engineer tiny UIs - split only when it adds clarity.</li>
                     <li><b>Don’t</b> leak internal flags/endpoints into presentational layers.</li>
                 </Styled.List>
             </Styled.Section>

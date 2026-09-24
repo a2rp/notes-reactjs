@@ -10,7 +10,7 @@ const Streaming = () => {
                 <b>Streaming</b> sends HTML to the browser <i>in chunks</i> as soon as parts are ready,
                 instead of waiting for the entire page to render on the server. This improves perceived
                 speed by lowering <Styled.InlineCode>TTFB</Styled.InlineCode> and letting the browser start
-                painting earlier—especially when parts of the page depend on slow data.
+                painting earlier - especially when parts of the page depend on slow data.
             </Styled.Lead>
 
             {/* 1) Core definitions */}
@@ -150,7 +150,7 @@ export default async function handleRequest(request) {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    Many edge runtimes prefer Web Streams. The concept is the same—send chunks as they're ready.
+                    Many edge runtimes prefer Web Streams. The concept is the same - send chunks as they're ready.
                 </Styled.Small>
             </Styled.Section>
 
@@ -185,7 +185,7 @@ export default async function handleRequest(request) {
                     <li><b>Do</b> send a fast shell (header, hero, layout) so users see useful UI quickly.</li>
                     <li><b>Do</b> keep critical meta tags in the shell for SEO and social previews.</li>
                     <li><b>Don't</b> block the whole page on a single slow query; split into multiple boundaries.</li>
-                    <li><b>Don't</b> delay the first byte by doing all data first—stream what you can.</li>
+                    <li><b>Don't</b> delay the first byte by doing all data first - stream what you can.</li>
                 </Styled.List>
             </Styled.Section>
 

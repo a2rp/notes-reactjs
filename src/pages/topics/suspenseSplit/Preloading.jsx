@@ -33,24 +33,24 @@ const Preloading = () => {
                         give the browser a heads-up:
                         <ul>
                             <li>
-                                <b><Styled.InlineCode>rel="preload"</Styled.InlineCode></b> — high-priority fetch for
+                                <b><Styled.InlineCode>rel="preload"</Styled.InlineCode></b>  -  high-priority fetch for
                                 the <i>current</i> page; must be used soon. Requires{" "}
                                 <Styled.InlineCode>as</Styled.InlineCode> (script, style, font, image).
                             </li>
                             <li>
-                                <b><Styled.InlineCode>rel="prefetch"</Styled.InlineCode></b> — low-priority fetch for
+                                <b><Styled.InlineCode>rel="prefetch"</Styled.InlineCode></b>  -  low-priority fetch for
                                 a <i>future</i> page (idle time).
                             </li>
                             <li>
-                                <b><Styled.InlineCode>rel="modulepreload"</Styled.InlineCode></b> — prefetch an ES
+                                <b><Styled.InlineCode>rel="modulepreload"</Styled.InlineCode></b>  -  prefetch an ES
                                 module <i>and</i> its static imports (great for ESM code chunks).
                             </li>
                             <li>
-                                <b><Styled.InlineCode>rel="preconnect"</Styled.InlineCode></b> — warm up TCP+TLS to a
+                                <b><Styled.InlineCode>rel="preconnect"</Styled.InlineCode></b>  -  warm up TCP+TLS to a
                                 domain; faster first request later.
                             </li>
                             <li>
-                                <b><Styled.InlineCode>rel="dns-prefetch"</Styled.InlineCode></b> — resolve a domain's
+                                <b><Styled.InlineCode>rel="dns-prefetch"</Styled.InlineCode></b>  -  resolve a domain's
                                 DNS early (small win).
                             </li>
                         </ul>
@@ -75,7 +75,7 @@ const Preloading = () => {
                     </li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`// lazyWithPreload.ts/js — attach a .preload() helper
+                    {`// lazyWithPreload.ts/js  -  attach a .preload() helper
 export function lazyWithPreload(factory) {
   const Component = React.lazy(factory);
   Component.preload = factory; // call this to start fetching the chunk early
@@ -102,7 +102,7 @@ function ProfileLink() {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    Result: when the user clicks, the chunk is already cached—navigation feels instant and the
+                    Result: when the user clicks, the chunk is already cached - navigation feels instant and the
                     Suspense fallback rarely appears.
                 </Styled.Small>
             </Styled.Section>
@@ -260,7 +260,7 @@ export function preloadImage(src) {
                     <li><b>Do</b> preload the <i>next most likely</i> route on hover, focus, visibility, or idle.</li>
                     <li><b>Do</b> keep Suspense boundaries around lazy routes so a fallback is available if needed.</li>
                     <li><b>Do</b> measure with real user timings; remove preloads that don't move the needle.</li>
-                    <li><b>Don't</b> preload everything—excess preloads can <i>slow down</i> the current page.</li>
+                    <li><b>Don't</b> preload everything - excess preloads can <i>slow down</i> the current page.</li>
                     <li><b>Don't</b> use <Styled.InlineCode>rel="preload"</Styled.InlineCode> for resources you won't use immediately.</li>
                     <li><b>Pitfall:</b> wrong <Styled.InlineCode>as</Styled.InlineCode> value breaks the hint (e.g., fonts need <Styled.InlineCode>crossorigin</Styled.InlineCode>).</li>
                 </Styled.List>

@@ -7,7 +7,7 @@ const TypingRefs = () => {
 
             <Styled.Lead>
                 A <b>ref</b> is a React way to hold an <i>imperative handle</i> to something that lives
-                outside React's declarative data flow—typically a <b>DOM element</b> (like an input) or a
+                outside React's declarative data flow - typically a <b>DOM element</b> (like an input) or a
                 <b>mutable value</b> that shouldn't trigger re-renders. In TypeScript, we add precise types
                 so our refs are safe and discoverable.
             </Styled.Lead>
@@ -57,7 +57,7 @@ const TypingRefs = () => {
                     </li>
                     <li>
                         <Styled.InlineCode>React.Ref&lt;T&gt;</Styled.InlineCode>: union of object ref, callback
-                        ref, or <Styled.InlineCode>null</Styled.InlineCode>—useful for component prop typing.
+                        ref, or <Styled.InlineCode>null</Styled.InlineCode> - useful for component prop typing.
                     </li>
                     <li>
                         <Styled.InlineCode>React.ForwardedRef&lt;T&gt;</Styled.InlineCode>: the param type your
@@ -346,7 +346,7 @@ function Demo() {
             <Styled.Callout>
                 Summary: Type refs precisely (always include <i>| null</i>), forward them when exposing inner
                 elements, and prefer an <b>imperative handle</b> when you want to control what parents can do.
-                Use refs for imperative tasks and persistent mutable values—use state to update UI.
+                Use refs for imperative tasks and persistent mutable values - use state to update UI.
             </Styled.Callout>
         </Styled.Page>
     );

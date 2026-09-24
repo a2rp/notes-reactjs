@@ -178,7 +178,7 @@ const rows = data.map((item, i) => <Row key={i} item={item} />);`}
                         Context updates re-render all consumers below the provider.
                     </li>
                     <li>
-                        Re-rendering is cheap; avoid premature micro-optimizations—optimize hotspots found via Profiler.
+                        Re-rendering is cheap; avoid premature micro-optimizations - optimize hotspots found via Profiler.
                     </li>
                 </Styled.List>
                 <Styled.Pre>
@@ -197,7 +197,7 @@ const rows = data.map((item, i) => <Row key={i} item={item} />);`}
                         Change the <Styled.InlineCode>key</Styled.InlineCode> to reset component state (e.g., reset a form after submit).
                     </li>
                     <li>
-                        Use sparingly—most resets can be handled by updating state.
+                        Use sparingly - most resets can be handled by updating state.
                     </li>
                 </Styled.List>
                 <Styled.Pre>
@@ -226,7 +226,7 @@ const rows = data.map((item, i) => <Row key={i} item={item} />);`}
                     <li><b>Do</b> localize state inside the keyed component so identity travels with the data item.</li>
                     <li><b>Don't</b> use array index as a key for dynamic lists (reorder/insert/remove).</li>
                     <li><b>Don't</b> switch wrapper types casually; it triggers remounts and loses state/focus.</li>
-                    <li><b>Don't</b> over-optimize renders without profiling—optimize the hotspots first.</li>
+                    <li><b>Don't</b> over-optimize renders without profiling - optimize the hotspots first.</li>
                 </Styled.List>
             </Styled.Section>
 

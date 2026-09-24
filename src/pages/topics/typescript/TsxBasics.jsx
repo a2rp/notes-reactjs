@@ -202,7 +202,7 @@ export default function Card({ title, children }: CardProps) {
 }
 
 // Usage
-<Card title="Profile"><strong>Ashish</strong> — MERN Developer</Card>`}
+<Card title="Profile"><strong>Ashish</strong>  -  MERN Developer</Card>`}
                 </Styled.Pre>
                 <Styled.Small>
                     We'll go deeper in <b>Typing Children</b>, but for now know that{" "}
@@ -214,7 +214,7 @@ export default function Card({ title, children }: CardProps) {
             <Styled.Section>
                 <Styled.H2>Forwarding native props (preview)</Styled.H2>
                 <Styled.Pre>
-                    {`// IconButton.tsx — combine your props with native <button> props
+                    {`// IconButton.tsx  -  combine your props with native <button> props
 type IconButtonProps = {
   icon: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
@@ -244,7 +244,7 @@ export default function IconButton({ icon, children, ...buttonProps }: IconButto
                     <li><b>Do</b> enable <Styled.InlineCode>"strict": true</Styled.InlineCode> in tsconfig.</li>
                     <li><b>Do</b> prefer explicit unions for finite options (e.g., variants, sizes).</li>
                     <li><b>Do</b> type events precisely (<Styled.InlineCode>ChangeEvent&lt;HTMLInputElement&gt;</Styled.InlineCode>, etc.).</li>
-                    <li><b>Don't</b> use <Styled.InlineCode>any</Styled.InlineCode> by default—reach for <Styled.InlineCode>unknown</Styled.InlineCode> or proper generics later.</li>
+                    <li><b>Don't</b> use <Styled.InlineCode>any</Styled.InlineCode> by default - reach for <Styled.InlineCode>unknown</Styled.InlineCode> or proper generics later.</li>
                     <li><b>Don't</b> overuse <Styled.InlineCode>React.FC</Styled.InlineCode>; a plain typed function is usually clearer and avoids implicit <Styled.InlineCode>children</Styled.InlineCode>.</li>
                 </Styled.List>
             </Styled.Section>
@@ -256,13 +256,13 @@ export default function IconButton({ icon, children, ...buttonProps }: IconButto
                     <li><b>Type annotation:</b> a declared type for a variable, parameter, or return value.</li>
                     <li><b>Interface vs type alias:</b> both name shapes of objects; interfaces are extendable via declaration merging; type aliases can use unions/intersections.</li>
                     <li><b>Union type:</b> a value that can be <i>one of several</i> types (e.g., <Styled.InlineCode>"sm" | "md" | "lg"</Styled.InlineCode>).</li>
-                    <li><b>Generic:</b> a reusable type parameter (e.g., <Styled.InlineCode>Array&lt;T&gt;</Styled.InlineCode>)—covered in the “Generics” topic.</li>
+                    <li><b>Generic:</b> a reusable type parameter (e.g., <Styled.InlineCode>Array&lt;T&gt;</Styled.InlineCode>) - covered in the “Generics” topic.</li>
                     <li><b>Intrinsic element:</b> a built-in HTML tag like <Styled.InlineCode>"div"</Styled.InlineCode> or <Styled.InlineCode>"button"</Styled.InlineCode>.</li>
                 </Styled.List>
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: TSX lets you write React with types—start by typing props, state, refs, and events.
+                Summary: TSX lets you write React with types - start by typing props, state, refs, and events.
                 Prefer strict mode, precise event types, and small, composable components.
             </Styled.Callout>
         </Styled.Page>

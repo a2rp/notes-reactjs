@@ -249,7 +249,7 @@ function Overview() {
                     <li><b>Do</b> keep URLs parallel to your UI hierarchy (predictable paths).</li>
                     <li><b>Do</b> use an <Styled.InlineCode>index</Styled.InlineCode> for default content at each section.</li>
                     <li><b>Do</b> prefer relative <Styled.InlineCode>to</Styled.InlineCode> and child <code>path</code> (no leading slash).</li>
-                    <li><b>Don’t</b> sprinkle duplicate nav/header across pages—use a layout route + <Styled.InlineCode>Outlet</Styled.InlineCode>.</li>
+                    <li><b>Don’t</b> sprinkle duplicate nav/header across pages - use a layout route + <Styled.InlineCode>Outlet</Styled.InlineCode>.</li>
                     <li><b>Don’t</b> mix absolute and relative child paths arbitrarily; it’s a common source of 404s.</li>
                 </Styled.List>
             </Styled.Section>

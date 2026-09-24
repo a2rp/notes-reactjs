@@ -243,7 +243,7 @@ async function uploadAll(files) {
                     <li><b>Do</b> show progress and clear errors; large files feel broken without feedback.</li>
                     <li><b>Do</b> compress or resize images on the client (Canvas/OffscreenCanvas) when appropriate.</li>
                     <li><b>Do</b> consider <i>pre-signed URLs</i> to reduce backend load.</li>
-                    <li><b>Dont</b> rely on <i>accept</i> or client checks for security—always re-validate server-side.</li>
+                    <li><b>Dont</b> rely on <i>accept</i> or client checks for security - always re-validate server-side.</li>
                     <li><b>Dont</b> set <i>Content-Type</i> manually on FormData requests; let the browser set the boundary.</li>
                 </Styled.List>
             </Styled.Section>

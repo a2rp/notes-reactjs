@@ -8,7 +8,7 @@ const Responsive = () => {
 
             <Styled.Lead>
                 <b>Responsive design</b> means your UI <i>adapts fluidly</i> to different screen sizes,
-                orientations, and input types—without breaking layout, readability, or usability.
+                orientations, and input types - without breaking layout, readability, or usability.
                 Core ideas: <b>mobile-first</b>, <b>fluid layouts</b>, sensible <b>breakpoints</b>, and
                 <b>progressive enhancement</b>.
             </Styled.Lead>

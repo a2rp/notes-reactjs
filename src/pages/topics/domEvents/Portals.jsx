@@ -25,7 +25,7 @@ const Portals = () => {
                     </li>
                     <li>
                         <b>Why:</b> escape clipping (<Styled.InlineCode>overflow: hidden</Styled.InlineCode> /
-                        transforms), complex stacking contexts, or parent z-index limits—common with modals, popovers, tooltips.
+                        transforms), complex stacking contexts, or parent z-index limits - common with modals, popovers, tooltips.
                     </li>
                     <li>
                         <b>React behavior:</b> events bubble through the <i>React</i> tree (not strictly the DOM tree).

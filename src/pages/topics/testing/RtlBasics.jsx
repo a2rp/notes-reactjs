@@ -3,11 +3,11 @@ import { Styled } from "./styled";
 const RtlBasics = () => {
     return (
         <Styled.Page>
-            <Styled.Title>React Testing Library (RTL) — Basics</Styled.Title>
+            <Styled.Title>React Testing Library (RTL)  -  Basics</Styled.Title>
 
             <Styled.Lead>
                 <b>React Testing Library (RTL)</b> helps you test React components
-                by interacting with them the way a user would—via the DOM. It's built
+                by interacting with them the way a user would - via the DOM. It's built
                 on top of <b>DOM Testing Library</b> and typically runs with <b>Jest</b> in a
                 <b> JSDOM</b> environment. Focus on <i>behavior</i> and <i>accessibility</i>, not implementation details.
             </Styled.Lead>
@@ -59,13 +59,13 @@ test("renders greeting with provided name", () => {
             <Styled.Section>
                 <Styled.H2>Queries (how you find elements)</Styled.H2>
                 <Styled.List>
-                    <li><b>By role (preferred):</b> <Styled.InlineCode>getByRole("button", {`{{ name: /submit/i }}`})</Styled.InlineCode> — role + accessible name (best for a11y).</li>
-                    <li><b>By label text:</b> <Styled.InlineCode>getByLabelText("Email")</Styled.InlineCode> — for form controls with <Styled.InlineCode>&lt;label&gt;</Styled.InlineCode>.</li>
-                    <li><b>By placeholder:</b> <Styled.InlineCode>getByPlaceholderText("Search")</Styled.InlineCode> — when no label exists (use sparingly).</li>
-                    <li><b>By text:</b> <Styled.InlineCode>getByText(/hello/i)</Styled.InlineCode> — visible text content.</li>
-                    <li><b>By alt text:</b> <Styled.InlineCode>getByAltText("User avatar")</Styled.InlineCode> — for images.</li>
-                    <li><b>By title:</b> <Styled.InlineCode>getByTitle("tooltip")</Styled.InlineCode> — last resort for non-interactive labels.</li>
-                    <li><b>By test id (escape hatch):</b> <Styled.InlineCode>getByTestId("sum")</Styled.InlineCode> — use only when no accessible query fits.</li>
+                    <li><b>By role (preferred):</b> <Styled.InlineCode>getByRole("button", {`{{ name: /submit/i }}`})</Styled.InlineCode>  -  role + accessible name (best for a11y).</li>
+                    <li><b>By label text:</b> <Styled.InlineCode>getByLabelText("Email")</Styled.InlineCode>  -  for form controls with <Styled.InlineCode>&lt;label&gt;</Styled.InlineCode>.</li>
+                    <li><b>By placeholder:</b> <Styled.InlineCode>getByPlaceholderText("Search")</Styled.InlineCode>  -  when no label exists (use sparingly).</li>
+                    <li><b>By text:</b> <Styled.InlineCode>getByText(/hello/i)</Styled.InlineCode>  -  visible text content.</li>
+                    <li><b>By alt text:</b> <Styled.InlineCode>getByAltText("User avatar")</Styled.InlineCode>  -  for images.</li>
+                    <li><b>By title:</b> <Styled.InlineCode>getByTitle("tooltip")</Styled.InlineCode>  -  last resort for non-interactive labels.</li>
+                    <li><b>By test id (escape hatch):</b> <Styled.InlineCode>getByTestId("sum")</Styled.InlineCode>  -  use only when no accessible query fits.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// getBy*: returns the element or throws if not found
@@ -227,8 +227,8 @@ export { customRender as render };`}
                     <li><b>Do</b> prefer role-based queries and real interactions with <Styled.InlineCode>userEvent</Styled.InlineCode>.</li>
                     <li><b>Do</b> use <Styled.InlineCode>findBy*</Styled.InlineCode> for async UI and <Styled.InlineCode>waitFor</Styled.InlineCode> for eventually-true assertions.</li>
                     <li><b>Don't</b> assert internal state or call component functions directly (implementation details).</li>
-                    <li><b>Don't</b> stub timers/network without reason—mock them purposefully for deterministic tests.</li>
-                    <li><b>Don't</b> overuse <Styled.InlineCode>getByTestId</Styled.InlineCode>—it bypasses accessibility.</li>
+                    <li><b>Don't</b> stub timers/network without reason - mock them purposefully for deterministic tests.</li>
+                    <li><b>Don't</b> overuse <Styled.InlineCode>getByTestId</Styled.InlineCode> - it bypasses accessibility.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -248,7 +248,7 @@ export { customRender as render };`}
             <Styled.Callout>
                 Summary: Write tests that reflect how users interact with your app. Query by role and accessible
                 name, use <code>userEvent</code> for realistic input, and handle async UI with <code>findBy</code> and <code>waitFor</code>.
-                Favor clarity and behavior over internals—your tests will be reliable and maintainable.
+                Favor clarity and behavior over internals - your tests will be reliable and maintainable.
             </Styled.Callout>
         </Styled.Page>
     );

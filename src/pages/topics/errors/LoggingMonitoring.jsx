@@ -158,7 +158,7 @@ export function createLogger({ app, transport, sample = { debug: 0, info: 0.1, w
   if (typeof window !== "undefined") {
     window.addEventListener("error", (e) => {
       api.error("unhandled.error", {
-        message: e?.message, 
+        message: e?.message,
         error: { name: e?.error?.name, message: e?.error?.message, stack: e?.error?.stack },
         where: "window.onerror",
       });
@@ -316,7 +316,7 @@ export default function AppProviders({ children }) {
                     <li><b>Sampling:</b> Sending only a fraction of certain log levels to control volume.</li>
                     <li><b>Rate limiting:</b> Capping how many logs are sent per time window.</li>
                     <li><b>Keepalive:</b> Allows requests to continue during page unload on some browsers.</li>
-                    <li><b>RUM:</b> Real User Monitoring—metrics gathered from real user sessions, not lab tests.</li>
+                    <li><b>RUM:</b> Real User Monitoring - metrics gathered from real user sessions, not lab tests.</li>
                 </Styled.List>
             </Styled.Section>
 

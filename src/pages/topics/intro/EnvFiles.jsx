@@ -38,17 +38,17 @@ const EnvFiles = () => {
                 <Styled.H2>Common files & purpose</Styled.H2>
                 <Styled.List>
                     <li>
-                        <Styled.InlineCode>.env</Styled.InlineCode> — defaults for all modes.
+                        <Styled.InlineCode>.env</Styled.InlineCode>  -  defaults for all modes.
                     </li>
                     <li>
-                        <Styled.InlineCode>.env.development</Styled.InlineCode> — overrides for dev.
+                        <Styled.InlineCode>.env.development</Styled.InlineCode>  -  overrides for dev.
                     </li>
                     <li>
-                        <Styled.InlineCode>.env.production</Styled.InlineCode> — overrides for prod builds.
+                        <Styled.InlineCode>.env.production</Styled.InlineCode>  -  overrides for prod builds.
                     </li>
                     <li>
                         <Styled.InlineCode>.env.local</Styled.InlineCode> and{" "}
-                        <Styled.InlineCode>.env.&lt;mode&gt;.local</Styled.InlineCode> — developer-specific overrides (keep out of git).
+                        <Styled.InlineCode>.env.&lt;mode&gt;.local</Styled.InlineCode>  -  developer-specific overrides (keep out of git).
                     </li>
                 </Styled.List>
                 <Styled.Pre>

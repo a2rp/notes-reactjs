@@ -20,7 +20,7 @@ const Payments = () => {
                         It tracks status like <i>requires_action</i>, <i>succeeded</i>, or <i>failed</i>.
                     </li>
                     <li>
-                        <b>Payment Method:</b> how the customer pays — card, UPI, netbanking, wallet, etc. A PSP standardizes these.
+                        <b>Payment Method:</b> how the customer pays  -  card, UPI, netbanking, wallet, etc. A PSP standardizes these.
                     </li>
                     <li>
                         <b>Capture:</b> actually taking the money (some flows <i>authorize</i> first, then <i>capture</i> later).
@@ -149,7 +149,7 @@ const display = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'I
                     </li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`// Client (React) — minimal sketch (pseudocode):
+                    {`// Client (React)  -  minimal sketch (pseudocode):
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements, CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 
@@ -218,7 +218,7 @@ export default function StripeCheckoutPage() {
                     </li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`// Client (React) — minimal sketch (pseudocode):
+                    {`// Client (React)  -  minimal sketch (pseudocode):
 function RazorpayButton({ amountPaise }) {
   async function openRzp() {
     // 1) Create Order on server
@@ -299,7 +299,7 @@ app.post("/webhooks/psp", verifySignature, async (req, res) => {
                         <b>Retry & idempotency:</b> if network fails while creating intents/orders, retry with the same idempotency key.
                     </li>
                     <li>
-                        <b>User feedback:</b> show clear states—<i>processing</i>, <i>action required</i>, <i>failed</i>—and allow retry.
+                        <b>User feedback:</b> show clear states - <i>processing</i>, <i>action required</i>, <i>failed</i> - and allow retry.
                     </li>
                 </Styled.List>
             </Styled.Section>

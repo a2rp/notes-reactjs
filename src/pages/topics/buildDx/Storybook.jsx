@@ -8,7 +8,7 @@ const Storybook = () => {
 
             <Styled.Lead>
                 <b>Storybook</b> is a “frontend workshop” that lets you build, test, and document UI
-                components in isolation—outside your app—so you can develop faster and catch edge cases
+                components in isolation - outside your app - so you can develop faster and catch edge cases
                 early. It integrates tightly with Vite and React for zero-config local DX.
             </Styled.Lead>
 
@@ -260,7 +260,7 @@ import * as ButtonStories from "./Button.stories";
                     <li><b>Do</b> write small <Styled.InlineCode>play</Styled.InlineCode> tests for core interactions (click, type, focus).</li>
                     <li><b>Do</b> wrap stories with the same theme/provider the app uses (via decorators).</li>
                     <li><b>Don't</b> couple stories to live APIs; use mock data and pure props.</li>
-                    <li><b>Don't</b> skip accessibility—enable the a11y addon and fix warnings early.</li>
+                    <li><b>Don't</b> skip accessibility - enable the a11y addon and fix warnings early.</li>
                 </Styled.List>
             </Styled.Section>
 

@@ -57,7 +57,7 @@ const MediaAudioVideo = () => {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    <b>Tip:</b> Use <Styled.InlineCode>preload="metadata"</Styled.InlineCode> to load only duration/metadata—faster initial paint.
+                    <b>Tip:</b> Use <Styled.InlineCode>preload="metadata"</Styled.InlineCode> to load only duration/metadata - faster initial paint.
                 </Styled.Small>
             </Styled.Section>
 
@@ -322,7 +322,7 @@ async function toggleFullscreen(el) {
                     <li><b>MediaRecorder:</b> API to record a <b>MediaStream</b> into encoded chunks (e.g., WebM).</li>
                     <li><b>WebVTT:</b> Text format for captions/subtitles in web video (<Styled.InlineCode>.vtt</Styled.InlineCode> files).</li>
                     <li><b>HLS/DASH:</b> Adaptive streaming protocols delivering media in small segments at multiple bitrates.</li>
-                    <li><b>MSE:</b> Media Source Extensions—JS feeds segments directly to the media element for custom streaming.</li>
+                    <li><b>MSE:</b> Media Source Extensions - JS feeds segments directly to the media element for custom streaming.</li>
                 </Styled.List>
             </Styled.Section>
 

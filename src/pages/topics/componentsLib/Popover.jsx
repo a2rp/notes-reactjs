@@ -8,7 +8,7 @@ const Popover = () => {
 
             <Styled.Lead>
                 A <b>popover</b> is a small, contextual panel that appears on user action (click/press) and
-                contains <i>interactive content</i>—buttons, links, inputs, or short forms. It is different from
+                contains <i>interactive content</i> - buttons, links, inputs, or short forms. It is different from
                 a <b>tooltip</b> (which is passive text, usually on hover/focus) and from a <b>dropdown menu</b>
                 (which is a list of options/commands). Think “mini card with actions,” anchored to a trigger.
             </Styled.Lead>
@@ -29,7 +29,7 @@ const Popover = () => {
                         start/end alignment).
                     </li>
                     <li>
-                        <b>Dismissal:</b> how the popover closes—pressing Escape, clicking outside, blurring focus, selecting
+                        <b>Dismissal:</b> how the popover closes - pressing Escape, clicking outside, blurring focus, selecting
                         an action, or programmatically.
                     </li>
                     <li>
@@ -50,7 +50,7 @@ const Popover = () => {
                 <Styled.List>
                     <li><b>Use</b> for short, contextual tasks (quick filters, tiny forms, confirmations, link lists).</li>
                     <li><b>Use</b> when the content needs interaction (buttons, inputs). If it's just explanatory text, use a tooltip.</li>
-                    <li><b>Don't use</b> for long or critical flows (multi-step forms) — prefer a modal dialog or a dedicated page.</li>
+                    <li><b>Don't use</b> for long or critical flows (multi-step forms)  -  prefer a modal dialog or a dedicated page.</li>
                     <li><b>Don't use</b> if the panel risks being clipped by scrolling containers; consider layout changes or an inline modal pattern.</li>
                 </Styled.List>
             </Styled.Section>
@@ -68,7 +68,7 @@ function ExamplePopover() {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    Keep the popover next to the trigger in the DOM to simplify keyboard and focus management—
+                    Keep the popover next to the trigger in the DOM to simplify keyboard and focus management -
                     but watch out for clipping and stacking context.
                 </Styled.Small>
             </Styled.Section>
@@ -229,7 +229,7 @@ function ExamplePopover() {
                     <li><b>Do</b> use a real <Styled.InlineCode>&lt;button&gt;</Styled.InlineCode> as a trigger (keyboard + semantics).</li>
                     <li><b>Do</b> label the panel with <Styled.InlineCode>aria-label</Styled.InlineCode> or <Styled.InlineCode>aria-labelledby</Styled.InlineCode>.</li>
                     <li><b>Do</b> close on outside click and Escape by default; users expect it.</li>
-                    <li><b>Don't</b> trap the user—always provide a clear close action.</li>
+                    <li><b>Don't</b> trap the user - always provide a clear close action.</li>
                     <li><b>Don't</b> rely on hover to open popovers that contain interactive controls (hover is fragile on touch).</li>
                 </Styled.List>
             </Styled.Section>

@@ -100,20 +100,20 @@ const Snippets = () => {
                 <Styled.H3>Tabstops &amp; Placeholders</Styled.H3>
                 <Styled.List>
                     <li>
-                        <b>Tabstop</b>: cursor stops you can jump through with Tab —{" "}
+                        <b>Tabstop</b>: cursor stops you can jump through with Tab  - {" "}
                         <Styled.InlineCode>$1</Styled.InlineCode>, <Styled.InlineCode>$2</Styled.InlineCode>, …
                         and <Styled.InlineCode>$0</Styled.InlineCode> (final position).
                     </li>
                     <li>
-                        <b>Placeholder</b>: default text inside a tabstop —{" "}
+                        <b>Placeholder</b>: default text inside a tabstop  - {" "}
                         <Styled.InlineCode>\${"{1:Button}"}</Styled.InlineCode>.
                     </li>
                     <li>
-                        <b>Choice</b>: limited options —{" "}
+                        <b>Choice</b>: limited options  - {" "}
                         <Styled.InlineCode>\${"{1|primary,secondary,ghost|}"}</Styled.InlineCode>.
                     </li>
                     <li>
-                        <b>Variable</b>: editor data —{" "}
+                        <b>Variable</b>: editor data  - {" "}
                         <Styled.InlineCode>\${"{TM_FILENAME_BASE}"}</Styled.InlineCode>,{" "}
                         <Styled.InlineCode>\${"{CURRENT_YEAR}"}</Styled.InlineCode>,{" "}
                         <Styled.InlineCode>\${"{CLIPBOARD}"}</Styled.InlineCode>.
@@ -135,7 +135,7 @@ const Snippets = () => {
       "  gap: \${4:12px};",
       "\`;",
       "",
-      "\$0"
+      "$0"
     ]
   }
 }`}
@@ -182,7 +182,7 @@ const Snippets = () => {
     "description": "State + setter with initial value",
     "body": [
       "const [\${1:value}, set\${1/(^.)/\${1:/upcase}/}] = React.useState(\${2:null});",
-      "\$0"
+      "$0"
     ]
   }
 }`}
@@ -207,7 +207,7 @@ const Snippets = () => {
       "    \${2:// cleanup}",
       "  };",
       "}, [\${3:deps}]);",
-      "\$0"
+      "$0"
     ]
   }
 }`}
@@ -225,7 +225,7 @@ const Snippets = () => {
       "  e.preventDefault();",
       "  \${2:// TODO: validate & submit}",
       "}",
-      "\$0"
+      "$0"
     ]
   }
 }`}
@@ -312,7 +312,7 @@ const Snippets = () => {
                         <b>Don't</b> overfit: snippets should be starting points, not rigid templates.
                     </li>
                     <li>
-                        <b>Don't</b> forget accessibility—bake ARIA/labels into UI snippets.
+                        <b>Don't</b> forget accessibility - bake ARIA/labels into UI snippets.
                     </li>
                 </Styled.List>
             </Styled.Section>

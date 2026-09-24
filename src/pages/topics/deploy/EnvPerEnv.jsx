@@ -33,7 +33,7 @@ const EnvPerEnv = () => {
                         unless you fetch them (e.g., <i>window</i>-injected config or a fetched JSON).
                     </li>
                     <li>
-                        <b>Public vs Secret:</b> Frontend code is downloadable by anyone—assume everything in it is <em>public</em>.
+                        <b>Public vs Secret:</b> Frontend code is downloadable by anyone - assume everything in it is <em>public</em>.
                         Never put true secrets (DB passwords, private keys) in the frontend. Keep secrets on the server.
                     </li>
                 </Styled.List>
@@ -198,7 +198,7 @@ export async function loadRuntimeConfig() {
                     </li>
                     <li>
                         <b>Vercel / Netlify:</b> support dashboard env vars that become build-time values. For SPA,
-                        they're still public after build—treat as non-secrets.
+                        they're still public after build - treat as non-secrets.
                     </li>
                     <li>
                         <b>Cloudflare Pages:</b> similar to GH Pages (static). Use per-project env and/or runtime JSON.
@@ -233,8 +233,8 @@ export const FLAGS = Object.freeze(
                     <li><b>Do</b> prefix with <Styled.InlineCode>VITE_</Styled.InlineCode> and centralize access in small helpers.</li>
                     <li><b>Do</b> keep separate env files for dev/staging/prod; commit only non-sensitive ones.</li>
                     <li><b>Do</b> use <Styled.InlineCode>*.local</Styled.InlineCode> for machine-specific values (ignored by Git).</li>
-                    <li><b>Don't</b> put secrets in frontend env—use a server/API for secrets.</li>
-                    <li><b>Don't</b> scatter base URLs across components—use one config source.</li>
+                    <li><b>Don't</b> put secrets in frontend env - use a server/API for secrets.</li>
+                    <li><b>Don't</b> scatter base URLs across components - use one config source.</li>
                 </Styled.List>
             </Styled.Section>
 

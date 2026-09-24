@@ -306,7 +306,7 @@ function useCloseOnRouteChange(isOpen, close) {
                     <li><b>Do</b> provide keyboard/ARIA support (Esc, focus trap, labeled dialog).</li>
                     <li><b>Do</b> lock background scroll while open.</li>
                     <li><b>Don't</b> trap users by removing all visible ways to close.</li>
-                    <li><b>Don't</b> place essential, primary flows in drawers—keep them for secondary tasks.</li>
+                    <li><b>Don't</b> place essential, primary flows in drawers - keep them for secondary tasks.</li>
                 </Styled.List>
             </Styled.Section>
 

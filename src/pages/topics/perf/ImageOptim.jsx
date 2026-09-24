@@ -224,7 +224,7 @@ const ImageOptim = () => {
                 <Styled.H2>Accessibility basics</Styled.H2>
                 <Styled.List>
                     <li><b>Alt text:</b> describe the image's purpose; if purely decorative, use <Styled.InlineCode>alt=""</Styled.InlineCode>.</li>
-                    <li><b>Do not</b> bake text into images for essential content—use real HTML text.</li>
+                    <li><b>Do not</b> bake text into images for essential content - use real HTML text.</li>
                 </Styled.List>
             </Styled.Section>
 

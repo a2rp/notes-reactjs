@@ -166,7 +166,7 @@ html[data-theme="light"]{
                     <li><b>Do</b> normalize base elements and set consistent typography.</li>
                     <li><b>Do</b> prefer variables + theme toggles over duplicating styles.</li>
                     <li><b>Don’t</b> put component-specific styles in global CSS.</li>
-                    <li><b>Don’t</b> rely solely on resets—add meaningful base styles.</li>
+                    <li><b>Don’t</b> rely solely on resets - add meaningful base styles.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -182,7 +182,7 @@ html[data-theme="light"]{
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: keep globals lean and purposeful—reset/normalize, tokens, base typography, and
+                Summary: keep globals lean and purposeful - reset/normalize, tokens, base typography, and
                 accessibility helpers. Everything else should live in component-scoped styles.
             </Styled.Callout>
         </Styled.Page>

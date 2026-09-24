@@ -26,7 +26,7 @@ const SchemaYupZod = () => {
 
             {/* 2) Choosing a library */}
             <Styled.Section>
-                <Styled.H2>Yup vs Zod — When to Choose What</Styled.H2>
+                <Styled.H2>Yup vs Zod  -  When to Choose What</Styled.H2>
                 <Styled.List>
                     <li><b>Yup:</b> mature, widely used with Formik; builder-style API (<Styled.InlineCode>yup.object({`...`})</Styled.InlineCode>). Great if your stack already uses Formik or Yup.</li>
                     <li><b>Zod:</b> modern, composable; powerful <i>refine</i>/<i>transform</i>, unions/discriminated unions, and first-class TypeScript inference.</li>
@@ -38,7 +38,7 @@ const SchemaYupZod = () => {
             <Styled.Section>
                 <Styled.H2>Minimal Examples</Styled.H2>
 
-                <Styled.H3>Yup — login schema</Styled.H3>
+                <Styled.H3>Yup  -  login schema</Styled.H3>
                 <Styled.Pre>
                     {`import * as yup from "yup";
 
@@ -48,7 +48,7 @@ const loginYup = yup.object({
 });`}
                 </Styled.Pre>
 
-                <Styled.H3>Zod — login schema</Styled.H3>
+                <Styled.H3>Zod  -  login schema</Styled.H3>
                 <Styled.Pre>
                     {`import { z } from "zod";
 
@@ -161,7 +161,7 @@ function ProfileFormik() {
             <Styled.Section>
                 <Styled.H2>Cross-Field Rules & Refinements</Styled.H2>
 
-                <Styled.H3>Zod — confirm password & date range</Styled.H3>
+                <Styled.H3>Zod  -  confirm password & date range</Styled.H3>
                 <Styled.Pre>
                     {`import { z } from "zod";
 
@@ -181,7 +181,7 @@ const account = z.object({
 });`}
                 </Styled.Pre>
 
-                <Styled.H3>Yup — confirm password</Styled.H3>
+                <Styled.H3>Yup  -  confirm password</Styled.H3>
                 <Styled.Pre>
                     {`import * as yup from "yup";
 
@@ -222,7 +222,7 @@ const accountYup = yup.object({
             <Styled.Section>
                 <Styled.H2>Validating Files</Styled.H2>
 
-                <Styled.H3>Zod — file type/size</Styled.H3>
+                <Styled.H3>Zod  -  file type/size</Styled.H3>
                 <Styled.Pre>
                     {`const fileZod = z.object({
   avatar: z.instanceof(File, { message: "Please select a file" })
@@ -231,7 +231,7 @@ const accountYup = yup.object({
 });`}
                 </Styled.Pre>
 
-                <Styled.H3>Yup — file type/size</Styled.H3>
+                <Styled.H3>Yup  -  file type/size</Styled.H3>
                 <Styled.Pre>
                     {`const fileYup = yup.object({
   avatar: yup
@@ -246,7 +246,7 @@ const accountYup = yup.object({
             {/* 9) Manual parse without a form lib */}
             <Styled.Section>
                 <Styled.H2>Manual Validation (no form library)</Styled.H2>
-                <Styled.H3>Zod — safeParse</Styled.H3>
+                <Styled.H3>Zod  -  safeParse</Styled.H3>
                 <Styled.Pre>
                     {`const res = account.safeParse(formValues);
 if (!res.success) {
@@ -258,7 +258,7 @@ if (!res.success) {
 }`}
                 </Styled.Pre>
 
-                <Styled.H3>Yup — validate / try/catch</Styled.H3>
+                <Styled.H3>Yup  -  validate / try/catch</Styled.H3>
                 <Styled.Pre>
                     {`try {
   const ok = await accountYup.validate(formValues, { abortEarly: false });

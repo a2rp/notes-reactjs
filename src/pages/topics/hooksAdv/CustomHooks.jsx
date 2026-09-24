@@ -268,7 +268,7 @@ const CustomHooks = () => {
                     <li>Returning a new object every render when consumers depend on reference equality (memoize when needed).</li>
                     <li>Forgetting to clean up listeners/timers opened by the hook.</li>
                     <li>Encoding rendering/UI inside the hook; keep hooks UI-agnostic.</li>
-                    <li>Hiding synchronous errors—bubble errors or return them explicitly (as in <Styled.InlineCode>useAsync</Styled.InlineCode>).</li>
+                    <li>Hiding synchronous errors - bubble errors or return them explicitly (as in <Styled.InlineCode>useAsync</Styled.InlineCode>).</li>
                 </Styled.List>
             </Styled.Section>
 

@@ -22,7 +22,7 @@ const Debugging = () => {
             </Styled.Section>
 
             <Styled.Section>
-                <Styled.H2>Browser DevTools — quick tour</Styled.H2>
+                <Styled.H2>Browser DevTools  -  quick tour</Styled.H2>
                 <Styled.List>
                     <li>
                         <b>Elements</b>: inspect DOM, view applied CSS, toggle rules, force

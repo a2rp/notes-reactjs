@@ -185,8 +185,8 @@ export const useCartStore = create((set) => ({
                     <li><b>Do</b> co-locate everything a feature needs (UI, state, tests, styles, assets).</li>
                     <li><b>Do</b> expose a clear public API via <Styled.InlineCode>index.js</Styled.InlineCode>.</li>
                     <li><b>Do</b> keep shared primitives in <Styled.InlineCode>src/ui</Styled.InlineCode> to avoid duplication.</li>
-                    <li><b>Don't</b> create mega “shared/utils” dumping grounds—organize by domain.</li>
-                    <li><b>Don't</b> let features import each other's deep internals—use barrels.</li>
+                    <li><b>Don't</b> create mega “shared/utils” dumping grounds - organize by domain.</li>
+                    <li><b>Don't</b> let features import each other's deep internals - use barrels.</li>
                 </Styled.List>
             </Styled.Section>
 

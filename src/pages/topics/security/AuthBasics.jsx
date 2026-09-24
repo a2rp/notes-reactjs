@@ -27,11 +27,11 @@ const AuthBasics = () => {
                     <li><b>Refresh token:</b> longer-lived credential used to obtain new access tokens.</li>
                     <li><b>Cookie:</b> small key/value stored by the browser; may be <b>HttpOnly</b> (not readable by JS) and <b>Secure</b> (HTTPS only).</li>
                     <li><b>SameSite:</b> cookie rule controlling cross-site sending: <b>Lax</b> (default), <b>Strict</b>, or <b>None</b> (requires Secure).</li>
-                    <li><b>CSRF:</b> Cross-Site Request Forgery—an attacker makes the browser send your cookies to a site.</li>
-                    <li><b>XSS:</b> Cross-Site Scripting—attacker runs arbitrary JS in your page context.</li>
+                    <li><b>CSRF:</b> Cross-Site Request Forgery - an attacker makes the browser send your cookies to a site.</li>
+                    <li><b>XSS:</b> Cross-Site Scripting - attacker runs arbitrary JS in your page context.</li>
                     <li><b>OAuth 2.0:</b> framework to obtain access tokens (delegated access).</li>
                     <li><b>OIDC (OpenID Connect):</b> identity layer on top of OAuth that adds login/user info.</li>
-                    <li><b>PKCE:</b> Proof Key for Code Exchange—secures OAuth <i>Authorization Code</i> flow in public clients (SPAs).</li>
+                    <li><b>PKCE:</b> Proof Key for Code Exchange - secures OAuth <i>Authorization Code</i> flow in public clients (SPAs).</li>
                     <li><b>Scopes:</b> strings describing allowed actions (“read:invoices”).</li>
                     <li><b>Claims:</b> data inside tokens (e.g., user id, expiry, roles).</li>
                 </Styled.List>
@@ -208,7 +208,7 @@ await fetch("/auth/session/logout", { method: "POST", credentials: "include" });
                     <li><b>Do</b> use <b>HttpOnly Secure</b> cookies (SameSite set) or BFF pattern.</li>
                     <li><b>Don't</b> store long-lived tokens in <Styled.InlineCode>localStorage</Styled.InlineCode>.</li>
                     <li><b>Don't</b> trust client-side route guards for security; always enforce on the server.</li>
-                    <li><b>Don't</b> put secrets in front-end env files—they ship to the browser.</li>
+                    <li><b>Don't</b> put secrets in front-end env files - they ship to the browser.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -216,12 +216,12 @@ await fetch("/auth/session/logout", { method: "POST", credentials: "include" });
             <Styled.Section>
                 <Styled.H2>Glossary</Styled.H2>
                 <Styled.List>
-                    <li><b>BFF:</b> Backend-for-Frontend—a small server that fronts APIs and manages auth on behalf of the SPA.</li>
+                    <li><b>BFF:</b> Backend-for-Frontend - a small server that fronts APIs and manages auth on behalf of the SPA.</li>
                     <li><b>Nonce:</b> random value used to bind OIDC id_token to the auth request, preventing replay/mix-up.</li>
                     <li><b>State (OAuth):</b> random string to tie the callback to the initiation request (CSRF protection).</li>
                     <li><b>Opaque token:</b> a random string that the server introspects instead of reading claims client-side.</li>
                     <li><b>Introspection:</b> server endpoint that validates an opaque token and returns its active/claims data.</li>
-                    <li><b>CSP:</b> Content Security Policy—HTTP header restricting sources of scripts/styles to mitigate XSS.</li>
+                    <li><b>CSP:</b> Content Security Policy - HTTP header restricting sources of scripts/styles to mitigate XSS.</li>
                 </Styled.List>
             </Styled.Section>
 

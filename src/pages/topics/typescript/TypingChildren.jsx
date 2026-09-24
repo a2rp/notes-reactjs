@@ -93,7 +93,7 @@ function Stack({ direction = "column", gap = 8, children }: StackProps) {
 // <Stack gap={12}><Button/>Hello <strong>World</strong></Stack>`}
                 </Styled.Pre>
                 <Styled.Small>
-                    <b>ReactNode</b> lets callers pass text, elements, or fragments—great for flexible layouts.
+                    <b>ReactNode</b> lets callers pass text, elements, or fragments - great for flexible layouts.
                 </Styled.Small>
             </Styled.Section>
 
@@ -229,7 +229,7 @@ function List({ children }: { children: React.ReactNode }) {
                     <li><b>Do</b> use <Styled.InlineCode>ReactNode</Styled.InlineCode> for flexible, general children.</li>
                     <li><b>Do</b> use <Styled.InlineCode>ReactElement</Styled.InlineCode> when you must clone or enforce element type.</li>
                     <li><b>Do</b> type render-prop children as functions returning <Styled.InlineCode>ReactNode</Styled.InlineCode>.</li>
-                    <li><b>Don't</b> assume children are always elements—text and <i>null</i> are valid.</li>
+                    <li><b>Don't</b> assume children are always elements - text and <i>null</i> are valid.</li>
                     <li><b>Don't</b> accept <Styled.InlineCode>any</Styled.InlineCode> for children; it defeats type safety.</li>
                     <li><b>Don't</b> forget runtime guards when you rely on "exactly one element" semantics.</li>
                 </Styled.List>

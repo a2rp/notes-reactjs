@@ -274,14 +274,14 @@ const StyledSelect = styled(Select)\`
                         app.
                     </li>
                     <li>
-                        <b>Don’t</b> create styled components <i>inside</i> render—define them once at module scope.
+                        <b>Don’t</b> create styled components <i>inside</i> render - define them once at module scope.
                     </li>
                     <li>
                         <b>Don’t</b> overuse global styles; prefer local, component-scoped styles.
                     </li>
                     <li>
                         <b>Don’t</b> mix ad-hoc inline styles and styled-components for the same element without a
-                        reason—prefer one source of truth.
+                        reason - prefer one source of truth.
                     </li>
                 </Styled.List>
             </Styled.Section>

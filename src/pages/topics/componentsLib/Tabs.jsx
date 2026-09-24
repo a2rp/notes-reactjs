@@ -307,7 +307,7 @@ const items = [
             <Styled.Section>
                 <Styled.H2>Glossary</Styled.H2>
                 <Styled.List>
-                    <li><b>ARIA</b>: Accessible Rich Internet Applications—attributes/roles to convey semantics to AT.</li>
+                    <li><b>ARIA</b>: Accessible Rich Internet Applications - attributes/roles to convey semantics to AT.</li>
                     <li><b>AT</b>: Assistive Technologies (screen readers, etc.).</li>
                     <li><b>Manual vs Automatic activation</b>: whether focusing a tab also switches its panel.</li>
                     <li><b>Roving tabindex</b>: a technique to keep one focusable item in a set at a time.</li>

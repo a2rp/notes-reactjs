@@ -183,7 +183,7 @@ function ReportsRoute() {
                     <li><b>Do</b> preload “next-click” routes on hover/focus for snappier UX.</li>
                     <li><b>Do</b> co-locate heavy widgets and lazy them inside a page if needed.</li>
                     <li><b>Don't</b> block navigation on non-essential requests; show skeletons.</li>
-                    <li><b>Don't</b> split everything—measure and split where it helps.</li>
+                    <li><b>Don't</b> split everything - measure and split where it helps.</li>
                 </Styled.List>
             </Styled.Section>
 

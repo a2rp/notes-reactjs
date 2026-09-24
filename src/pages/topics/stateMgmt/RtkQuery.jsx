@@ -187,7 +187,7 @@ function AddPostForm() {
                         <b>keepUnusedDataFor:</b> seconds to keep cached data after last subscriber unmounts.
                     </li>
                     <li>
-                        <b>refetchOnMountOrArgChange:</b> true/number/'always' — refetch when component mounts
+                        <b>refetchOnMountOrArgChange:</b> true/number/'always'  -  refetch when component mounts
                         or when args change (or if cache is older than N seconds).
                     </li>
                     <li>

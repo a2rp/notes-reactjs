@@ -285,7 +285,7 @@ export default function Widget() {
                     <li><b>Do</b> place boundaries around risky, isolated UI islands.</li>
                     <li><b>Do</b> offer recovery (retry button) by resetting the boundary.</li>
                     <li><b>Do</b> log errors with component stacks for debugging.</li>
-                    <li><b>Don't</b> expect boundaries to catch handler/async/server errors—handle those directly.</li>
+                    <li><b>Don't</b> expect boundaries to catch handler/async/server errors - handle those directly.</li>
                     <li><b>Don't</b> swallow errors silently; always surface a helpful message.</li>
                 </Styled.List>
             </Styled.Section>

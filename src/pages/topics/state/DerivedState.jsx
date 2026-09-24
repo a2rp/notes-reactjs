@@ -28,7 +28,7 @@ const DerivedState = () => {
                 <Styled.H2>Rule of thumb: store the minimum, derive the rest</Styled.H2>
                 <Styled.List>
                     <li>Store <b>only</b> what users or the system can change directly.</li>
-                    <li>Do <b>not</b> store duplicates like <em>sorted</em> or <em>filtered</em> arrays—compute them from the source.</li>
+                    <li>Do <b>not</b> store duplicates like <em>sorted</em> or <em>filtered</em> arrays - compute them from the source.</li>
                     <li>Store IDs and raw records; derive views (counts, sums, selections) at render time.</li>
                 </Styled.List>
             </Styled.Section>
@@ -199,7 +199,7 @@ const cls     = ["btn", disabled && "btn--muted"].filter(Boolean).join(" ");`}
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
                     <li>Storing filtered/sorted data in state → gets out of sync; derive instead.</li>
-                    <li>Using <Styled.InlineCode>useMemo</Styled.InlineCode> to “prevent re-renders” universally—memo is not a magic shield; measure first.</li>
+                    <li>Using <Styled.InlineCode>useMemo</Styled.InlineCode> to “prevent re-renders” universally - memo is not a magic shield; measure first.</li>
                     <li>Missing dependencies in <Styled.InlineCode>useMemo</Styled.InlineCode>/<Styled.InlineCode>useEffect</Styled.InlineCode> → stale results. Include all inputs.</li>
                     <li>Creating new arrays/objects every render and passing them to memoized children → avoid with <Styled.InlineCode>useMemo</Styled.InlineCode>.</li>
                     <li>Keeping both <em>raw</em> and <em>derived</em> copies in state → bugs during updates.</li>

@@ -8,7 +8,7 @@ const UseMemoHook = () => {
             <Styled.Lead>
                 <Styled.InlineCode>useMemo</Styled.InlineCode> memoizes the <b>result of a computation</b>.
                 It returns a cached value while the dependency list stays equal, and recomputes when dependencies change.
-                It is a <b>performance hint</b>—never required for correctness.
+                It is a <b>performance hint</b> - never required for correctness.
             </Styled.Lead>
 
             {/* 1) Signature & terms */}
@@ -20,7 +20,7 @@ const UseMemoHook = () => {
                 <Styled.List>
                     <li><b>Memoized value:</b> the cached result returned by <Styled.InlineCode>useMemo</Styled.InlineCode>.</li>
                     <li><b>Dependencies:</b> reactive inputs for the computation; when any changes, React recomputes.</li>
-                    <li><b>Referential equality:</b> children using <Styled.InlineCode>React.memo</Styled.InlineCode> or effect dependencies often need a <b>stable reference</b> (same object/array) — <Styled.InlineCode>useMemo</Styled.InlineCode> helps.</li>
+                    <li><b>Referential equality:</b> children using <Styled.InlineCode>React.memo</Styled.InlineCode> or effect dependencies often need a <b>stable reference</b> (same object/array)  -  <Styled.InlineCode>useMemo</Styled.InlineCode> helps.</li>
                     <li><b>Pure computation:</b> the callback must be side-effect free and deterministic for the given inputs.</li>
                     <li><b>Hint, not guarantee:</b> React may discard caches; do not rely on memo for correctness.</li>
                 </Styled.List>
@@ -103,7 +103,7 @@ function Cart({ items }) {
                 <Styled.H2>useMemo vs useCallback</Styled.H2>
                 <Styled.List>
                     <li><b>useMemo</b> memoizes a <em>value</em> (object/array/number/string).</li>
-                    <li><b>useCallback</b> memoizes a <em>function</em>—equivalent to <Styled.InlineCode>useMemo(() =&gt; fn, deps)</Styled.InlineCode>.</li>
+                    <li><b>useCallback</b> memoizes a <em>function</em> - equivalent to <Styled.InlineCode>useMemo(() =&gt; fn, deps)</Styled.InlineCode>.</li>
                     <li>If a child needs a stable <em>function</em> prop, use <Styled.InlineCode>useCallback</Styled.InlineCode>; for stable data props, use <Styled.InlineCode>useMemo</Styled.InlineCode>.</li>
                 </Styled.List>
             </Styled.Section>
@@ -180,10 +180,10 @@ const byId = React.useMemo(() => {
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
                     <li>Missing dependencies → stale results. Always include every input used inside.</li>
-                    <li>Using <Styled.InlineCode>useMemo</Styled.InlineCode> to “prevent re-renders” globally—memoizing values does not stop parent renders.</li>
+                    <li>Using <Styled.InlineCode>useMemo</Styled.InlineCode> to “prevent re-renders” globally - memoizing values does not stop parent renders.</li>
                     <li>Placing side effects (fetch, DOM writes) inside <Styled.InlineCode>useMemo</Styled.InlineCode>.</li>
-                    <li>Memoizing everything by default—adds complexity with little gain.</li>
-                    <li>Relying on memo for correctness—React may drop caches; logic must still be correct without memo.</li>
+                    <li>Memoizing everything by default - adds complexity with little gain.</li>
+                    <li>Relying on memo for correctness - React may drop caches; logic must still be correct without memo.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -196,7 +196,7 @@ const byId = React.useMemo(() => {
                     <li><b>Do</b> keep the compute function pure and include all dependencies.</li>
                     <li><b>Don’t</b> perform side effects in <Styled.InlineCode>useMemo</Styled.InlineCode>.</li>
                     <li><b>Don’t</b> overuse it for trivial work; measure first.</li>
-                    <li><b>Don’t</b> treat memo as a guarantee of caching—it’s a hint.</li>
+                    <li><b>Don’t</b> treat memo as a guarantee of caching - it’s a hint.</li>
                 </Styled.List>
             </Styled.Section>
 

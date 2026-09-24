@@ -61,7 +61,7 @@ npm i -D rollup-plugin-visualizer
 pnpm add -D rollup-plugin-visualizer
 yarn add -D rollup-plugin-visualizer
 
-// 2) vite.config.js — add Visualizer to Rollup plugins (build only)
+// 2) vite.config.js  -  add Visualizer to Rollup plugins (build only)
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { visualizer } from "rollup-plugin-visualizer";
@@ -112,7 +112,7 @@ npx source-map-explorer "dist/assets/*.js" --html dist/sme-report.html`}
                 <Styled.List>
                     <li><b>Big rectangles = big modules:</b> The larger the block, the more bytes it contributes.</li>
                     <li><b>Vendor chunk:</b> Expect a large vendor chunk containing React, router, and UI libs.</li>
-                    <li><b>Multiple chunks:</b> Route-level lazy imports appear as separate chunks—this is good for first-load time.</li>
+                    <li><b>Multiple chunks:</b> Route-level lazy imports appear as separate chunks - this is good for first-load time.</li>
                     <li><b>Gzip/Brotli:</b> Compare parsed vs compressed sizes; network cost may be far smaller than raw size.</li>
                 </Styled.List>
             </Styled.Section>
@@ -145,7 +145,7 @@ const HeavyPage = lazy(() => import("./pages/HeavyPage"));
                     </li>
                 </Styled.List>
                 <Styled.Pre>
-                    {`// vite.config.js — manual chunks (advanced)
+                    {`// vite.config.js  -  manual chunks (advanced)
 build: {
   rollupOptions: {
     output: {
@@ -176,7 +176,7 @@ build: {
                     <li><b>Do</b> analyze a <em>production</em> build; dev server uses ES modules and is not optimized.</li>
                     <li><b>Do</b> lazy-load rarely used pages, editors, charts, and admin screens.</li>
                     <li><b>Don't</b> micro-optimize tiny files; prioritize the top 2-3 offenders in the report.</li>
-                    <li><b>Don't</b> block critical route JS with huge optional dependencies—split them out.</li>
+                    <li><b>Don't</b> block critical route JS with huge optional dependencies - split them out.</li>
                 </Styled.List>
             </Styled.Section>
 

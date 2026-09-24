@@ -237,13 +237,13 @@ function useScrollRestoration() {
                     <li><b>Do</b> throttle or rAF-wrap scroll handlers.</li>
                     <li><b>Do</b> use IntersectionObserver for infinite lists when possible.</li>
                     <li><b>Do</b> restore scroll on history navigation and jump to anchors on hash.</li>
-                    <li><b>Don’t</b> attach many per-item listeners—delegate when feasible.</li>
+                    <li><b>Don’t</b> attach many per-item listeners - delegate when feasible.</li>
                     <li><b>Don’t</b> block scroll without restoring the original position on unlock.</li>
                 </Styled.List>
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: Treat scrolling as state—read it efficiently, change it deliberately, restore it
+                Summary: Treat scrolling as state - read it efficiently, change it deliberately, restore it
                 on navigation, and keep it accessible. Prefer sticky/snap/overscroll CSS where possible and
                 IO for performant infinite loading.
             </Styled.Callout>

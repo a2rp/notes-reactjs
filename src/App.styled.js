@@ -69,6 +69,7 @@ const Header = styled.div`
     gap: 30px;
     padding: 15px;
     border-bottom: 1px solid #333;
+    z-index: 10000;
 `;
 
 const LogoLinkWrapper = styled.div`

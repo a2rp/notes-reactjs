@@ -88,7 +88,7 @@ const baseUrl = import.meta.env.BASE_URL;  // derived from vite.config.js -> bas
             </Styled.Section>
 
             <Styled.Section>
-                <Styled.H2>Assets — two ways</Styled.H2>
+                <Styled.H2>Assets  -  two ways</Styled.H2>
                 <Styled.List>
                     <li>
                         <b>Imported assets (recommended):</b> processed and hashed on build.

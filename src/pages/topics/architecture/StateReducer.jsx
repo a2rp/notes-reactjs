@@ -239,7 +239,7 @@ function businessRulesReducer(state, action, proposed) {
             <Styled.Callout>
                 Summary: The State Reducer pattern exposes a predictable state transition pipeline. Components
                 define the default behavior; consumers can accept, block, or transform transitions via a
-                custom reducer—without forking your component.
+                custom reducer - without forking your component.
             </Styled.Callout>
         </Styled.Page>
     );

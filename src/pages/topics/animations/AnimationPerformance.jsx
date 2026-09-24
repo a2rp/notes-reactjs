@@ -187,7 +187,7 @@ requestAnimationFrame(() => { tile.style.transform = "translate(0,0)"; });`}
                         <b>Passive listeners:</b> <Styled.InlineCode>{`addEventListener('scroll', fn, { passive: true })`}</Styled.InlineCode> prevents blocking scrolling.
                     </li>
                     <li>
-                        <b>IntersectionObserver:</b> Trigger animations when elements enter the viewport—no scroll polling.
+                        <b>IntersectionObserver:</b> Trigger animations when elements enter the viewport - no scroll polling.
                     </li>
                 </Styled.List>
                 <Styled.Pre>
@@ -252,7 +252,7 @@ document.querySelectorAll(".revealable").forEach(el => io.observe(el));
             <Styled.Section>
                 <Styled.H2>Glossary</Styled.H2>
                 <Styled.List>
-                    <li><b>FPS:</b> Frames per second—how many images are shown each second.</li>
+                    <li><b>FPS:</b> Frames per second - how many images are shown each second.</li>
                     <li><b>Main thread:</b> The browser thread that runs JS, layout, and much of rendering work.</li>
                     <li><b>Compositor thread:</b> Combines pre-painted layers with transforms/opacity to produce frames.</li>
                     <li><b>Layout/Reflow:</b> Computing element sizes/positions after DOM/style changes.</li>

@@ -4,7 +4,7 @@ import { Styled } from "./styled";
 const OfflineFallback = () => {
     return (
         <Styled.Page>
-            <Styled.Title>PWA — Offline Fallback</Styled.Title>
+            <Styled.Title>PWA  -  Offline Fallback</Styled.Title>
 
             <Styled.Lead>
                 <b>Offline fallback</b> means your app returns a friendly page when the network is unavailable,
@@ -111,7 +111,7 @@ self.addEventListener("fetch", (event) => {
                 <Styled.List>
                     <li>
                         Keep it <b>small</b> (fast to cache & serve). Inline minimal CSS. Offer a clear message like
-                        “You're offline — some features may be unavailable.”
+                        “You're offline  -  some features may be unavailable.”
                     </li>
                     <li>
                         Include <b>basic navigation</b> back to the home route and to pages you know are cached.
@@ -130,7 +130,7 @@ self.addEventListener("fetch", (event) => {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Offline — YourApp</title>
+    <title>Offline  -  YourApp</title>
     <style>
       body { font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; padding: 24px; }
       .card { max-width: 680px; margin: 0 auto; padding: 24px; border: 1px solid #ccc; border-radius: 12px; }
@@ -204,7 +204,7 @@ self.addEventListener("fetch", (event) => {
                     <li><b>Do</b> precache <Styled.InlineCode>offline.html</Styled.InlineCode> and any minimal CSS it needs.</li>
                     <li><b>Do</b> return the offline page specifically for <b>navigation requests</b>.</li>
                     <li><b>Do</b> keep the offline page independent of large JS bundles.</li>
-                    <li><b>Don't</b> rely solely on the browser's HTTP cache—use <b>Cache Storage API</b> to control fallbacks.</li>
+                    <li><b>Don't</b> rely solely on the browser's HTTP cache - use <b>Cache Storage API</b> to control fallbacks.</li>
                     <li><b>Don't</b> cache POST responses or sensitive/auth-only content without a strategy.</li>
                 </Styled.List>
             </Styled.Section>
@@ -237,7 +237,7 @@ self.addEventListener("fetch", (event) => {
                 <Styled.List>
                     <li>Open DevTools → <b>Application</b> → Service Workers: check “Offline”.</li>
                     <li>Hard refresh your app and navigate between routes; verify the offline page appears for new navigations.</li>
-                    <li>Switch DevTools Network to “Offline” and reload — ensure offline.html is served.</li>
+                    <li>Switch DevTools Network to “Offline” and reload  -  ensure offline.html is served.</li>
                     <li>Clear site data, reinstall SW, and repeat.</li>
                 </Styled.List>
             </Styled.Section>

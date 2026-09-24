@@ -58,7 +58,7 @@ export async function registerSW() {
 
     // Optional: react when a waiting SW takes control (page reload, etc.)
     navigator.serviceWorker.addEventListener("controllerchange", () => {
-      // A new SW has taken control. You might prompt "App updated — reload?"
+      // A new SW has taken control. You might prompt "App updated  -  reload?"
     });
   } catch (err) {
     console.error("SW registration failed:", err);
@@ -86,7 +86,7 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
   );
-  // Activate new SW immediately (optional — see update strategy below)
+  // Activate new SW immediately (optional  -  see update strategy below)
   self.skipWaiting();
 });
 
@@ -131,7 +131,7 @@ self.addEventListener("fetch", (event) => {
                 <Styled.List>
                     <li><b>Default behavior:</b> a new SW becomes <i>waiting</i> until all old pages close; then it activates.</li>
                     <li><b>Immediate activation:</b> call <Styled.InlineCode>self.skipWaiting()</Styled.InlineCode> (in SW) and <Styled.InlineCode>clients.claim()</Styled.InlineCode> to take over. Safer with a user prompt to reload.</li>
-                    <li><b>Recommended UX:</b> show “New version available — Update” button that posts a message to the SW to <i>skip waiting</i>, then reload the page.</li>
+                    <li><b>Recommended UX:</b> show “New version available  -  Update” button that posts a message to the SW to <i>skip waiting</i>, then reload the page.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// page code (e.g., registerSW helper): trigger refresh when an update is ready
@@ -212,7 +212,7 @@ navigator.serviceWorker.getRegistrations().then((regs) => regs.forEach(r => r.un
 
             <Styled.Callout>
                 Summary: A Service Worker gives your app offline power and control over network requests.
-                Start simple—precache your shell, pick clear strategies for assets/APIs, and design a friendly update flow.
+                Start simple - precache your shell, pick clear strategies for assets/APIs, and design a friendly update flow.
             </Styled.Callout>
         </Styled.Page>
     );

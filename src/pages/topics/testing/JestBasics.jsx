@@ -34,7 +34,7 @@ const JestBasics = () => {
                     <li><b>Test case</b>: an individual <Styled.InlineCode>test()</Styled.InlineCode> (alias <Styled.InlineCode>it()</Styled.InlineCode>).</li>
                     <li><b>Assertion</b>: a check like <Styled.InlineCode>expect(value).toBe(42)</Styled.InlineCode>.</li>
                     <li><b>Matcher</b>: the method after <Styled.InlineCode>expect()</Styled.InlineCode> (e.g., <Styled.InlineCode>toBe</Styled.InlineCode>, <Styled.InlineCode>toEqual</Styled.InlineCode>).</li>
-                    <li><b>Test environment</b>: the runtime for tests — usually <Styled.InlineCode>jsdom</Styled.InlineCode> (browser-like) or <Styled.InlineCode>node</Styled.InlineCode>.</li>
+                    <li><b>Test environment</b>: the runtime for tests  -  usually <Styled.InlineCode>jsdom</Styled.InlineCode> (browser-like) or <Styled.InlineCode>node</Styled.InlineCode>.</li>
                     <li><b>Mock</b>: a fake function/module you control during tests (created with <Styled.InlineCode>jest.fn</Styled.InlineCode>, <Styled.InlineCode>jest.spyOn</Styled.InlineCode>, or <Styled.InlineCode>jest.mock</Styled.InlineCode>).</li>
                     <li><b>Spy</b>: a special mock that wraps a real function to record calls (<Styled.InlineCode>jest.spyOn(obj, "method")</Styled.InlineCode>).</li>
                     <li><b>Stub</b>: a mock that returns canned values (a preprogrammed fake).</li>
@@ -197,7 +197,7 @@ expect(api.get(1)).toEqual({ id: 1, ok: false });
 expect(spy).toHaveBeenCalledTimes(1);
 spy.mockRestore();
 
-// jest.mock() — mock a module
+// jest.mock()  -  mock a module
 // userService.js
 export async function getUserName(fetcher, id) {
   const r = await fetcher(\`/u/\${id}\`);

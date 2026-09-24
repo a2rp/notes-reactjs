@@ -22,7 +22,7 @@ const Pagination = () => {
                     <li><b>Total items (total):</b> How many items exist in the full list.</li>
                     <li><b>Total pages:</b> <Styled.InlineCode>Math.ceil(total / pageSize)</Styled.InlineCode>.</li>
                     <li><b>Offset pagination:</b> Use <Styled.InlineCode>offset = (page - 1) * pageSize</Styled.InlineCode> to fetch a slice (SQL <code>LIMIT</code>/<code>OFFSET</code> style).</li>
-                    <li><b>Cursor pagination:</b> Use a <i>cursor</i> (e.g., last item ID) to fetch the next slice—stable for live/large data.</li>
+                    <li><b>Cursor pagination:</b> Use a <i>cursor</i> (e.g., last item ID) to fetch the next slice - stable for live/large data.</li>
                     <li><b>Client pagination:</b> Paginate in the browser after loading all data (simple, but memory-heavy).</li>
                     <li><b>Server pagination:</b> Ask the server for each page (scalable, common for real apps).</li>
                 </Styled.List>
@@ -228,7 +228,7 @@ function usePageParams({ defaultPage = 1, defaultSize = 10 } = {}) {
                     <li><b>Do</b> reset page to 1 when filters or search change.</li>
                     <li><b>Do</b> prefer cursor pagination for endless feeds/real-time lists.</li>
                     <li><b>Don't</b> fetch all data just to paginate on the client for large datasets.</li>
-                    <li><b>Don't</b> mix 0-based and 1-based indexing—pick one and stick to it.</li>
+                    <li><b>Don't</b> mix 0-based and 1-based indexing - pick one and stick to it.</li>
                 </Styled.List>
             </Styled.Section>
 

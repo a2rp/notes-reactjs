@@ -173,7 +173,7 @@ class RouteErrorBoundary extends React.Component {
                     <li><b>Do</b> preload chunks on hover/visible links for smoother UX.</li>
                     <li><b>Don’t</b> lazy-load tiny components that are reused everywhere (hurts perf).</li>
                     <li><b>Don’t</b> forget that <Styled.InlineCode>React.lazy</Styled.InlineCode> requires a <b>default export</b>.</li>
-                    <li><b>Don’t</b> mutate the DOM to “insert” chunks—navigation should trigger the render.</li>
+                    <li><b>Don’t</b> mutate the DOM to “insert” chunks - navigation should trigger the render.</li>
                 </Styled.List>
             </Styled.Section>
 

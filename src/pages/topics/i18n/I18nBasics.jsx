@@ -4,7 +4,7 @@ import { Styled } from "./styled";
 const I18nBasics = () => {
     return (
         <Styled.Page>
-            <Styled.Title>Internationalization (i18n) — Basics</Styled.Title>
+            <Styled.Title>Internationalization (i18n)  -  Basics</Styled.Title>
 
             <Styled.Lead>
                 <b>Internationalization (i18n)</b> is preparing your app so it can be <i>localized</i> into
@@ -193,7 +193,7 @@ const out2 = formatMessage(locale, "price.example", { price: priceText });`}
                 <Styled.H2>Glossary</Styled.H2>
                 <Styled.List>
                     <li><b>BCP 47:</b> Standard for locale tags (<Styled.InlineCode>en-US</Styled.InlineCode>).</li>
-                    <li><b>ICU:</b> International Components for Unicode—libraries and MessageFormat spec.</li>
+                    <li><b>ICU:</b> International Components for Unicode - libraries and MessageFormat spec.</li>
                     <li><b>Message catalog:</b> A file (JSON, PO, etc.) with key→translation entries.</li>
                     <li><b>Fallback locale:</b> The locale used if a translation is missing.</li>
                     <li><b>Translatable string:</b> Any user-visible text extracted for translators.</li>

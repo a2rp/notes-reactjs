@@ -224,7 +224,7 @@ function ProgressBar() {
                     <li><b>Do</b> start with CSS where possible (sticky, snap) before adding JS.</li>
                     <li><b>Do</b> gate animations behind IO thresholds for efficiency.</li>
                     <li><b>Don't</b> run expensive calculations on every scroll tick.</li>
-                    <li><b>Don't</b> animate layout properties—use transforms instead.</li>
+                    <li><b>Don't</b> animate layout properties - use transforms instead.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -240,7 +240,7 @@ function ProgressBar() {
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: Pick the simplest tool that fits—CSS for structure (sticky/snap), IO for reveals,
+                Summary: Pick the simplest tool that fits - CSS for structure (sticky/snap), IO for reveals,
                 rAF for continuous transforms, and a library only if it adds real value. Animate transforms
                 and opacity, respect reduced motion, and keep the main thread free of heavy work.
             </Styled.Callout>

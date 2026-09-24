@@ -7,7 +7,7 @@ const Conventions = () => {
             <Styled.Title>Conventions</Styled.Title>
 
             <Styled.Lead>
-                Conventions are the shared rules your team follows—how you name files, organize folders,
+                Conventions are the shared rules your team follows - how you name files, organize folders,
                 write commits/PRs, version releases, and document changes. Good conventions reduce confusion,
                 make reviews faster, and keep the codebase predictable for everyone.
             </Styled.Lead>
@@ -116,7 +116,7 @@ Explain the why, not the what. Link issues if relevant (#123).`}
                 </Styled.Small>
                 <Styled.List>
                     <li><b>Trunk-based:</b> one main branch (<Styled.InlineCode>main</Styled.InlineCode>), small PRs, frequent merges; use feature branches like <Styled.InlineCode>feat/search-box</Styled.InlineCode>.</li>
-                    <li><b>Gitflow (heavier):</b> long-lived <Styled.InlineCode>develop</Styled.InlineCode> plus release/hotfix branches—better for packaged releases.</li>
+                    <li><b>Gitflow (heavier):</b> long-lived <Styled.InlineCode>develop</Styled.InlineCode> plus release/hotfix branches - better for packaged releases.</li>
                 </Styled.List>
                 <Styled.Pre>
                     {`// Naming
@@ -197,7 +197,7 @@ Cleaner links; need 404 redirect rule on host.`}
             <Styled.Section>
                 <Styled.H2>Do &amp; Don't</Styled.H2>
                 <Styled.List>
-                    <li><b>Do</b> keep conventions short and specific—people will follow them.</li>
+                    <li><b>Do</b> keep conventions short and specific - people will follow them.</li>
                     <li><b>Do</b> automate where possible (linters, formatters, commit hooks).</li>
                     <li><b>Do</b> write examples in docs so beginners can copy-paste safely.</li>
                     <li><b>Don't</b> create rules nobody enforces; remove or automate them.</li>
@@ -218,7 +218,7 @@ Cleaner links; need 404 redirect rule on host.`}
             </Styled.Section>
 
             <Styled.Callout>
-                Summary: agree on a few practical rules—names, layout, commits, PRs, and releases—then
+                Summary: agree on a few practical rules - names, layout, commits, PRs, and releases - then
                 automate them. The goal is to help humans read, review, and maintain the project long after
                 the first version ships.
             </Styled.Callout>

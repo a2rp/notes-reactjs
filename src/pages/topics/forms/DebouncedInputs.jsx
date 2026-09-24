@@ -23,7 +23,7 @@ const DebouncedInputs = () => {
                     </li>
                     <li>
                         <b>Don’t use for:</b> critical interactions needing immediate feedback (e.g., password fields,
-                        stepper controls)—update immediately instead.
+                        stepper controls) - update immediately instead.
                     </li>
                 </Styled.List>
             </Styled.Section>
@@ -90,7 +90,7 @@ const DebouncedInputs = () => {
         placeholder="Type to search..."
         autoComplete="off"
       />
-      <p><b>Debounced query:</b> {query || "—"}</p>
+      <p><b>Debounced query:</b> {query || " - "}</p>
     </>
   );
 }`}
@@ -249,7 +249,7 @@ function DebouncedInput({ onDebouncedChange, delay = 300 }) {
                     <li><b>Do</b> debounce only the expensive work (fetch/filter), not the user’s typing.</li>
                     <li><b>Do</b> cancel stale requests (AbortController or a flag) when the query changes.</li>
                     <li><b>Don’t</b> forget to clear timers on unmount/prop changes.</li>
-                    <li><b>Don’t</b> block IME users—respect composition events.</li>
+                    <li><b>Don’t</b> block IME users - respect composition events.</li>
                 </Styled.List>
             </Styled.Section>
 

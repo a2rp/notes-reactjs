@@ -223,7 +223,7 @@ function useThemeSSR(initial) {
                     <li>Returning fresh objects from <Styled.InlineCode>getSnapshot</Styled.InlineCode> → unnecessary re-renders; return primitives or memoized objects.</li>
                     <li>Mutating store state in place; React won’t detect changes if the same reference is returned.</li>
                     <li>Forgetting to unsubscribe in <Styled.InlineCode>subscribe</Styled.InlineCode>; always return a cleanup function.</li>
-                    <li>Using <Styled.InlineCode>useEffect</Styled.InlineCode> to read store values; it can tear under concurrency—use this hook instead.</li>
+                    <li>Using <Styled.InlineCode>useEffect</Styled.InlineCode> to read store values; it can tear under concurrency - use this hook instead.</li>
                     <li>Mismatched SSR/client snapshots causing hydration warnings; supply <Styled.InlineCode>getServerSnapshot</Styled.InlineCode>.</li>
                 </Styled.List>
             </Styled.Section>

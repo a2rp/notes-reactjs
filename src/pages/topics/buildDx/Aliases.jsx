@@ -14,14 +14,14 @@ const Aliases = () => {
 
             {/* 1) Definitions */}
             <Styled.Section>
-                <Styled.H2>Definitions — start here</Styled.H2>
+                <Styled.H2>Definitions  -  start here</Styled.H2>
                 <Styled.List>
                     <li><b>Module:</b> a JS/TS file that can import/export values.</li>
                     <li><b>Module resolution:</b> how a tool (Vite/Node/TS) figures out what file an import points to.</li>
                     <li><b>Relative import:</b> path starting with <Styled.InlineCode>./</Styled.InlineCode> or <Styled.InlineCode>../</Styled.InlineCode> (e.g., <Styled.InlineCode>../../utils/format</Styled.InlineCode>).</li>
                     <li><b>Absolute import:</b> path that doesn't depend on the current file's location (e.g., <Styled.InlineCode>src/utils/format</Styled.InlineCode> or an alias like <Styled.InlineCode>@/utils/format</Styled.InlineCode>).</li>
                     <li><b>Alias:</b> a custom prefix (e.g., <Styled.InlineCode>@</Styled.InlineCode>) mapped to a specific folder (e.g., <Styled.InlineCode>src</Styled.InlineCode>).</li>
-                    <li><b>DX (Developer Experience):</b> how easy and pleasant it is to develop—good DX saves time and reduces errors.</li>
+                    <li><b>DX (Developer Experience):</b> how easy and pleasant it is to develop - good DX saves time and reduces errors.</li>
                 </Styled.List>
             </Styled.Section>
 
@@ -224,8 +224,8 @@ export default {
                     <li><b>Do</b> choose a single root alias (commonly <Styled.InlineCode>@</Styled.InlineCode>) and stick to it.</li>
                     <li><b>Do</b> keep Vite <Styled.InlineCode>resolve.alias</Styled.InlineCode> in sync with TS/JS <Styled.InlineCode>paths</Styled.InlineCode>.</li>
                     <li><b>Do</b> organize a few clear aliases (<Styled.InlineCode>@</Styled.InlineCode>, <Styled.InlineCode>@components</Styled.InlineCode>, <Styled.InlineCode>@utils</Styled.InlineCode>), not dozens.</li>
-                    <li><b>Don't</b> mix many relative and alias paths in the same folder—pick one style for consistency.</li>
-                    <li><b>Don't</b> forget editor/ESLint/test configs—otherwise imports may work in build but show red squiggles or fail tests.</li>
+                    <li><b>Don't</b> mix many relative and alias paths in the same folder - pick one style for consistency.</li>
+                    <li><b>Don't</b> forget editor/ESLint/test configs - otherwise imports may work in build but show red squiggles or fail tests.</li>
                 </Styled.List>
             </Styled.Section>
 

@@ -268,8 +268,8 @@ const api = import.meta.env.VITE_API_URL; // read at build time
                     <li><b>Do</b> keep <Styled.InlineCode>index.html</Styled.InlineCode> minimally cached.</li>
                     <li><b>Do</b> use <Styled.InlineCode>VITE_</Styled.InlineCode> prefix for browser-exposed env vars.</li>
                     <li><b>Do</b> rely on Preview deployments for QA before merging.</li>
-                    <li><b>Don't</b> hardcode environment URLs in code—read from env vars.</li>
-                    <li><b>Don't</b> place secrets in the repo—store them as Vercel env vars.</li>
+                    <li><b>Don't</b> hardcode environment URLs in code - read from env vars.</li>
+                    <li><b>Don't</b> place secrets in the repo - store them as Vercel env vars.</li>
                 </Styled.List>
             </Styled.Section>
 

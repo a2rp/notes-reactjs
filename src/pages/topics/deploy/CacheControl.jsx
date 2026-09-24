@@ -2,7 +2,7 @@ import React from "react";
 import { Styled } from "./styled";
 
 /**
- * Deployment — Cache Control
+ * Deployment  -  Cache Control
  * Goal: Explain browser/CDN caching for SPAs built with Vite/React.
  * Style: Definitions first, then practical recipes, then platform snippets.
  */
@@ -139,7 +139,7 @@ Cache-Control: no-cache
             <Styled.Section>
                 <Styled.H2>Platform snippets</Styled.H2>
 
-                <Styled.H3>Netlify — <code>_headers</code> file</Styled.H3>
+                <Styled.H3>Netlify  -  <code>_headers</code> file</Styled.H3>
                 <Styled.Pre>
                     {`/*              // all paths: default safe base
   Cache-Control: public, max-age=0, must-revalidate
@@ -157,7 +157,7 @@ Cache-Control: no-cache
   Cache-Control: public, max-age=31536000, immutable`}
                 </Styled.Pre>
 
-                <Styled.H3>Vercel — <code>vercel.json</code></Styled.H3>
+                <Styled.H3>Vercel  -  <code>vercel.json</code></Styled.H3>
                 <Styled.Pre>
                     {`{
   "headers": [
@@ -177,9 +177,9 @@ Cache-Control: no-cache
 }`}
                 </Styled.Pre>
 
-                <Styled.H3>Cloudflare Pages — <code>_headers</code></Styled.H3>
+                <Styled.H3>Cloudflare Pages  -  <code>_headers</code></Styled.H3>
                 <Styled.Pre>
-                    {`/*              
+                    {`/*
   Cache-Control: public, max-age=0, must-revalidate
 
 /index.html
@@ -235,7 +235,7 @@ Cache-Control: no-cache
                     <li><b>Do</b> use <i>no-cache</i> for <Styled.InlineCode>index.html</Styled.InlineCode> so deploys roll out instantly.</li>
                     <li><b>Do</b> keep images/fonts hashed if you want long caching without busting manually.</li>
                     <li><b>Don’t</b> set long caching on <i>non-fingerprinted</i> files (users may never see updates).</li>
-                    <li><b>Don’t</b> assume <i>no-cache</i> means “don’t store” — it means “revalidate”. Use <i>no-store</i> to disable storing.</li>
+                    <li><b>Don’t</b> assume <i>no-cache</i> means “don’t store”  -  it means “revalidate”. Use <i>no-store</i> to disable storing.</li>
                 </Styled.List>
             </Styled.Section>
 

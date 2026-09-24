@@ -2,7 +2,7 @@ import React from "react";
 import { Styled } from "./styled";
 
 /**
- * Reusable Components — Accordion
+ * Reusable Components  -  Accordion
  *
  * Goal: Give a crystal-clear mental model of what an Accordion is,
  * the moving parts (items, headers, panels), UX patterns (single vs multiple),

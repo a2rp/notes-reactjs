@@ -51,7 +51,7 @@ const ListsKeys = () => {
                 <Styled.H2>Why keys matter (identity, not order)</Styled.H2>
                 <p>
                     With correct keys, React updates only what changed. With bad keys (or index keys),
-                    React may <em>remount</em> items unnecessarily—losing focus, resetting local state,
+                    React may <em>remount</em> items unnecessarily - losing focus, resetting local state,
                     or mixing user input across rows.
                 </p>
             </Styled.Section>
@@ -62,7 +62,7 @@ const ListsKeys = () => {
                 <Styled.List>
                     <li>
                         <b>Avoid</b> index as key when the list can reorder, filter, insert in the middle,
-                        or delete—index changes will rename identities.
+                        or delete - index changes will rename identities.
                     </li>
                     <li>
                         <b>Acceptable</b> when the list is truly static (never reorders, never filters),
@@ -131,10 +131,10 @@ list.map(item => (
                         <b>Generated once and stored with data</b> is OK (e.g., assign an <em>id</em> when creating items client-side).
                     </li>
                     <li>
-                        <b>Avoid:</b> transient values like <Styled.InlineCode>Math.random()</Styled.InlineCode> on every render—this forces remounts.
+                        <b>Avoid:</b> transient values like <Styled.InlineCode>Math.random()</Styled.InlineCode> on every render - this forces remounts.
                     </li>
                     <li>
-                        <b>Don’t</b> use <Styled.InlineCode>useId</Styled.InlineCode> as a list key—<em>useId</em> is for stable accessibility IDs per component, not for identifying external list items.
+                        <b>Don’t</b> use <Styled.InlineCode>useId</Styled.InlineCode> as a list key - <em>useId</em> is for stable accessibility IDs per component, not for identifying external list items.
                     </li>
                 </Styled.List>
             </Styled.Section>
@@ -168,7 +168,7 @@ setItems(prev => reorder(prev, startIndex, endIndex));`}
                 <Styled.List>
                     <li>
                         For very long lists, consider virtualization (<em>react-window</em>, <em>react-virtual</em>).
-                        Keys still matter—use stable IDs for rows.
+                        Keys still matter - use stable IDs for rows.
                     </li>
                     <li>
                         Avoid heavy computations inside <Styled.InlineCode>map</Styled.InlineCode>; compute derived data once above.
@@ -184,8 +184,8 @@ setItems(prev => reorder(prev, startIndex, endIndex));`}
                     <li><b>Do</b> put keys on the element returned by the <Styled.InlineCode>map</Styled.InlineCode>.</li>
                     <li><b>Do</b> use keyed fragments for multi-sibling groups in a loop.</li>
                     <li><b>Don’t</b> use array index if the list can reorder, filter, insert, or delete.</li>
-                    <li><b>Don’t</b> generate random keys per render—this defeats reconciliation.</li>
-                    <li><b>Don’t</b> expect <Styled.InlineCode>props.key</Styled.InlineCode> in children—pass a real prop if the child needs an ID.</li>
+                    <li><b>Don’t</b> generate random keys per render - this defeats reconciliation.</li>
+                    <li><b>Don’t</b> expect <Styled.InlineCode>props.key</Styled.InlineCode> in children - pass a real prop if the child needs an ID.</li>
                 </Styled.List>
             </Styled.Section>
 

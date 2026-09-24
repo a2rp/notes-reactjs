@@ -17,7 +17,7 @@ const Conditional = () => {
                     <li>JSX curly braces expect an <b>expression</b> that returns a node (or <Styled.InlineCode>null</Styled.InlineCode>).</li>
                     <li>
                         Statements like <Styled.InlineCode>if</Styled.InlineCode>, <Styled.InlineCode>for</Styled.InlineCode> cannot appear directly
-                        inside JSX—move logic above, or use an expression (ternary, <Styled.InlineCode>&&</Styled.InlineCode>).
+                        inside JSX - move logic above, or use an expression (ternary, <Styled.InlineCode>&&</Styled.InlineCode>).
                     </li>
                     <li>Returning <Styled.InlineCode>null</Styled.InlineCode> or <Styled.InlineCode>false</Styled.InlineCode> renders nothing.</li>
                 </Styled.List>
@@ -25,7 +25,7 @@ const Conditional = () => {
 
             {/* Pattern 1: Ternary */}
             <Styled.Section>
-                <Styled.H2>Pattern 1 — Ternary (if/else)</Styled.H2>
+                <Styled.H2>Pattern 1  -  Ternary (if/else)</Styled.H2>
                 <p>Best choice when there is a clear “then/else”.</p>
                 <Styled.Pre>
                     {`{isLoading ? <Spinner /> : <List items={data} />}
@@ -43,7 +43,7 @@ return <section>{statusView}</section>;`}
 
             {/* Pattern 2: Logical AND */}
             <Styled.Section>
-                <Styled.H2>Pattern 2 — Logical AND (guarded render)</Styled.H2>
+                <Styled.H2>Pattern 2  -  Logical AND (guarded render)</Styled.H2>
                 <p>Render a piece only when a condition is truthy.</p>
                 <Styled.Pre>
                     {`{/* show error only when error exists */}
@@ -60,7 +60,7 @@ return <section>{statusView}</section>;`}
 
             {/* Pattern 3: Early returns */}
             <Styled.Section>
-                <Styled.H2>Pattern 3 — Early returns (before JSX)</Styled.H2>
+                <Styled.H2>Pattern 3  -  Early returns (before JSX)</Styled.H2>
                 <p>Keep JSX flat by returning early for special cases.</p>
                 <Styled.Pre>
                     {`function Products({ data, error, loading }) {
@@ -75,7 +75,7 @@ return <section>{statusView}</section>;`}
 
             {/* Pattern 4: Guard components */}
             <Styled.Section>
-                <Styled.H2>Pattern 4 — Guard components (wrapper)</Styled.H2>
+                <Styled.H2>Pattern 4  -  Guard components (wrapper)</Styled.H2>
                 <p>Encapsulate a common gate (auth, feature flag, permission) once.</p>
                 <Styled.Pre>
                     {`function If({ when, children, otherwise = null }) {
@@ -96,7 +96,7 @@ return <section>{statusView}</section>;`}
 
             {/* Pattern 5: Switch map */}
             <Styled.Section>
-                <Styled.H2>Pattern 5 — Switch map (object map)</Styled.H2>
+                <Styled.H2>Pattern 5  -  Switch map (object map)</Styled.H2>
                 <p>Prefer a lookup map over nested ternaries for multiple states.</p>
                 <Styled.Pre>
                     {`const views = {
@@ -112,7 +112,7 @@ return views[status] ?? <UnknownState />;`}
 
             {/* Pattern 6: Dynamic component */}
             <Styled.Section>
-                <Styled.H2>Pattern 6 — Dynamic component choice</Styled.H2>
+                <Styled.H2>Pattern 6  -  Dynamic component choice</Styled.H2>
                 <p>Select a component type by condition, then render it.</p>
                 <Styled.Pre>
                     {`const Field = readOnly ? ReadOnlyField : EditableField;
@@ -198,8 +198,8 @@ function Comp({ show }) {
                     <li><b>Do</b> return early to keep JSX shallow.</li>
                     <li><b>Do</b> use a map/object for multiple states.</li>
                     <li><b>Don’t</b> call hooks conditionally.</li>
-                    <li><b>Don’t</b> rely on <Styled.InlineCode>&&</Styled.InlineCode> with values like <Styled.InlineCode>0</Styled.InlineCode>—coerce to boolean or compare.</li>
-                    <li><b>Don’t</b> overuse nested ternaries—extract helpers.</li>
+                    <li><b>Don’t</b> rely on <Styled.InlineCode>&&</Styled.InlineCode> with values like <Styled.InlineCode>0</Styled.InlineCode> - coerce to boolean or compare.</li>
+                    <li><b>Don’t</b> overuse nested ternaries - extract helpers.</li>
                 </Styled.List>
             </Styled.Section>
 

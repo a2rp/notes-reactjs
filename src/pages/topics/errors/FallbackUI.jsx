@@ -60,7 +60,7 @@ function Spinner() {
 }`}
                 </Styled.Pre>
                 <Styled.Small>
-                    <b>Definition:</b> <i>Suspense</i> shows a <i>fallback</i> until children finish loading. It's not for errors—pair it with an Error Boundary.
+                    <b>Definition:</b> <i>Suspense</i> shows a <i>fallback</i> until children finish loading. It's not for errors - pair it with an Error Boundary.
                 </Styled.Small>
             </Styled.Section>
 
@@ -74,7 +74,7 @@ function Spinner() {
                     </li>
                     <li>
                         <b>Scope:</b> Catches errors in <i>render</i>, <i>lifecycle</i>, and <i>constructor</i> of children.
-                        It does <u>not</u> catch errors in event handlers or async code—handle those in your logic.
+                        It does <u>not</u> catch errors in event handlers or async code - handle those in your logic.
                     </li>
                     <li>
                         <b>Reset:</b> Change a <i>key</i> on the boundary (or internal state) to try rendering again.
@@ -224,9 +224,9 @@ function Panel() {
                 <Styled.List>
                     <li><b>Do</b> wrap risky islands with Error Boundaries (charts, third-party widgets, complex views).</li>
                     <li><b>Do</b> compose Suspense fallback (loading) inside an Error Boundary (errors).</li>
-                    <li><b>Do</b> distinguish <i>empty</i> vs <i>error</i> vs <i>loading</i>—they need different UI.</li>
-                    <li><b>Don't</b> swallow errors silently—log to console in dev and to monitoring in prod.</li>
-                    <li><b>Don't</b> show raw stack traces to end users—show a friendly message and log details elsewhere.</li>
+                    <li><b>Do</b> distinguish <i>empty</i> vs <i>error</i> vs <i>loading</i> - they need different UI.</li>
+                    <li><b>Don't</b> swallow errors silently - log to console in dev and to monitoring in prod.</li>
+                    <li><b>Don't</b> show raw stack traces to end users - show a friendly message and log details elsewhere.</li>
                 </Styled.List>
             </Styled.Section>
 

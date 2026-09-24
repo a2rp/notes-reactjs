@@ -29,8 +29,8 @@ const CanvasWebGL = () => {
                         <Styled.InlineCode>"webgl"</Styled.InlineCode>/<Styled.InlineCode>"webgl2"</Styled.InlineCode> (GPU).
                     </li>
                     <li>
-                        <b>Immediate-mode vs retained-mode:</b> Canvas is <em>immediate-mode</em>—you manually
-                        redraw each frame. SVG is <em>retained-mode</em>—the browser keeps objects in a scene.
+                        <b>Immediate-mode vs retained-mode:</b> Canvas is <em>immediate-mode</em> - you manually
+                        redraw each frame. SVG is <em>retained-mode</em> - the browser keeps objects in a scene.
                     </li>
                     <li>
                         <b>WebGL:</b> a browser's JavaScript binding to OpenGL ES 2.0/3.0. You write small GPU
@@ -72,7 +72,7 @@ ctx.strokeRect(20, 20, 160, 90);
 // Text
 ctx.fillStyle = '#c9d1d9';
 ctx.font = '16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
-ctx.fillText('Canvas 2D — Hello Pixels', 20, 140);`}
+ctx.fillText('Canvas 2D  -  Hello Pixels', 20, 140);`}
                 </Styled.Pre>
                 <Styled.Small>
                     The canvas's <em>display</em> size (CSS) and <em>drawing buffer</em> size (width/height
@@ -299,7 +299,7 @@ gl.drawArrays(gl.TRIANGLES, 0, 3);`}
                     </li>
                     <li>
                         <b>Overdraw:</b> clearing/painting entire screen with expensive effects every frame
-                        unnecessarily—measure first.
+                        unnecessarily - measure first.
                     </li>
                     <li>
                         <b>Blocking the main thread:</b> heavy CPU loops will stutter rendering. Consider
@@ -322,7 +322,7 @@ gl.drawArrays(gl.TRIANGLES, 0, 3);`}
                         <b>Do</b> precompute geometry/text metrics outside the hot loop where possible.
                     </li>
                     <li>
-                        <b>Don't</b> mutate React DOM during drawing—draw to the canvas only.
+                        <b>Don't</b> mutate React DOM during drawing - draw to the canvas only.
                     </li>
                     <li>
                         <b>Don't</b> start multiple RAF loops for the same canvas; centralize the timeline.
@@ -351,7 +351,7 @@ gl.drawArrays(gl.TRIANGLES, 0, 3);`}
 
             <Styled.Callout>
                 Summary: Use Canvas 2D for pixel-level control and WebGL/WebGL2 when you need GPU power.
-                In React, treat the canvas like an imperative island—initialize once, draw per frame, and
+                In React, treat the canvas like an imperative island - initialize once, draw per frame, and
                 clean up diligently.
             </Styled.Callout>
         </Styled.Page>

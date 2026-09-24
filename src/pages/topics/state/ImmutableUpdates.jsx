@@ -153,7 +153,7 @@ setState(prev => ({ ...prev, lastSeen: Date.now() }));`}
             <Styled.Section>
                 <Styled.H2>Avoid deep cloning by default</Styled.H2>
                 <Styled.List>
-                    <li>Deep clones are slow and unnecessary for most updates—only the changed paths need new objects.</li>
+                    <li>Deep clones are slow and unnecessary for most updates - only the changed paths need new objects.</li>
                     <li><Styled.InlineCode>JSON.parse(JSON.stringify(...))</Styled.InlineCode> drops functions, <Styled.InlineCode>undefined</Styled.InlineCode>, Dates, Maps/Sets.</li>
                     <li>Prefer <b>structural sharing</b> (spread on each level being changed).</li>
                 </Styled.List>
@@ -203,7 +203,7 @@ const [state, dispatch] = React.useReducer(reducer, { items: [] });
             <Styled.Section>
                 <Styled.H2>Debugging accidental mutations</Styled.H2>
                 <Styled.List>
-                    <li>Watch for state updates that do nothing—often due to mutating then setting the same reference.</li>
+                    <li>Watch for state updates that do nothing - often due to mutating then setting the same reference.</li>
                     <li>Freeze development data (<Styled.InlineCode>Object.freeze</Styled.InlineCode>) to catch mutations early (dev-only).</li>
                     <li>Check array helpers that mutate (<Styled.InlineCode>sort</Styled.InlineCode>, <Styled.InlineCode>reverse</Styled.InlineCode>, <Styled.InlineCode>splice</Styled.InlineCode>).</li>
                 </Styled.List>

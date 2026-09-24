@@ -178,10 +178,10 @@ const Btn = React.forwardRef(function Btn({ active, ...rest }, ref) {
             <Styled.Section>
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
-                    <li>Expecting <Styled.InlineCode>ref</Styled.InlineCode> to “pass through” automatically—custom components need <Styled.InlineCode>forwardRef</Styled.InlineCode>.</li>
+                    <li>Expecting <Styled.InlineCode>ref</Styled.InlineCode> to “pass through” automatically - custom components need <Styled.InlineCode>forwardRef</Styled.InlineCode>.</li>
                     <li>Forgetting to attach the forwarded ref to the correct inner element.</li>
                     <li>Forwarding the ref but also spreading it as a normal prop (naming collisions). The <em>special</em> prop is always <Styled.InlineCode>ref</Styled.InlineCode>.</li>
-                    <li>Creating new wrapper objects/handlers every render around the forwarded element—can defeat memoization.</li>
+                    <li>Creating new wrapper objects/handlers every render around the forwarded element - can defeat memoization.</li>
                     <li>Using refs for data that should be state (UI won’t update when <Styled.InlineCode>ref.current</Styled.InlineCode> changes).</li>
                 </Styled.List>
             </Styled.Section>

@@ -218,7 +218,7 @@ function AdminLayout() { return (<div className="admin"><SideNav /><Outlet /></d
                         should have a single router at the root.
                     </li>
                     <li>
-                        <b>Don’t</b> forget <Styled.InlineCode>&lt;Outlet /&gt;</Styled.InlineCode>—without it, children will never render.
+                        <b>Don’t</b> forget <Styled.InlineCode>&lt;Outlet /&gt;</Styled.InlineCode> - without it, children will never render.
                     </li>
                 </Styled.List>
             </Styled.Section>

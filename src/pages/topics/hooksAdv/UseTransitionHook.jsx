@@ -184,10 +184,10 @@ fetch("/api/data").then(data => {
             <Styled.Section>
                 <Styled.H2>Common pitfalls</Styled.H2>
                 <Styled.List>
-                    <li>Putting <b>all</b> updates in a transition—then nothing feels immediate. Keep truly interactive updates urgent.</li>
-                    <li>Assuming transitions guarantee completion—an in-flight transition can be interrupted by newer updates.</li>
+                    <li>Putting <b>all</b> updates in a transition - then nothing feels immediate. Keep truly interactive updates urgent.</li>
+                    <li>Assuming transitions guarantee completion - an in-flight transition can be interrupted by newer updates.</li>
                     <li>Mutating large data during render; transitions won’t fix logic issues or expensive un-memoized work.</li>
-                    <li>Driving form input <em>value</em> from a transition state—keystrokes will feel laggy. Mirror input urgently; derive heavy UI in transition.</li>
+                    <li>Driving form input <em>value</em> from a transition state - keystrokes will feel laggy. Mirror input urgently; derive heavy UI in transition.</li>
                 </Styled.List>
             </Styled.Section>
 
